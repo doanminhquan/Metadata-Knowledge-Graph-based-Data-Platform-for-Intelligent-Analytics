@@ -1,0 +1,138 @@
+[
+    {
+        "name": "Total Students by Class",
+        "description": "Displays the total number of students grouped by class_code.",
+        "collection_id": 2,
+        "display": "bar",
+        "dataset_query": {
+            "type": "query",
+            "database": 2,
+            "query": {
+                "source-table": 18,
+                "aggregation": [
+                    ["count"]
+                ],
+                "breakout": [
+                    ["field", 116]
+                ]
+            }
+        },
+        "visualization_settings": {
+            "graph": {
+                "type": "bar",
+                "x-axis": "class_code",
+                "y-axis": "count"
+            }
+        },
+        "collection_position": None,
+        "parameters": [],
+        "param_values": []
+    },
+    {
+        "name": "Average Score per Term",
+        "description": "Shows the average score for each term.",
+        "collection_id": 2,
+        "display": "line",
+        "dataset_query": {
+            "type": "query",
+            "database": 3,
+            "query": {
+                "source-table": 27,
+                "aggregation": [
+                    ["avg", ["field", 237]]
+                ],
+                "breakout": [
+                    ["field", 239]
+                ]
+            }
+        },
+        "visualization_settings": {
+            "graph": {
+                "type": "line",
+                "x-axis": "term_code",
+                "y-axis": "avg"
+            }
+        },
+        "collection_position": None,
+        "parameters": [],
+        "param_values": []
+    },
+    {
+        "name": "Total Courses by Program",
+        "description": "Displays total number of courses grouped by program_code.",
+        "collection_id": 2,
+        "display": "bar",
+        "dataset_query": {
+            "type": "query",
+            "database": 3,
+            "query": {
+                "source-table": 24,
+                "aggregation": [
+                    ["count"]
+                ],
+                "breakout": [
+                    ["field", 217]
+                ]
+            }
+        },
+        "visualization_settings": {
+            "graph": {
+                "type": "bar",
+                "x-axis": "program_code",
+                "y-axis": "count"
+            }
+        },
+        "collection_position": None,
+        "parameters": [],
+        "param_values": []
+    },
+    {
+        "name": "Graduates by Term",
+        "description": "Shows the total number of graduates by term.",
+        "collection_id": 2,
+        "display": "bar",
+        "dataset_query": {
+            "type": "query",
+            "database": 3,
+            "query": {
+                "source-table": 26,
+                "aggregation": [
+                    ["count"]
+                ],
+                "breakout": [
+                    ["field", 232]
+                ]
+            }
+        },
+        "visualization_settings": {
+            "graph": {
+                "type": "bar",
+                "x-axis": "term_code",
+                "y-axis": "count"
+            }
+        },
+        "collection_position": None,
+        "parameters": [],
+        "param_values": []
+    },
+    {
+        "name": "Graduation Rate",
+        "description": "Displays the overall graduation rate.",
+        "collection_id": 2,
+        "display": "smartscalar",
+        "dataset_query": {
+            "type": "query",
+            "database": 3,
+            "query": {
+                "source-table": 28,
+                "aggregation": [
+                    ["sum", ["field", 248]]
+                ]
+            }
+        },
+        "visualization_settings": {},
+        "collection_position": None,
+        "parameters": [],
+        "param_values": []
+    }
+]

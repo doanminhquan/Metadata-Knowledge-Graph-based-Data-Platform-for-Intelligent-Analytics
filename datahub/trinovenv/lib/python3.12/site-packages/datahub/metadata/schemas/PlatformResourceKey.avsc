@@ -1,0 +1,24 @@
+{
+  "type": "record",
+  "Aspect": {
+    "name": "platformResourceKey",
+    "keyForEntity": "platformResource",
+    "entityCategory": "core",
+    "entityAspects": [
+      "dataPlatformInstance",
+      "platformResourceInfo",
+      "status"
+    ],
+    "entityDoc": "Platform Resources are assets that are unmodeled and stored outside of the core data model. They are stored in DataHub primarily to help with application-specific use-cases that are not sufficiently generalized to move into the core data model."
+  },
+  "name": "PlatformResourceKey",
+  "namespace": "com.linkedin.pegasus2avro.platformresource",
+  "fields": [
+    {
+      "type": "string",
+      "name": "id",
+      "doc": "A unique id for this entity.\nThere are no constraints on the format of this id, but most implementations\nwill choose to use a UUID.\nThis id should be globally unique for the entire DataHub instance and\n     uniquely identify the resource that is being stored, so most\n     implementations\nwill combine logical attributes like platform name, platform instance,\nplatform-specific-id and the resource type to create the unique id.\ne.g. slack:slack-instance:slack-user-id:user-info \nor guid(slack, slack-instance, slack-user-id, user-info) etc."
+    }
+  ],
+  "doc": "Key for a Platform Resource.\nPlatform Resources are assets that are not part of the core data model.\nThey are stored in DataHub primarily to help with application-specific\nuse-cases that are not sufficiently generalized to move into the core data model.\nFor instance, if we want to persist & retrieve additional user profile data \nfrom auxiliary integrations such as Slack or Microsoft Teams for resolving details later."
+}

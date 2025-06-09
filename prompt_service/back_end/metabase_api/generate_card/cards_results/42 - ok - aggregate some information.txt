@@ -1,0 +1,142 @@
+{
+    "cards": [
+        {
+            "name": "Total Students Enrolled per Class",
+            "description": "Displays the total number of students enrolled in each class.",
+            "collection_id": 2,
+            "display": "bar",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 116]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "bar",
+                    "x-axis": "class_code",
+                    "y-axis": "count"
+                }
+            }
+        },
+        {
+            "name": "Number of Classes by Year Start",
+            "description": "Shows the total number of classes grouped by year start.",
+            "collection_id": 2,
+            "display": "bar",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 15,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 81]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "bar",
+                    "x-axis": "year_start",
+                    "y-axis": "count"
+                }
+            }
+        },
+        {
+            "name": "Average Score of Graduates by Program",
+            "description": "Displays the average scores of graduates grouped by their program codes.",
+            "collection_id": 2,
+            "display": "bar",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 17,
+                    "aggregation": [
+                        ["avg", ["field", 109]]
+                    ],
+                    "breakout": [
+                        ["field", 108]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "bar",
+                    "x-axis": "program_code",
+                    "y-axis": "avg"
+                }
+            }
+        },
+        {
+            "name": "Total Courses Offered by Year",
+            "description": "Shows the total number of courses offered each year.",
+            "collection_id": 2,
+            "display": "bar",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 10,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 173]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "bar",
+                    "x-axis": "course_code",
+                    "y-axis": "count"
+                }
+            }
+        },
+        {
+            "name": "Student Enrollment by Major",
+            "description": "Displays the number of students enrolled in each major.",
+            "collection_id": 2,
+            "display": "bar",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 22,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 153]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "bar",
+                    "x-axis": "major_code",
+                    "y-axis": "count"
+                }
+            }
+        }
+    ],
+    "explanation": [
+        "This chart shows how many students are enrolled in each class, providing insights into class sizes.",
+        "This chart displays the breakdown of classes by their year of initiation, helping to visualize trends in course offerings.",
+        "This card illustrates the average scores of graduates, which helps assess the performance of different programs.",
+        "This chart reveals the number of courses offered in each year, which can assist in understanding educational trends.",
+        "This card presents the number of students enrolled per major, providing valuable data on popularity and demand for various programs."
+    ],
+    "dashboard_name": "Student Enrollment and Program Performance"
+}

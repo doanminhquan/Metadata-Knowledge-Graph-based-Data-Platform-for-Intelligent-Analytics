@@ -1,0 +1,23 @@
+source:
+  type: trino
+  config:
+    host_port: "localhost:8092" 
+    database: "hudi"
+    username: "admin" 
+    password: ""
+    schema_pattern:
+      deny:
+        - "information_schema" 
+    profiling:
+        enabled: true
+        profile_table_level_only: false
+    stateful_ingestion:
+        enabled: true
+        fail_safe_threshold: 99
+
+pipeline_name: "cli_trino"
+
+sink:
+  type: datahub-rest
+  config:
+    server: "http://localhost:22691"

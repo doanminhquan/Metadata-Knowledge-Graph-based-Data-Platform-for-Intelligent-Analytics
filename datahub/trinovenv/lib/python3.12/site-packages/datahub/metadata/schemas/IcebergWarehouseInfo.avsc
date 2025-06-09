@@ -1,0 +1,92 @@
+{
+  "type": "record",
+  "Aspect": {
+    "name": "icebergWarehouseInfo"
+  },
+  "name": "IcebergWarehouseInfo",
+  "namespace": "com.linkedin.pegasus2avro.dataplatforminstance",
+  "fields": [
+    {
+      "type": "string",
+      "name": "dataRoot",
+      "doc": "Path of the root for the backing store of the tables in the warehouse."
+    },
+    {
+      "java": {
+        "class": "com.linkedin.pegasus2avro.common.urn.Urn"
+      },
+      "type": "string",
+      "name": "clientId",
+      "doc": "clientId to be used to authenticate with storage hosting this warehouse",
+      "Urn": "Urn"
+    },
+    {
+      "java": {
+        "class": "com.linkedin.pegasus2avro.common.urn.Urn"
+      },
+      "type": "string",
+      "name": "clientSecret",
+      "doc": "client secret to authenticate with storage hosting this warehouse",
+      "Urn": "Urn"
+    },
+    {
+      "type": "string",
+      "name": "region",
+      "doc": "region where the warehouse is located."
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "role",
+      "default": null
+    },
+    {
+      "type": [
+        "null",
+        "int"
+      ],
+      "name": "tempCredentialExpirationSeconds",
+      "default": null
+    },
+    {
+      "type": {
+        "type": "enum",
+        "symbolDocs": {
+          "CORP": "Designates corporation fabrics",
+          "DEV": "Designates development fabrics",
+          "EI": "Designates early-integration fabrics",
+          "NON_PROD": "Designates non-production fabrics",
+          "PRE": "Designates pre-production fabrics",
+          "PROD": "Designates production fabrics",
+          "QA": "Designates quality assurance fabrics",
+          "RVW": "Designates review fabrics",
+          "SANDBOX": "Designates sandbox fabrics",
+          "STG": "Designates staging fabrics",
+          "TEST": "Designates testing fabrics",
+          "UAT": "Designates user acceptance testing fabrics"
+        },
+        "name": "FabricType",
+        "namespace": "com.linkedin.pegasus2avro.common",
+        "symbols": [
+          "DEV",
+          "TEST",
+          "QA",
+          "UAT",
+          "EI",
+          "PRE",
+          "STG",
+          "NON_PROD",
+          "PROD",
+          "CORP",
+          "RVW",
+          "SANDBOX"
+        ],
+        "doc": "Fabric group type"
+      },
+      "name": "env"
+    }
+  ],
+  "doc": "An Iceberg warehouse location and credentails whose read/writes are governed by datahub catalog."
+}

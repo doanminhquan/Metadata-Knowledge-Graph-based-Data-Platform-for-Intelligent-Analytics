@@ -1,0 +1,28 @@
+{
+  "table_name": "term",
+  "table_id": 11,
+  "db_id": "2",
+  "fields": [
+    {
+      "name": "term_code",
+      "display_name": "Term Code",
+      "base_type": "type/Text",
+      "semantic_type": "type/Category",
+      "id": 180
+    },
+    {
+      "name": "term_name",
+      "display_name": "Term Name",
+      "base_type": "type/Text",
+      "semantic_type": "type/Category",
+      "id": 182
+    },
+    {
+      "name": "id",
+      "display_name": "ID",
+      "base_type": "type/Text",
+      "semantic_type": "type/PK",
+      "id": 175
+    }
+  ]
+}

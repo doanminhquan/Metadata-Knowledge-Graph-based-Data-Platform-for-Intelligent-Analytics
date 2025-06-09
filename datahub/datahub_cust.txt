@@ -1,0 +1,32 @@
+this is for notes and is otherwise of no significance :0 
+
+[Command]
+/*
+ * This compose must start AFTER MinIO compose has started.
+ * It depends on network "hudi" to be created prior.
+ */ 
+
+docker compose -f docker-compose.yml up
+
+
+[Kafka]
+dafka:22604
+PLAINTEXT://dafka:22604,PLAINTEXT_HOST://localhost:22611
+dzookeeper:22619
+schema-registry:22634
+
+[PostgreSQL]
+postgres:22677:22677
+
+[DataHub]
+datahub-gms:22691:8080
+
+[Trino]
+datahub ingest -c trino-ingest.yml
+
+[Metabase]
+datahub ingest -c metabase-ingest.yml
+
+[Airflow]
+onetime setup:
+airflow connections add --conn-type 'datahub-rest' 'datahub_rest_default' --conn-host 'http://localhost:22691' --conn-login 'datahub' --conn-password 'datahub'

@@ -1,0 +1,177 @@
+[
+  {
+    "table_name": "avg_score_per_term",
+    "table_id": 27,
+    "db_id": "3",
+    "fields": [
+      {
+        "name": "term_avg_score",
+        "display_name": "Term Avg Score",
+        "base_type": "type/Float",
+        "semantic_type": null,
+        "id": 237
+      },
+      {
+        "name": "term_code",
+        "display_name": "Term Code",
+        "base_type": "type/Text",
+        "semantic_type": null,
+        "id": 239
+      }
+    ]
+  },
+  {
+    "table_name": "courses_per_program",
+    "table_id": 24,
+    "db_id": "3",
+    "fields": [
+      {
+        "name": "total_courses",
+        "display_name": "Total Courses",
+        "base_type": "type/BigInteger",
+        "semantic_type": null,
+        "id": 211
+      },
+      {
+        "name": "program_code",
+        "display_name": "Program Code",
+        "base_type": "type/Text",
+        "semantic_type": null,
+        "id": 217
+      }
+    ]
+  },
+  {
+    "table_name": "graduates_by_term",
+    "table_id": 26,
+    "db_id": "3",
+    "fields": [
+      {
+        "name": "total_graduates",
+        "display_name": "Total Graduates",
+        "base_type": "type/BigInteger",
+        "semantic_type": null,
+        "id": 233
+      },
+      {
+        "name": "term_code",
+        "display_name": "Term Code",
+        "base_type": "type/Text",
+        "semantic_type": null,
+        "id": 232
+      }
+    ]
+  },
+  {
+    "table_name": "graduation_rate",
+    "table_id": 28,
+    "db_id": "3",
+    "fields": [
+      {
+        "name": "graduation_rate",
+        "display_name": "Graduation Rate",
+        "base_type": "type/Float",
+        "semantic_type": null,
+        "id": 248
+      }
+    ]
+  },
+  {
+    "table_name": "students_by_class",
+    "table_id": 29,
+    "db_id": "3",
+    "fields": [
+      {
+        "name": "total_students",
+        "display_name": "Total Students",
+        "base_type": "type/BigInteger",
+        "semantic_type": null,
+        "id": 254
+      },
+      {
+        "name": "class_code",
+        "display_name": "Class Code",
+        "base_type": "type/Text",
+        "semantic_type": null,
+        "id": 253
+      }
+    ]
+  },
+  {
+    "table_name": "summary_counts",
+    "table_id": 25,
+    "db_id": "3",
+    "fields": [
+      {
+        "name": "total_students",
+        "display_name": "Total Students",
+        "base_type": "type/BigInteger",
+        "semantic_type": null,
+        "id": 221
+      },
+      {
+        "name": "total_staff",
+        "display_name": "Total Staff",
+        "base_type": "type/BigInteger",
+        "semantic_type": null,
+        "id": 227
+      },
+      {
+        "name": "total_courses",
+        "display_name": "Total Courses",
+        "base_type": "type/BigInteger",
+        "semantic_type": null,
+        "id": 218
+      },
+      {
+        "name": "total_classes",
+        "display_name": "Total Classes",
+        "base_type": "type/BigInteger",
+        "semantic_type": null,
+        "id": 225
+      },
+      {
+        "name": "total_programs",
+        "display_name": "Total Programs",
+        "base_type": "type/BigInteger",
+        "semantic_type": null,
+        "id": 229
+      },
+      {
+        "name": "total_majors",
+        "display_name": "Total Majors",
+        "base_type": "type/BigInteger",
+        "semantic_type": null,
+        "id": 222
+      },
+      {
+        "name": "summary_id",
+        "display_name": "Summary ID",
+        "base_type": "type/BigInteger",
+        "semantic_type": null,
+        "id": 223
+      }
+    ]
+  },
+  {
+    "table_name": "teaching_load",
+    "table_id": 30,
+    "db_id": "3",
+    "fields": [
+      {
+        "name": "total_groups_taught",
+        "display_name": "Total Groups Taught",
+        "base_type": "type/BigInteger",
+        "semantic_type": null,
+        "id": 261
+      },
+      {
+        "name": "staff_code",
+        "display_name": "Staff Code",
+        "base_type": "type/Text",
+        "semantic_type": null,
+        "id": 262
+      }
+    ]
+  }
+]

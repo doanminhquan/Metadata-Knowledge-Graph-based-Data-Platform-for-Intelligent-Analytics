@@ -1,0 +1,98 @@
+{
+    "cards": [
+        {
+            "name": "Student Enrollment Trend Over Years",
+            "description": "This chart shows the total number of students enrolled each year.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 115]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "year",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Total Students Enrolled per Class",
+            "description": "This visualization presents the total number of students enrolled in each class over the years.",
+            "collection_id": 2,
+            "display": "bar",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 116]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "bar",
+                    "x-axis": "class_code",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Enrollment by Year and Program",
+            "description": "This graph displays how student enrollment changes year by year within different programs.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 115],
+                        ["field", 108]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "year",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        }
+    ],
+    "explanation": [
+        "This chart shows the total number of students enrolled each year.",
+        "This visualization presents the total number of students enrolled in each class over the years.",
+        "This graph displays how student enrollment changes year by year within different programs."
+    ],
+    "dashboard_name": "Student Enrollment Trends"
+}

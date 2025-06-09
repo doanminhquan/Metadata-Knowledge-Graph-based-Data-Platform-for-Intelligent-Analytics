@@ -1,0 +1,165 @@
+{
+  "type": "record",
+  "Aspect": {
+    "name": "corpUserSettings"
+  },
+  "name": "CorpUserSettings",
+  "namespace": "com.linkedin.pegasus2avro.identity",
+  "fields": [
+    {
+      "type": {
+        "type": "record",
+        "name": "CorpUserAppearanceSettings",
+        "namespace": "com.linkedin.pegasus2avro.identity",
+        "fields": [
+          {
+            "type": [
+              "null",
+              "boolean"
+            ],
+            "name": "showSimplifiedHomepage",
+            "default": null,
+            "doc": "Flag whether the user should see a homepage with only datasets, charts and dashboards. Intended for users\nwho have less operational use cases for the datahub tool."
+          },
+          {
+            "type": [
+              "null",
+              "boolean"
+            ],
+            "name": "showThemeV2",
+            "default": null,
+            "doc": "Flag controlling whether the V2 UI for DataHub is shown."
+          }
+        ],
+        "doc": "Settings for a user around the appearance of their DataHub UI"
+      },
+      "name": "appearance",
+      "doc": "Settings for a user around the appearance of their DataHub U"
+    },
+    {
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "CorpUserViewsSettings",
+          "namespace": "com.linkedin.pegasus2avro.identity",
+          "fields": [
+            {
+              "java": {
+                "class": "com.linkedin.pegasus2avro.common.urn.Urn"
+              },
+              "type": [
+                "null",
+                "string"
+              ],
+              "name": "defaultView",
+              "default": null,
+              "doc": "The default View which is selected for the user.\nIf none is chosen, then this value will be left blank.",
+              "Urn": "Urn"
+            }
+          ],
+          "doc": "Settings related to the 'Views' feature."
+        }
+      ],
+      "name": "views",
+      "default": null,
+      "doc": "User preferences for the Views feature."
+    },
+    {
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "NotificationSettings",
+          "namespace": "com.linkedin.pegasus2avro.event.notification.settings",
+          "fields": [
+            {
+              "type": {
+                "type": "array",
+                "items": {
+                  "type": "enum",
+                  "symbolDocs": {
+                    "EMAIL": "Email target type.",
+                    "SLACK": "Slack target type."
+                  },
+                  "name": "NotificationSinkType",
+                  "namespace": "com.linkedin.pegasus2avro.event.notification",
+                  "symbols": [
+                    "SLACK",
+                    "EMAIL"
+                  ],
+                  "doc": "A type of sink / platform to send a notification to."
+                }
+              },
+              "name": "sinkTypes",
+              "doc": "Sink types that notifications are sent to."
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "record",
+                  "name": "SlackNotificationSettings",
+                  "namespace": "com.linkedin.pegasus2avro.event.notification.settings",
+                  "fields": [
+                    {
+                      "type": [
+                        "null",
+                        "string"
+                      ],
+                      "name": "userHandle",
+                      "default": null,
+                      "doc": "Optional user handle"
+                    },
+                    {
+                      "type": [
+                        "null",
+                        {
+                          "type": "array",
+                          "items": "string"
+                        }
+                      ],
+                      "name": "channels",
+                      "default": null,
+                      "doc": "Optional list of channels to send notifications to"
+                    }
+                  ],
+                  "doc": "Slack Notification settings for an actor."
+                }
+              ],
+              "name": "slackSettings",
+              "default": null,
+              "doc": "Slack Notification Settings"
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "record",
+                  "name": "EmailNotificationSettings",
+                  "namespace": "com.linkedin.pegasus2avro.event.notification.settings",
+                  "fields": [
+                    {
+                      "type": "string",
+                      "name": "email",
+                      "doc": "Optional user or group email address"
+                    }
+                  ],
+                  "doc": "Email Notification settings for an actor."
+                }
+              ],
+              "name": "emailSettings",
+              "default": null,
+              "doc": "Email Notification Settings"
+            }
+          ],
+          "doc": "Notification settings for an actor or subscription."
+        }
+      ],
+      "name": "notificationSettings",
+      "default": null,
+      "doc": "Notification settings for a user"
+    }
+  ],
+  "doc": "Settings that a user can customize through the datahub ui"
+}

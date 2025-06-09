@@ -1,0 +1,66 @@
+{
+    "cards": [
+        {
+            "name": "Student Enrollment Trend",
+            "description": "Displays the trend of student enrollment over the years.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 115]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "year",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": None,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Enrollment Over the Years by Class Code",
+            "description": "Shows student enrollment trends across different classes over the years.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 116]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "year",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": None,
+            "parameters": [],
+            "param_values": []
+        }
+    ],
+    "explanation": [
+        "I created a visualization that shows student enrollment over the years, allowing us to see how the number of enrolled students has changed over time.",
+        "This card presents the trends of student enrollment grouped by class code, helping us analyze how different classes have performed in attracting students over the years."
+    ]
+}

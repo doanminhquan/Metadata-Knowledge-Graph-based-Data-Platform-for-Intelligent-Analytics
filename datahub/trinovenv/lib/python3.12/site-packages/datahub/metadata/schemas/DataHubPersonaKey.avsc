@@ -1,0 +1,21 @@
+{
+  "type": "record",
+  "Aspect": {
+    "name": "dataHubPersonaKey",
+    "keyForEntity": "dataHubPersona",
+    "entityCategory": "internal",
+    "entityAspects": [
+      "dataHubPersonaInfo"
+    ]
+  },
+  "name": "DataHubPersonaKey",
+  "namespace": "com.linkedin.pegasus2avro.metadata.key",
+  "fields": [
+    {
+      "type": "string",
+      "name": "id",
+      "doc": "A unique id for the persona type"
+    }
+  ],
+  "doc": "Key for a persona type"
+}

@@ -1,0 +1,157 @@
+{
+    "cards": [
+        {
+            "name": "Total Classes Offered by Year",
+            "description": "Displays the total number of classes offered each year.",
+            "collection_id": 2,
+            "display": "bar",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 15,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 81]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "bar",
+                    "x-axis": "year_start",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Average Class Size by Year",
+            "description": "Shows the average size of classes offered each year, helping to evaluate capacity and growth.",
+            "collection_id": 2,
+            "display": "bar",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 15,
+                    "aggregation": [
+                        ["avg", ["field", 202]]
+                    ],
+                    "breakout": [
+                        ["field", 81]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "bar",
+                    "x-axis": "year_start",
+                    "y-axis": "avg"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Classes Offered by Program",
+            "description": "This chart shows the number of classes grouped by program, offering insight into program offerings.",
+            "collection_id": 2,
+            "display": "bar",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 15,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 90]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "bar",
+                    "x-axis": "program_code",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Class Enrollment by Year",
+            "description": "Displays the total number of students enrolled in classes each year, showcasing trends in enrollment.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 19,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 104]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "term_code",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Graduates by Program and Year",
+            "description": "Illustrates the number of graduates each year by program, providing a clear view of graduation trends.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 17,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 104]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "term_code",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        }
+    ],
+    "explanation": [
+        "This chart shows the total number of classes offered each year.",
+        "Shows the average size of classes offered each year, helping to evaluate capacity and growth.",
+        "This chart shows the number of classes grouped by program, offering insight into program offerings.",
+        "Displays the total number of students enrolled in classes each year, showcasing trends in enrollment.",
+        "Illustrates the number of graduates each year by program, providing a clear view of graduation trends."
+    ],
+    "dashboard_name": "Class Overview and Trends"
+}

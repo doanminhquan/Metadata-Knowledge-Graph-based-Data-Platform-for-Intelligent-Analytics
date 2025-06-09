@@ -1,0 +1,152 @@
+[
+  {
+    "name": "Total Students by Class",
+    "description": "Displays the total number of students grouped by class.",
+    "collection_id": 2,
+    "display": "bar",
+    "dataset_query": {
+      "database": 2,
+      "query": {
+        "aggregation": [
+          [
+            "count"
+          ]
+        ],
+        "breakout": [
+          [
+            "field",
+            "class_code",
+            {
+              "base-type": "type/Text"
+            }
+          ]
+        ],
+        "source-table": 18
+      },
+      "type": "query"
+    },
+    "visualization_settings": {
+      "graph": {
+        "type": "bar",
+        "x-axis": "class_code",
+        "y-axis": "count"
+      }
+    }
+  },
+  {
+    "name": "Average Score per Term",
+    "description": "Shows the average score for students by term.",
+    "collection_id": 2,
+    "display": "bar",
+    "dataset_query": {
+      "database": 3,
+      "query": {
+        "aggregation": [
+          [
+            "avg",
+            [
+              "field",
+              "term_avg_score",
+              {
+                "base-type": "type/Float"
+              }
+            ]
+          ]
+        ],
+        "breakout": [
+          [
+            "field",
+            "term_code",
+            {
+              "base-type": "type/Text"
+            }
+          ]
+        ],
+        "source-table": 27
+      },
+      "type": "query"
+    },
+    "visualization_settings": {
+      "graph": {
+        "type": "bar",
+        "x-axis": "term_code",
+        "y-axis": "avg"
+      }
+    }
+  },
+  {
+    "name": "Total Courses Per Program",
+    "description": "Displays the total number of courses offered per program.",
+    "collection_id": 2,
+    "display": "bar",
+    "dataset_query": {
+      "database": 3,
+      "query": {
+        "aggregation": [
+          [
+            "count"
+          ]
+        ],
+        "breakout": [
+          [
+            "field",
+            "program_code",
+            {
+              "base-type": "type/Text"
+            }
+          ]
+        ],
+        "source-table": 24
+      },
+      "type": "query"
+    },
+    "visualization_settings": {
+      "graph": {
+        "type": "bar",
+        "x-axis": "program_code",
+        "y-axis": "count"
+      }
+    }
+  },
+  {
+    "name": "Graduates by Term",
+    "description": "Shows the total number of graduates per term.",
+    "collection_id": 2,
+    "display": "line",
+    "dataset_query": {
+      "database": 3,
+      "query": {
+        "aggregation": [
+          [
+            "count",
+            [
+              "field",
+              "total_graduates",
+              {
+                "base-type": "type/BigInteger"
+              }
+            ]
+          ]
+        ],
+        "breakout": [
+          [
+            "field",
+            "term_code",
+            {
+              "base-type": "type/Text"
+            }
+          ]
+        ],
+        "source-table": 26
+      },
+      "type": "query"
+    },
+    "visualization_settings": {
+      "graph": {
+        "type": "line",
+        "x-axis": "term_code",
+        "y-axis": "count"
+      }
+    }
+  }
+]

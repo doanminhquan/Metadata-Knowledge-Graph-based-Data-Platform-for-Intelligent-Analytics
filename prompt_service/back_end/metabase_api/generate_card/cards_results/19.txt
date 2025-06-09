@@ -1,0 +1,88 @@
+{
+    "cards": [
+        {
+            "name": "Student Enrollment Trend Over the Years",
+            "description": "Displays the total number of students enrolled each year.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 115]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "year",
+                    "y-axis": "count"
+                }
+            }
+        },
+        {
+            "name": "Enrollment Trend by Class Code",
+            "description": "Illustrates how student enrollment changes over the years, categorized by class.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 116],
+                        ["field", 115]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "year",
+                    "y-axis": "count"
+                }
+            }
+        },
+        {
+            "name": "Annual Student Enrollment Overview",
+            "description": "Shows total student enrollment grouped by year.",
+            "collection_id": 2,
+            "display": "bar",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 115]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "bar",
+                    "x-axis": "year",
+                    "y-axis": "count"
+                }
+            }
+        }
+    ],
+    "explanation": [
+        "I created a visualization that shows the trend of student enrollment over the years, helping us understand how many students have joined in each year.",
+        "I created a visualization that illustrates how student enrollment changes over the years, categorized by each class, giving insights into enrollment patterns in different programs.",
+        "I created a visualization that provides an overview of total student enrollment grouped by year, allowing us to see the overall growth in student numbers over time."
+    ]
+}

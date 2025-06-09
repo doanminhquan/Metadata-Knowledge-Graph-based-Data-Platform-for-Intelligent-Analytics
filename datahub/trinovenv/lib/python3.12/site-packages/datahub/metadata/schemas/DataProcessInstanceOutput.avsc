@@ -1,0 +1,170 @@
+{
+  "type": "record",
+  "Aspect": {
+    "name": "dataProcessInstanceOutput"
+  },
+  "name": "DataProcessInstanceOutput",
+  "namespace": "com.linkedin.pegasus2avro.dataprocess",
+  "fields": [
+    {
+      "Relationship": {
+        "/*": {
+          "entityTypes": [
+            "dataset",
+            "mlModel"
+          ],
+          "name": "Produces"
+        }
+      },
+      "Searchable": {
+        "/*": {
+          "addToFilters": true,
+          "fieldName": "outputs",
+          "fieldType": "URN",
+          "numValuesFieldName": "numOutputs",
+          "queryByDefault": false
+        }
+      },
+      "type": {
+        "type": "array",
+        "items": "string"
+      },
+      "name": "outputs",
+      "doc": "Output assets produced",
+      "Urn": "Urn",
+      "urn_is_array": true
+    },
+    {
+      "Relationship": {
+        "/*/destinationUrn": {
+          "createdActor": "outputEdges/*/created/actor",
+          "createdOn": "outputEdges/*/created/time",
+          "entityTypes": [
+            "dataset",
+            "mlModel",
+            "dataProcessInstance"
+          ],
+          "isLineage": true,
+          "isUpstream": false,
+          "name": "DataProcessInstanceProduces",
+          "properties": "outputEdges/*/properties",
+          "updatedActor": "outputEdges/*/lastModified/actor",
+          "updatedOn": "outputEdges/*/lastModified/time"
+        }
+      },
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": {
+            "type": "record",
+            "name": "Edge",
+            "namespace": "com.linkedin.pegasus2avro.common",
+            "fields": [
+              {
+                "java": {
+                  "class": "com.linkedin.pegasus2avro.common.urn.Urn"
+                },
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "name": "sourceUrn",
+                "default": null,
+                "doc": "Urn of the source of this relationship edge.\nIf not specified, assumed to be the entity that this aspect belongs to.",
+                "Urn": "Urn"
+              },
+              {
+                "java": {
+                  "class": "com.linkedin.pegasus2avro.common.urn.Urn"
+                },
+                "type": "string",
+                "name": "destinationUrn",
+                "doc": "Urn of the destination of this relationship edge.",
+                "Urn": "Urn"
+              },
+              {
+                "type": [
+                  "null",
+                  {
+                    "type": "record",
+                    "name": "AuditStamp",
+                    "namespace": "com.linkedin.pegasus2avro.common",
+                    "fields": [
+                      {
+                        "type": "long",
+                        "name": "time",
+                        "doc": "When did the resource/association/sub-resource move into the specific lifecycle stage represented by this AuditEvent."
+                      },
+                      {
+                        "java": {
+                          "class": "com.linkedin.pegasus2avro.common.urn.Urn"
+                        },
+                        "type": "string",
+                        "name": "actor",
+                        "doc": "The entity (e.g. a member URN) which will be credited for moving the resource/association/sub-resource into the specific lifecycle stage. It is also the one used to authorize the change.",
+                        "Urn": "Urn"
+                      },
+                      {
+                        "java": {
+                          "class": "com.linkedin.pegasus2avro.common.urn.Urn"
+                        },
+                        "type": [
+                          "null",
+                          "string"
+                        ],
+                        "name": "impersonator",
+                        "default": null,
+                        "doc": "The entity (e.g. a service URN) which performs the change on behalf of the Actor and must be authorized to act as the Actor.",
+                        "Urn": "Urn"
+                      },
+                      {
+                        "type": [
+                          "null",
+                          "string"
+                        ],
+                        "name": "message",
+                        "default": null,
+                        "doc": "Additional context around how DataHub was informed of the particular change. For example: was the change created by an automated process, or manually."
+                      }
+                    ],
+                    "doc": "Data captured on a resource/association/sub-resource level giving insight into when that resource/association/sub-resource moved into a particular lifecycle stage, and who acted to move it into that specific lifecycle stage."
+                  }
+                ],
+                "name": "created",
+                "default": null,
+                "doc": "Audit stamp containing who created this relationship edge and when"
+              },
+              {
+                "type": [
+                  "null",
+                  "com.linkedin.pegasus2avro.common.AuditStamp"
+                ],
+                "name": "lastModified",
+                "default": null,
+                "doc": "Audit stamp containing who last modified this relationship edge and when"
+              },
+              {
+                "type": [
+                  "null",
+                  {
+                    "type": "map",
+                    "values": "string"
+                  }
+                ],
+                "name": "properties",
+                "default": null,
+                "doc": "A generic properties bag that allows us to store specific information on this graph edge."
+              }
+            ],
+            "doc": "A common structure to represent all edges to entities when used inside aspects as collections\nThis ensures that all edges have common structure around audit-stamps and will support PATCH, time-travel automatically."
+          }
+        }
+      ],
+      "name": "outputEdges",
+      "default": null,
+      "doc": "Output assets produced by the data process instance during processing, with additional metadata.\nCounts as lineage.\nWill eventually deprecate the outputs field."
+    }
+  ],
+  "doc": "Information about the outputs of a Data process"
+}

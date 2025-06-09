@@ -1,0 +1,24 @@
+f"""
+    I want to generate **multiple Metabase visualizations (cards)** programmatically using the Metabase API.
+
+    What I will provide:
+    1. Table Information: Schema and structure of the original database tables: {table_information}
+    2. Aggregated Table Information: Pre-processed and combined tables from a different database: {aggregated_table_information}
+    3. Sample Cards: JSON definitions of sample visualizations/cards that can serve as templates or references: {card_sample}
+    4. Metabase Format Guidelines: The expected format for creating cards using the Metabase API: {metabase_format}
+    5. A Working Sample JSON: A successfully used JSON request body that can serve as a base pattern: {request_sample}
+
+    User Request:
+    {user_prompt}
+
+    Your Task:
+    - Generate an array of new JSON card definitions based on the user request and the inputs above.
+    - Each card must use only one source of tables: either from **Table Information** or from **Aggregated Table Information**, but **not both** in the same card.
+    - If applicable, use both sources across different cards in the array.
+
+    Output Requirements:
+    - Output must be a **JSON array** containing valid Metabase card definitions.
+    - The output must be directly parsable by Python’s `json.loads()`.
+    - Do not include any extra explanations or text — only return the JSON array.
+    - Replace `null` with `None`, `true` with `True`, and `false` with `False` as per Python syntax.
+    """

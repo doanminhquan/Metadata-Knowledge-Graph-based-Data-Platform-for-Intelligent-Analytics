@@ -1,0 +1,67 @@
+{
+    "cards": [
+        {
+            "name": "Student Enrollment Trend Over the Years",
+            "description": "Displays the trend of student enrollment across different years.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 115]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "year",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Enrollment Trend by Class Code",
+            "description": "Illustrates how student enrollment changes over the years, categorized by class.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 116],
+                        ["field", 115]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "year",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        }
+    ],
+    "explanation": [
+        "I created a visualization that shows student enrollment over the years, allowing us to see how the number of students has changed each year.",
+        "I also designed a line chart that illustrates the trend of student enrollment broken down by class code, highlighting which classes have seen the most interest over time."
+    ]
+}

@@ -1,0 +1,204 @@
+{
+  "name": "Number of Students per Class",
+  "description": "Displays the total number of students grouped by class_code.",
+  "collection_id": 2,
+  "display": "bar",
+  "dataset_query": {
+    "type": "query",
+    "database": 2,
+    "query": {
+      "source-table": 18,
+      "aggregation": [
+        ["count"]
+      ],
+      "breakout": [
+        ["field", 116]
+      ]
+    }
+  },
+  "visualization_settings": {
+    "graph": {
+      "type": "bar",
+      "x-axis": "class_code",
+      "y-axis": "count"
+    }
+  },
+  "collection_position": None,
+  "parameters": [],
+  "param_values": []
+},
+{
+  "name": "Students grouped by Class Code",
+  "description": "Displays the total number of students grouped by class code.",
+  "collection_id": 2,
+  "display": "bar",
+  "dataset_query": {
+      "type": "query",
+      "database": 2,
+      "query": {
+          "source-table": 18,
+          "aggregation": [
+              ["count"]
+          ],
+          "breakout": [
+              ["field", 116]
+          ]
+      }
+  },
+  "visualization_settings": {
+      "graph": {
+          "type": "bar",
+          "x-axis": "class_code",
+          "y-axis": "count"
+      }
+  },
+  "collection_position": None,
+  "parameters": [],
+  "param_values": []
+},
+{
+  "name": "Number of Classes by Year Start",
+  "description": "Shows the total number of classes grouped by year start.",
+  "collection_id": 2,
+  "display": "bar",
+  "dataset_query": {
+      "type": "query",
+      "database": 2,
+      "query": {
+          "source-table": 15,
+          "aggregation": [
+              ["count"]
+          ],
+          "breakout": [
+              ["field", 81]
+          ]
+      }
+  },
+  "visualization_settings": {
+      "graph": {
+          "type": "bar",
+          "x-axis": "year_start",
+          "y-axis": "count"
+      }
+  },
+  "collection_position": None,
+  "parameters": [],
+  "param_values": []
+},
+{
+  "name": "Total Students Enrolled per Class",
+  "description": "Displays the total number of students enrolled in each class.",
+  "collection_id": 2,
+  "display": "bar",
+  "dataset_query": {
+    "type": "query",
+    "database": 2,
+    "query": {
+      "source-table": 18,
+      "aggregation": [
+        ["count"]
+      ],
+      "breakout": [
+        ["field", 115]
+      ]
+    }
+  },
+  "visualization_settings": {
+    "graph": {
+      "type": "bar",
+      "x-axis": "student_code",
+      "y-axis": "count"
+    }
+  },
+  "collection_position": None,
+  "parameters": [],
+  "param_values": []
+},
+{
+  "name": "Student Enrollment Trend",
+  "description": "Trend of student enrollment over the years.",
+  "collection_id": 2,
+  "display": "line",
+  "dataset_query": {
+    "type": "query",
+    "database": 2,
+    "query": {
+      "source-table": 18,
+      "aggregation": [
+        ["count"]
+      ],
+      "breakout": [
+        ["field", 115]
+      ]
+    }
+  },
+  "visualization_settings": {
+    "graph": {
+      "type": "line",
+      "x-axis": "year",
+      "y-axis": "count"
+    }
+  },
+  "collection_position": None,
+  "parameters": [],
+  "param_values": []
+},
+{
+  "name": "Enrollment Trend by Class Code",
+  "description": "Illustrates how student enrollment changes over the years, categorized by class.",
+  "collection_id": 2,
+  "display": "line",
+  "dataset_query": {
+      "type": "query",
+      "database": 2,
+      "query": {
+          "source-table": 18,
+          "aggregation": [
+              ["count"]
+          ],
+          "breakout": [
+              ["field", 116],
+              ["field", 115]
+          ]
+      }
+  },
+  "visualization_settings": {
+      "graph": {
+          "type": "line",
+          "x-axis": "year",
+          "y-axis": "count"
+      }
+  },
+  "collection_position": null,
+  "parameters": [],
+  "param_values": []
+},
+{
+  "name": "Graduates by Year and Program",
+  "description": "Illustrates the number of graduates each year by program, providing a clear view of graduation trends and program effectiveness.",
+  "collection_id": 2,
+  "display": "line",
+  "dataset_query": {
+      "type": "query",
+      "database": 2,
+      "query": {
+          "source-table": 17,
+          "aggregation": [
+              ["count"]
+          ],
+          "breakout": [
+              ["field", 104]
+          ]
+      }
+  },
+  "visualization_settings": {
+      "graph": {
+          "type": "line",
+          "x-axis": "term_code",
+          "y-axis": "count"
+      }
+  },
+  "collection_position": null,
+  "parameters": [],
+  "param_values": []
+}

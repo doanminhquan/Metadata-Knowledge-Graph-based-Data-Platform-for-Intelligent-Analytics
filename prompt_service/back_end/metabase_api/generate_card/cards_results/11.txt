@@ -1,0 +1,147 @@
+[
+  {
+    "name": "Total Students Enrolled per Class",
+    "description": "Displays the total number of students enrolled in each class.",
+    "collection_id": 2,
+    "display": "bar",
+    "dataset_query": {
+      "type": "query",
+      "database": 2,
+      "query": {
+        "source-table": 18,
+        "aggregation": [
+          ["count"]
+        ],
+        "breakout": [
+          ["field", 115]
+        ]
+      }
+    },
+    "visualization_settings": {
+      "graph": {
+        "type": "bar",
+        "x-axis": "student_code",
+        "y-axis": "count"
+      }
+    },
+    "collection_position": None,
+    "parameters": [],
+    "param_values": []
+  },
+  {
+    "name": "Class Count per Year Start",
+    "description": "Shows the total number of classes grouped by the year they started.",
+    "collection_id": 2,
+    "display": "bar",
+    "dataset_query": {
+      "type": "query",
+      "database": 2,
+      "query": {
+        "source-table": 15,
+        "aggregation": [
+          ["count"]
+        ],
+        "breakout": [
+          ["field", 81]
+        ]
+      }
+    },
+    "visualization_settings": {
+      "graph": {
+        "type": "bar",
+        "x-axis": "year_start",
+        "y-axis": "count"
+      }
+    },
+    "collection_position": None,
+    "parameters": [],
+    "param_values": []
+  },
+  {
+    "name": "Average Score by Term Code",
+    "description": "Shows the average score of graduates grouped by term code.",
+    "collection_id": 2,
+    "display": "bar",
+    "dataset_query": {
+      "type": "query",
+      "database": 2,
+      "query": {
+        "source-table": 17,
+        "aggregation": [
+          ["avg", ["field", 109]]
+        ],
+        "breakout": [
+          ["field", 104]
+        ]
+      }
+    },
+    "visualization_settings": {
+      "graph": {
+        "type": "bar",
+        "x-axis": "term_code",
+        "y-axis": "avg"
+      }
+    },
+    "collection_position": None,
+    "parameters": [],
+    "param_values": []
+  },
+  {
+    "name": "Student Count per Program",
+    "description": "Displays the total number of students grouped by program code.",
+    "collection_id": 2,
+    "display": "bar",
+    "dataset_query": {
+      "type": "query",
+      "database": 2,
+      "query": {
+        "source-table": 18,
+        "aggregation": [
+          ["count"]
+        ],
+        "breakout": [
+          ["field", 116]
+        ]
+      }
+    },
+    "visualization_settings": {
+      "graph": {
+        "type": "bar",
+        "x-axis": "class_code",
+        "y-axis": "count"
+      }
+    },
+    "collection_position": None,
+    "parameters": [],
+    "param_values": []
+  },
+  {
+    "name": "Student Enrollment Trend",
+    "description": "Trend of student enrollment over the years.",
+    "collection_id": 2,
+    "display": "line",
+    "dataset_query": {
+      "type": "query",
+      "database": 2,
+      "query": {
+        "source-table": 18,
+        "aggregation": [
+          ["count"]
+        ],
+        "breakout": [
+          ["field", 115]
+        ]
+      }
+    },
+    "visualization_settings": {
+      "graph": {
+        "type": "line",
+        "x-axis": "year",
+        "y-axis": "count"
+      }
+    },
+    "collection_position": None,
+    "parameters": [],
+    "param_values": []
+  }
+]

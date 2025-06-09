@@ -1,0 +1,176 @@
+{
+  "type": "record",
+  "Aspect": {
+    "name": "mlModelDeploymentProperties"
+  },
+  "name": "MLModelDeploymentProperties",
+  "namespace": "com.linkedin.pegasus2avro.ml.metadata",
+  "fields": [
+    {
+      "Searchable": {
+        "/*": {
+          "fieldType": "TEXT",
+          "queryByDefault": true
+        }
+      },
+      "type": {
+        "type": "map",
+        "values": "string"
+      },
+      "name": "customProperties",
+      "default": {},
+      "doc": "Custom property bag."
+    },
+    {
+      "Searchable": {
+        "fieldType": "KEYWORD"
+      },
+      "java": {
+        "class": "com.linkedin.pegasus2avro.common.url.Url",
+        "coercerClass": "com.linkedin.pegasus2avro.common.url.UrlCoercer"
+      },
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "externalUrl",
+      "default": null,
+      "doc": "URL where the reference exist"
+    },
+    {
+      "Searchable": {
+        "fieldType": "TEXT",
+        "hasValuesFieldName": "hasDescription"
+      },
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "description",
+      "default": null,
+      "doc": "Documentation of the MLModelDeployment"
+    },
+    {
+      "type": [
+        "null",
+        "long"
+      ],
+      "name": "createdAt",
+      "default": null,
+      "doc": "Date when the MLModelDeployment was developed"
+    },
+    {
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "VersionTag",
+          "namespace": "com.linkedin.pegasus2avro.common",
+          "fields": [
+            {
+              "type": [
+                "null",
+                "string"
+              ],
+              "name": "versionTag",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "record",
+                  "name": "MetadataAttribution",
+                  "namespace": "com.linkedin.pegasus2avro.common",
+                  "fields": [
+                    {
+                      "type": "long",
+                      "name": "time",
+                      "doc": "When this metadata was updated."
+                    },
+                    {
+                      "java": {
+                        "class": "com.linkedin.pegasus2avro.common.urn.Urn"
+                      },
+                      "type": "string",
+                      "name": "actor",
+                      "doc": "The entity (e.g. a member URN) responsible for applying the assocated metadata. This can\neither be a user (in case of UI edits) or the datahub system for automation.",
+                      "Urn": "Urn"
+                    },
+                    {
+                      "java": {
+                        "class": "com.linkedin.pegasus2avro.common.urn.Urn"
+                      },
+                      "type": [
+                        "null",
+                        "string"
+                      ],
+                      "name": "source",
+                      "default": null,
+                      "doc": "The DataHub source responsible for applying the associated metadata. This will only be filled out\nwhen a DataHub source is responsible. This includes the specific metadata test urn, the automation urn.",
+                      "Urn": "Urn"
+                    },
+                    {
+                      "type": {
+                        "type": "map",
+                        "values": "string"
+                      },
+                      "name": "sourceDetail",
+                      "default": {},
+                      "doc": "The details associated with why this metadata was applied. For example, this could include\nthe actual regex rule, sql statement, ingestion pipeline ID, etc."
+                    }
+                  ],
+                  "doc": "Information about who, why, and how this metadata was applied"
+                }
+              ],
+              "name": "metadataAttribution",
+              "default": null
+            }
+          ],
+          "doc": "A resource-defined string representing the resource state for the purpose of concurrency control"
+        }
+      ],
+      "name": "version",
+      "default": null,
+      "doc": "Version of the MLModelDeployment"
+    },
+    {
+      "Searchable": {
+        "fieldName": "deploymentStatus"
+      },
+      "type": [
+        "null",
+        {
+          "type": "enum",
+          "symbolDocs": {
+            "CREATING": "Deployments being created.",
+            "DELETING": "Deployments being deleted.",
+            "FAILED": "Deployments with an error state.",
+            "IN_SERVICE": "Deployments that are active.",
+            "OUT_OF_SERVICE": "Deployments out of service.",
+            "ROLLING_BACK": "Deployments being reverted to a previous version.",
+            "UNKNOWN": "Deployments with unknown/unmappable state.",
+            "UPDATING": "Deployments being updated."
+          },
+          "name": "DeploymentStatus",
+          "namespace": "com.linkedin.pegasus2avro.ml.metadata",
+          "symbols": [
+            "OUT_OF_SERVICE",
+            "CREATING",
+            "UPDATING",
+            "ROLLING_BACK",
+            "IN_SERVICE",
+            "DELETING",
+            "FAILED",
+            "UNKNOWN"
+          ],
+          "doc": "Model endpoint statuses"
+        }
+      ],
+      "name": "status",
+      "default": null,
+      "doc": "Status of the deployment"
+    }
+  ],
+  "doc": "Properties associated with an ML Model Deployment"
+}

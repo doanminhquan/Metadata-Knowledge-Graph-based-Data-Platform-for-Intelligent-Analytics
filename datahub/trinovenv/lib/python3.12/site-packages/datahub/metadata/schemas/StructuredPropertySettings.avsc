@@ -1,0 +1,114 @@
+{
+  "type": "record",
+  "Aspect": {
+    "name": "structuredPropertySettings"
+  },
+  "name": "StructuredPropertySettings",
+  "namespace": "com.linkedin.pegasus2avro.structured",
+  "fields": [
+    {
+      "Searchable": {
+        "fieldType": "BOOLEAN"
+      },
+      "type": "boolean",
+      "name": "isHidden",
+      "default": false,
+      "doc": "Whether or not this asset should be hidden in the main application"
+    },
+    {
+      "Searchable": {
+        "fieldType": "BOOLEAN"
+      },
+      "type": "boolean",
+      "name": "showInSearchFilters",
+      "default": false,
+      "doc": "Whether or not this asset should be displayed as a search filter"
+    },
+    {
+      "Searchable": {
+        "fieldType": "BOOLEAN"
+      },
+      "type": "boolean",
+      "name": "showInAssetSummary",
+      "default": false,
+      "doc": "Whether or not this asset should be displayed in the asset sidebar"
+    },
+    {
+      "Searchable": {
+        "fieldType": "BOOLEAN"
+      },
+      "type": "boolean",
+      "name": "showAsAssetBadge",
+      "default": false,
+      "doc": "Whether or not this asset should be displayed as an asset badge on other\nasset's headers"
+    },
+    {
+      "Searchable": {
+        "fieldType": "BOOLEAN"
+      },
+      "type": "boolean",
+      "name": "showInColumnsTable",
+      "default": false,
+      "doc": "Whether or not this asset should be displayed as a column in the schema field table\nin a Dataset's \"Columns\" tab."
+    },
+    {
+      "Searchable": {
+        "/time": {
+          "fieldName": "lastModifiedSettings",
+          "fieldType": "DATETIME"
+        }
+      },
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "AuditStamp",
+          "namespace": "com.linkedin.pegasus2avro.common",
+          "fields": [
+            {
+              "type": "long",
+              "name": "time",
+              "doc": "When did the resource/association/sub-resource move into the specific lifecycle stage represented by this AuditEvent."
+            },
+            {
+              "java": {
+                "class": "com.linkedin.pegasus2avro.common.urn.Urn"
+              },
+              "type": "string",
+              "name": "actor",
+              "doc": "The entity (e.g. a member URN) which will be credited for moving the resource/association/sub-resource into the specific lifecycle stage. It is also the one used to authorize the change.",
+              "Urn": "Urn"
+            },
+            {
+              "java": {
+                "class": "com.linkedin.pegasus2avro.common.urn.Urn"
+              },
+              "type": [
+                "null",
+                "string"
+              ],
+              "name": "impersonator",
+              "default": null,
+              "doc": "The entity (e.g. a service URN) which performs the change on behalf of the Actor and must be authorized to act as the Actor.",
+              "Urn": "Urn"
+            },
+            {
+              "type": [
+                "null",
+                "string"
+              ],
+              "name": "message",
+              "default": null,
+              "doc": "Additional context around how DataHub was informed of the particular change. For example: was the change created by an automated process, or manually."
+            }
+          ],
+          "doc": "Data captured on a resource/association/sub-resource level giving insight into when that resource/association/sub-resource moved into a particular lifecycle stage, and who acted to move it into that specific lifecycle stage."
+        }
+      ],
+      "name": "lastModified",
+      "default": null,
+      "doc": "Last Modified Audit stamp"
+    }
+  ],
+  "doc": "Settings specific to a structured property entity"
+}

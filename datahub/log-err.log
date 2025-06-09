@@ -1,0 +1,49 @@
+Python versions above 3.11 are not tested with. Please use Python 3.11.
+
+Cli report:
+{'cli_version': '1.0.0.3',
+ 'cli_entry_location': '/dis/test_spark/venv/lib/python3.12/site-packages/datahub/ingestion/run/pipeline.py',
+ 'models_version': 'bundled',
+ 'py_version': '3.12.3 (main, Feb  4 2025, 14:48:35) [GCC 13.3.0]',
+ 'py_exec_path': '/dis/test_spark/venv/bin/python3',
+ 'os_details': 'Linux-6.8.0-59-generic-x86_64-with-glibc2.39',
+ 'mem_info': '193.44 MB',
+ 'peak_memory_usage': '193.44 MB',
+ 'disk_info': {'total': '8.61 GB', 'used': '8.59 GB', 'used_initally': '8.59 GB', 'free': '0 bytes'},
+ 'peak_disk_usage': '8.59 GB',
+ 'thread_count': 1,
+ 'peak_thread_count': 2}
+Source (s3) report:
+{'event_not_produced_warn': True,
+ 'events_produced': 0,
+ 'events_produced_per_sec': 0,
+ 'entities': {},
+ 'aspects': {},
+ 'aspect_urn_samples': {},
+ 'soft_deleted_stale_entities': [],
+ 'last_state_non_deletable_entities': [],
+ 'filtered': [],
+ 'start_time': '2025-05-12 12:15:31.896377 (now)',
+ 'running_time': '0.95 seconds',
+ 'failures': [],
+ 'warnings': [{'title': 'No metadata was produced by the source',
+               'message': 'Please check the source configuration, filters, and permissions.',
+               'context': []}],
+ 'infos': []}
+Sink (datahub-rest) report:
+{'total_records_written': 3,
+ 'records_written_per_second': 1,
+ 'warnings': [],
+ 'failures': [],
+ 'start_time': '2025-05-12 12:15:30.839012 (2.01 seconds ago)',
+ 'current_time': '2025-05-12 12:15:32.844485 (now)',
+ 'total_duration_in_seconds': 2.01,
+ 'mode': 'ASYNC_BATCH',
+ 'max_threads': 15,
+ 'gms_version': 'v1.0.0rc3',
+ 'pending_requests': 0,
+ 'async_batches_prepared': 1,
+ 'async_batches_split': 0,
+ 'main_thread_blocking_timer': '0.054 seconds'}
+
+Pipeline finished with at least 1 warnings; produced 3 events in 0.95 seconds.

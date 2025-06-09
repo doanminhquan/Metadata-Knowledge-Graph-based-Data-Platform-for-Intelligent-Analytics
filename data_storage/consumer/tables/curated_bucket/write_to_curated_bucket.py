@@ -1,0 +1,372 @@
+from pyspark.sql import SparkSession
+from pyspark.sql.types import StructType, StructField, StringType
+import os
+import json
+import boto3
+import uuid
+from pyspark.sql.functions import avg, col, unbase64, udf, round
+from pyspark.sql.types import DoubleType
+from pyspark.sql import Row
+import struct   
+import base64
+from schemas.graduate import graduate_schema
+from schemas.program_course import program_course_schema
+from schemas.course import course_schema
+from schemas.program import program_schema
+from schemas.course_group import course_group_schema
+from schemas.course_group_detail import course_group_detail_schema
+from schemas.course_section import course_section_schema
+from schemas.enrollment import enrollment_schema
+from schemas.staff import staff_schema
+from schemas.term import term_schema
+from schemas.room import room_schema
+from schemas.classs import class_schema
+from schemas.major import major_schema
+from schemas.student import student_schema
+from schemas.point import point_schema
+
+os.environ["JAVA_HOME"] = "/usr/lib/jvm/java-11-openjdk-amd64"
+
+# Order:
+#   Spark extra configs
+#   Hudi
+#   MinIO/S3
+#   DataHub
+def configure_spark_with_hudi_minio():
+    spark = (SparkSession.builder
+        .appName("Spark: Write to Curated Bucket")
+        .config("spark.jars.packages", "org.apache.hudi:hudi-spark3-bundle_2.12:0.15.0,io.acryl:acryl-spark-lineage:0.2.17")
+        .config("spark.driver.memory", "4g")
+        .config("spark.executor.memory", "4g")
+        .config("spark.default.parallelism", "100")
+        .config("spark.sql.shuffle.partitions", "100")
+        .config("spark.sql.hive.metastore.version", "2.3.9")
+        .config("spark.sql.warehouse.dir", "s3a://warehouse/spark-warehouse")
+        .config("spark.sql.hive.convertMetastoreParquet", "false")
+        .config("spark.local.dir", "/data/spark/tmp")
+
+        .config("spark.serializer", "org.apache.spark.serializer.KryoSerializer")
+        .config("spark.sql.extensions", "org.apache.spark.sql.hudi.HoodieSparkSessionExtension")
+        .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.hudi.catalog.HoodieCatalog")
+        .config("spark.kryo.registrator", "org.apache.spark.HoodieSparkKryoRegistrar")
+
+        .config("fs.s3a.impl", "org.apache.hadoop.fs.s3a.S3AFileSystem")
+        .config("fs.s3a.aws.credentials.provider", "org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider")
+        .config("spark.hadoop.fs.s3a.aws.credentials.provider.impl.software.amazon.awssdk.auth.credentials.AwsCredentialsProvider.disabled", "true")
+        .config("spark.hadoop.fs.s3a.endpoint", "http://localhost:9008")
+        .config("spark.hadoop.fs.s3a.access.key", "admin")  
+        .config("spark.hadoop.fs.s3a.secret.key", "password") 
+        .config("spark.hadoop.fs.s3a.path.style.access", "true")
+        .config("spark.hadoop.fs.s3a.impl", "org.apache.hadoop.fs.s3a.S3AFileSystem")
+        .config("spark.hadoop.fs.s3a.connection.ssl.enabled", "false")
+        .config("spark.hadoop.fs.s3a.aws.credentials.provider", "org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider")
+        .config("spark.hadoop.fs.s3a.committer.name", "directory")
+
+        .config("spark.extraListeners","datahub.spark.DatahubSparkListener") 
+        .config("spark.datahub.rest.server","http://localhost:22691")
+
+        .enableHiveSupport()
+        .getOrCreate()
+    )
+
+    return spark
+
+     
+def configure_minio_cursor():
+    s3_client = boto3.client(
+        "s3",
+        endpoint_url="http://localhost:9008",
+        aws_access_key_id="admin",
+        aws_secret_access_key="password"
+    )
+
+    return s3_client
+
+# def read_unprocessed_data(spark_session, database, table):
+#     path = f"s3a://warehouse/raw_bucket/unprocessed/{database}/{table}"
+
+#     df = spark_session.read.parquet(path)
+
+#     if "payload" in df.columns:
+#         df = df.select("payload")
+
+#     json_data = df.toJSON().collect()
+
+#     new_data = []
+#     for item in json_data:
+#         record = json.loads(item) 
+#         payload = record.get("payload", {})  
+
+#         after_data = payload.get("after", {})
+#         if after_data:
+#             new_data.append(after_data)
+#         else:
+#             print("Data is error")
+#     return new_data
+
+
+def read_unprocessed_data(spark_session, database, table):
+    path = f"s3a://warehouse/raw_bucket/unprocessed/{database}/{table}"
+
+    try:
+        file_list = spark_session._jsc.hadoopConfiguration().set("fs.s3a.impl", "org.apache.hadoop.fs.s3a.S3AFileSystem")
+                
+        df = spark_session.read.parquet(path)
+
+        if "payload" in df.columns:
+            df = df.select("payload")
+        
+        json_data = df.toJSON().collect()
+        new_data = []
+        
+        for item in json_data:
+            record = json.loads(item)
+            payload = record.get("payload", {})
+            after_data = payload.get("after", {})
+            if after_data:
+                new_data.append(after_data)
+            else:
+                print("Data is error")
+                
+        return new_data
+        
+    except Exception as e:
+        if "no such file or directory" in str(e).lower() or "wrong fs" in str(e).lower():
+            print(f"Path does not exist or is not accessible: {path}")
+        else:
+            print(f"Error accessing path: {e}")
+        return []
+
+
+SCALE = 2
+def decode_decimal(binary_val):
+    if binary_val is not None:
+        unscaled = int.from_bytes(binary_val, byteorder='big', signed=False)
+        return unscaled / (10 ** SCALE)
+    return None
+
+decode_decimal_udf = udf(decode_decimal, DoubleType())
+
+def write_curated_data(spark_session, data, database, table, primary_fields, precombine_field, schema):
+    recordkey_str = ",".join(primary_fields)
+
+    database_name = "curated_bucket"
+    spark_session.sql(f"CREATE DATABASE IF NOT EXISTS {database_name}")
+
+    # Add xtra configs for datahub emitter
+    if data and len(data) > 0:
+        spark = configure_spark_with_hudi_minio()
+        hudi_options = {
+            'hoodie.table.name': table,
+            'hoodie.datasource.write.recordkey.field': recordkey_str,
+            'hoodie.datasource.write.table.name': table,
+            'hoodie.datasource.write.operation': 'upsert',
+            'hoodie.datasource.write.precombine.field': precombine_field,
+            "hoodie.datasource.write.table.type": "COPY_ON_WRITE",
+            "hoodie.datasource.hive_sync.enable": "true",
+            "hoodie.datasource.hive_sync.mode": "hms",
+            "hoodie.datasource.hive_sync.jdbcurl": "thrift://localhost:9083",
+            'hoodie.datasource.hive_sync.database': database_name,
+            'hoodie.datasource.hive_sync.table': table,
+            'hoodie.datasource.hive_sync.support_timestamp': 'true',
+
+        }
+            
+        keys = set()
+        # for item in data:
+        #     if "id" not in item or not item["id"]: 
+        #         item["id"] = str(uuid.uuid4())
+
+        for item in data:
+            if "avg_score" in item and item["avg_score"]:
+                decoded_bytes = base64.b64decode(item["avg_score"])
+                item["avg_score"] = decode_decimal(decoded_bytes)
+            if "point_4" in item and item["point_4"]:
+                decoded_bytes = base64.b64decode(item["point_4"])
+                item["point_4"] = decode_decimal(decoded_bytes)
+            if "point_10" in item and item["point_10"]:
+                decoded_bytes = base64.b64decode(item["point_10"])
+                item["point_10"] = decode_decimal(decoded_bytes)
+
+        for item in data:
+            keys.update(item.keys())
+        
+        # for item in data:
+        #     for key in keys:
+        #         item[key] = str(item.get(key, "unknown"))
+
+        # schema = StructType([StructField(field, StringType(), True) for field in keys])
+
+        df = spark.createDataFrame(data, schema=schema)
+        
+        data_path = f"s3a://warehouse/curated_bucket/{database}/{table}"
+        df.write.format("hudi").options(**hudi_options).mode("append").save(data_path)
+
+def transfer_processed_data(minio_cursor, database, table):
+    source_bucket = "warehouse"
+    source_prefix = f"raw_bucket/unprocessed/{database}/{table}/" 
+
+    destination_bucket = "warehouse"
+    destination_prefix = f"raw_bucket/processed/{database}/{table}/"
+
+    response = minio_cursor.list_objects_v2(Bucket=source_bucket, Prefix=source_prefix)
+    if "Contents" not in response:
+        print(f"No files found in source database {database} and table {table}")
+    else:
+        for obj in response["Contents"]:
+            source_key = obj["Key"]
+            destination_key = source_key.replace("unprocessed", "processed", 1) 
+
+            minio_cursor.copy_object(
+                Bucket=destination_bucket,
+                Key=destination_key,
+                CopySource={"Bucket": source_bucket, "Key": source_key}
+            )
+
+            minio_cursor.delete_object(Bucket=source_bucket, Key=source_key)
+    return 0
+
+if __name__ == "__main__":
+    spark_session = configure_spark_with_hudi_minio()
+
+    database = "school"
+
+    table = "staff"
+    unprocessed_data = read_unprocessed_data(spark_session=spark_session, database=database, table=table)
+    write_curated_data(spark_session=spark_session, data=unprocessed_data, database=database, table=table, primary_fields=["staff_code"], precombine_field="staff_code", schema=staff_schema)
+    print(f"Write curated bucket in database {database} and table {table} successfully")
+
+    table = "term"
+    unprocessed_data = read_unprocessed_data(spark_session=spark_session, database=database, table=table)
+    write_curated_data(spark_session=spark_session, data=unprocessed_data, database=database, table=table, primary_fields=["term_code"], precombine_field="term_code", schema=term_schema)
+    print(f"Write curated bucket in database {database} and table {table} successfully")
+
+    table = "course"
+    unprocessed_data = read_unprocessed_data(spark_session=spark_session, database=database, table=table)
+    write_curated_data(spark_session=spark_session, data=unprocessed_data, database=database, table=table, primary_fields=["course_code"], precombine_field="course_code", schema=course_schema)
+    print(f"Write curated bucket in database {database} and table {table} successfully")
+
+    table = "room"
+    unprocessed_data = read_unprocessed_data(spark_session=spark_session, database=database, table=table)
+    write_curated_data(spark_session=spark_session, data=unprocessed_data, database=database, table=table, primary_fields=["room_code"], precombine_field="room_code", schema=room_schema)
+    print(f"Write curated bucket in database {database} and table {table} successfully")
+
+    table = "program"
+    unprocessed_data = read_unprocessed_data(spark_session=spark_session, database=database, table=table)
+    write_curated_data(spark_session=spark_session, data=unprocessed_data, database=database, table=table, primary_fields=["program_code"], precombine_field="program_code", schema=program_schema)
+    print(f"Write curated bucket in database {database} and table {table} successfully")
+
+    table = "class"
+    unprocessed_data = read_unprocessed_data(spark_session=spark_session, database=database, table=table)
+    write_curated_data(spark_session=spark_session, data=unprocessed_data, database=database, table=table, primary_fields=["class_code"], precombine_field="class_code", schema=class_schema)
+    print(f"Write curated bucket in database {database} and table {table} successfully")
+    
+    table = "major"
+    unprocessed_data = read_unprocessed_data(spark_session=spark_session, database=database, table=table)
+    write_curated_data(spark_session=spark_session, data=unprocessed_data, database=database, table=table, primary_fields=["major_code"], precombine_field="major_code",schema=major_schema)
+    print(f"Write curated bucket in database {database} and table {table} successfully")
+
+    table = "student"
+    unprocessed_data = read_unprocessed_data(spark_session=spark_session, database=database, table=table)
+    write_curated_data(spark_session=spark_session, data=unprocessed_data, database=database, table=table, primary_fields=["student_code"], precombine_field="student_code", schema=student_schema)
+    print(f"Write curated bucket in database {database} and table {table} successfully")
+
+    table = "course_section"
+    unprocessed_data = read_unprocessed_data(spark_session=spark_session, database=database, table=table)
+    write_curated_data(spark_session=spark_session, data=unprocessed_data, database=database, table=table, primary_fields=["course_section_code"], precombine_field="course_section_code", schema=course_section_schema)
+    print(f"Write curated bucket in database {database} and table {table} successfully")
+
+    table = "course_group"
+    unprocessed_data = read_unprocessed_data(spark_session=spark_session, database=database, table=table)
+    write_curated_data(spark_session=spark_session, data=unprocessed_data, database=database, table=table, primary_fields=["course_group_code"], precombine_field="course_group_code", schema=course_group_schema)
+    print(f"Write curated bucket in database {database} and table {table} successfully")
+
+    table = "course_group_detail"
+    unprocessed_data = read_unprocessed_data(spark_session=spark_session, database=database, table=table)
+    write_curated_data(spark_session=spark_session, data=unprocessed_data, database=database, table=table, primary_fields=['course_group_code', 'room_code', 'session_start', 'weekday'], precombine_field='course_group_code', schema=course_group_detail_schema)
+    print(f"Write curated bucket in database {database} and table {table} successfully")
+
+    table = "enrollment"
+    unprocessed_data = read_unprocessed_data(spark_session=spark_session, database=database, table=table)
+    write_curated_data(spark_session=spark_session, data=unprocessed_data, database=database, table=table, primary_fields=["student_code", "course_group_code"], precombine_field="student_code", schema=enrollment_schema)
+    print(f"Write curated bucket in database {database} and table {table} successfully")
+
+    table = "graduate"
+    unprocessed_data = read_unprocessed_data(spark_session=spark_session, database=database, table=table)
+    write_curated_data(spark_session=spark_session, data=unprocessed_data, database=database, table=table, primary_fields=["student_code", "program_code", "term_code"], precombine_field="student_code", schema=graduate_schema)
+    print(f"Write curated bucket in database {database} and table {table} successfully")
+
+    table = "program_course"
+    unprocessed_data = read_unprocessed_data(spark_session=spark_session, database=database, table=table)
+    write_curated_data(spark_session=spark_session, data=unprocessed_data, database=database, table=table, primary_fields=["program_code", "course_code"], precombine_field="program_code", schema=program_course_schema)
+    print(f"Write curated bucket in database {database} and table {table} successfully")
+
+    table = "point"
+    unprocessed_data = read_unprocessed_data(spark_session=spark_session, database=database, table=table)
+    write_curated_data(spark_session=spark_session, data=unprocessed_data, database=database, table=table, primary_fields=["student_code", "course_section_code", "term_code"], precombine_field="student_code", schema=point_schema)
+    print(f"Write curated bucket in database {database} and table {table} successfully")
+
+    spark_session.stop()
+
+    minio_cursor = configure_minio_cursor()
+
+    # table = "staff"
+    # transfer_processed_data(minio_cursor=minio_cursor, database=database, table=table)
+    # print(f"Transfer unprocessed data in database {database} and table {table} successfully")
+
+    # table = "term"
+    # transfer_processed_data(minio_cursor=minio_cursor, database=database, table=table)
+    # print(f"Transfer unprocessed data in database {database} and table {table} successfully")
+
+    # table = "course"
+    # transfer_processed_data(minio_cursor=minio_cursor, database=database, table=table)
+    # print(f"Transfer unprocessed data in database {database} and table {table} successfully")
+    
+    # table = "room"
+    # transfer_processed_data(minio_cursor=minio_cursor, database=database, table=table)
+    # print(f"Transfer unprocessed data in database {database} and table {table} successfully")
+
+    # table = "program"
+    # transfer_processed_data(minio_cursor=minio_cursor, database=database, table=table)
+    # print(f"Transfer unprocessed data in database {database} and table {table} successfully")
+
+    # table = "class"
+    # transfer_processed_data(minio_cursor=minio_cursor, database=database, table=table)
+    # print(f"Transfer unprocessed data in database {database} and table {table} successfully")
+
+    # table = "major"
+    # transfer_processed_data(minio_cursor=minio_cursor, database=database, table=table)
+    # print(f"Transfer unprocessed data in database {database} and table {table} successfully")
+
+    # table = "student"
+    # transfer_processed_data(minio_cursor=minio_cursor, database=database, table=table)
+    # print(f"Transfer unprocessed data in database {database} and table {table} successfully")
+
+    # table = "course_section"
+    # transfer_processed_data(minio_cursor=minio_cursor, database=database, table=table)
+    # print(f"Transfer unprocessed data in database {database} and table {table} successfully")
+
+    # table = "course_group"
+    # transfer_processed_data(minio_cursor=minio_cursor, database=database, table=table)
+    # print(f"Transfer unprocessed data in database {database} and table {table} successfully")
+
+    # table = "course_group_detail"
+    # transfer_processed_data(minio_cursor=minio_cursor, database=database, table=table)
+    # print(f"Transfer unprocessed data in database {database} and table {table} successfully")
+
+    # table = "enrollment"
+    # transfer_processed_data(minio_cursor=minio_cursor, database=database, table=table)
+    # print(f"Transfer unprocessed data in database {database} and table {table} successfully")
+
+    # table = "graduate"
+    # transfer_processed_data(minio_cursor=minio_cursor, database=database, table=table)
+    # print(f"Transfer unprocessed data in database {database} and table {table} successfully")
+
+    # table = "program_course"
+    # transfer_processed_data(minio_cursor=minio_cursor, database=database, table=table)
+    # print(f"Transfer unprocessed data in database {database} and table {table} successfully")
+
+    # table = "point"
+    # transfer_processed_data(minio_cursor=minio_cursor, database=database, table=table)
+    # print(f"Transfer unprocessed data in database {database} and table {table} successfully")
+

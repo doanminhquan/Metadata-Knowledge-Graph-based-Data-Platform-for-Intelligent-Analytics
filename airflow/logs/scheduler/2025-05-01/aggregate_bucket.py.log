@@ -1,0 +1,959 @@
+[2025-05-01T14:18:56.815+0000] {processor.py:186} INFO - Started process (PID=3425410) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:18:56.816+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:18:56.820+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:18:56.819+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:18:56.845+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:18:56.878+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:18:56.878+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:18:56.908+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:18:56.908+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 12:25:00+00:00, run_after=2025-05-01 13:25:00+00:00
+[2025-05-01T14:18:56.943+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.137 seconds
+[2025-05-01T14:21:24.941+0000] {processor.py:186} INFO - Started process (PID=3442048) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:21:24.943+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:21:24.945+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:21:24.944+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:21:24.957+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:21:24.995+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:21:24.995+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:21:25.023+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:21:25.023+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 13:25:00+00:00, run_after=2025-05-01 14:25:00+00:00
+[2025-05-01T14:21:25.060+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.128 seconds
+[2025-05-01T14:21:56.202+0000] {processor.py:186} INFO - Started process (PID=3444828) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:21:56.203+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:21:56.205+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:21:56.204+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:21:56.216+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:21:56.252+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:21:56.252+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:21:56.279+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:21:56.279+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 13:25:00+00:00, run_after=2025-05-01 14:25:00+00:00
+[2025-05-01T14:21:56.317+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.124 seconds
+[2025-05-01T14:22:10.343+0000] {processor.py:186} INFO - Started process (PID=3446132) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:22:10.345+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:22:10.349+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:22:10.348+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:22:10.375+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:22:10.407+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:22:10.407+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:22:10.437+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:22:10.437+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 13:25:00+00:00, run_after=2025-05-01 14:25:00+00:00
+[2025-05-01T14:22:10.467+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.133 seconds
+[2025-05-01T14:22:40.676+0000] {processor.py:186} INFO - Started process (PID=3448786) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:22:40.678+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:22:40.682+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:22:40.681+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:22:40.703+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:22:40.740+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:22:40.739+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:22:40.777+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:22:40.776+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 13:25:00+00:00, run_after=2025-05-01 14:25:00+00:00
+[2025-05-01T14:22:40.818+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.151 seconds
+[2025-05-01T14:23:11.175+0000] {processor.py:186} INFO - Started process (PID=3451424) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:23:11.177+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:23:11.181+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:23:11.180+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:23:11.203+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:23:11.238+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:23:11.238+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:23:11.270+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:23:11.270+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 13:25:00+00:00, run_after=2025-05-01 14:25:00+00:00
+[2025-05-01T14:23:11.315+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.150 seconds
+[2025-05-01T14:23:41.782+0000] {processor.py:186} INFO - Started process (PID=3454090) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:23:41.784+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:23:41.787+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:23:41.787+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:23:41.809+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:23:41.845+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:23:41.844+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:23:41.878+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:23:41.878+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 13:25:00+00:00, run_after=2025-05-01 14:25:00+00:00
+[2025-05-01T14:23:41.912+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.139 seconds
+[2025-05-01T14:24:12.295+0000] {processor.py:186} INFO - Started process (PID=3457163) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:24:12.297+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:24:12.300+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:24:12.299+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:24:12.325+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:24:12.360+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:24:12.360+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:24:12.397+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:24:12.397+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 13:25:00+00:00, run_after=2025-05-01 14:25:00+00:00
+[2025-05-01T14:24:12.428+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.143 seconds
+[2025-05-01T14:24:42.848+0000] {processor.py:186} INFO - Started process (PID=3460551) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:24:42.850+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:24:42.853+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:24:42.853+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:24:42.874+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:24:42.907+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:24:42.906+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:24:42.941+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:24:42.941+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 13:25:00+00:00, run_after=2025-05-01 14:25:00+00:00
+[2025-05-01T14:24:42.977+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.138 seconds
+[2025-05-01T14:25:39.827+0000] {processor.py:186} INFO - Started process (PID=3466044) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:25:39.829+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:25:39.833+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:25:39.832+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:25:39.861+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:25:39.894+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:25:39.894+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:25:39.926+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:25:39.925+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:25:39.957+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.144 seconds
+[2025-05-01T14:26:10.412+0000] {processor.py:186} INFO - Started process (PID=3469957) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:26:10.414+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:26:10.418+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:26:10.417+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:26:10.445+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:26:10.478+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:26:10.478+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:26:10.509+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:26:10.508+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:26:10.546+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.145 seconds
+[2025-05-01T14:26:41.583+0000] {processor.py:186} INFO - Started process (PID=3472647) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:26:41.586+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:26:41.590+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:26:41.589+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:26:41.617+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:26:41.664+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:26:41.663+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:26:41.701+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:26:41.700+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:26:41.740+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.169 seconds
+[2025-05-01T14:27:12.067+0000] {processor.py:186} INFO - Started process (PID=3475254) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:27:12.069+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:27:12.074+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:27:12.073+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:27:12.095+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:27:12.130+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:27:12.130+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:27:12.162+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:27:12.162+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:27:12.200+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.143 seconds
+[2025-05-01T14:27:42.666+0000] {processor.py:186} INFO - Started process (PID=3477862) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:27:42.668+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:27:42.672+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:27:42.671+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:27:42.693+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:27:42.727+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:27:42.727+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:27:42.759+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:27:42.758+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:27:42.794+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.137 seconds
+[2025-05-01T14:28:13.530+0000] {processor.py:186} INFO - Started process (PID=3480531) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:28:13.532+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:28:13.536+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:28:13.535+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:28:13.556+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:28:13.591+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:28:13.590+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:28:13.624+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:28:13.623+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:28:13.663+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.142 seconds
+[2025-05-01T14:28:44.148+0000] {processor.py:186} INFO - Started process (PID=3483109) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:28:44.150+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:28:44.153+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:28:44.153+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:28:44.174+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:28:44.207+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:28:44.206+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:28:44.239+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:28:44.239+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:28:44.277+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.139 seconds
+[2025-05-01T14:29:14.759+0000] {processor.py:186} INFO - Started process (PID=3485725) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:29:14.761+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:29:14.765+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:29:14.765+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:29:14.788+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:29:14.824+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:29:14.824+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:29:14.863+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:29:14.863+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:29:14.894+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.145 seconds
+[2025-05-01T14:29:45.358+0000] {processor.py:186} INFO - Started process (PID=3488316) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:29:45.360+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:29:45.364+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:29:45.364+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:29:45.384+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:29:45.418+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:29:45.418+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:29:45.451+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:29:45.450+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:29:45.482+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.134 seconds
+[2025-05-01T14:30:16.006+0000] {processor.py:186} INFO - Started process (PID=3490896) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:30:16.008+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:30:16.011+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:30:16.010+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:30:16.032+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:30:16.068+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:30:16.068+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:30:16.101+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:30:16.101+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:30:16.143+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.147 seconds
+[2025-05-01T14:30:46.593+0000] {processor.py:186} INFO - Started process (PID=3493587) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:30:46.594+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:30:46.598+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:30:46.597+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:30:46.618+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:30:46.652+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:30:46.652+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:30:46.684+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:30:46.684+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:30:46.726+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.144 seconds
+[2025-05-01T14:31:17.206+0000] {processor.py:186} INFO - Started process (PID=3496154) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:31:17.208+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:31:17.212+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:31:17.211+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:31:17.232+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:31:17.274+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:31:17.274+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:31:17.311+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:31:17.311+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:31:17.358+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.161 seconds
+[2025-05-01T14:31:47.779+0000] {processor.py:186} INFO - Started process (PID=3498718) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:31:47.781+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:31:47.786+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:31:47.785+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:31:47.808+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:31:47.842+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:31:47.841+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:31:47.874+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:31:47.873+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:31:47.910+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.141 seconds
+[2025-05-01T14:32:18.350+0000] {processor.py:186} INFO - Started process (PID=3501344) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:32:18.352+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:32:18.356+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:32:18.355+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:32:18.378+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:32:18.412+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:32:18.412+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:32:18.445+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:32:18.445+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:32:18.486+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.145 seconds
+[2025-05-01T14:32:48.751+0000] {processor.py:186} INFO - Started process (PID=3503943) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:32:48.753+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:32:48.757+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:32:48.756+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:32:48.778+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:32:48.813+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:32:48.812+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:32:48.846+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:32:48.846+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:32:48.890+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.149 seconds
+[2025-05-01T14:33:19.130+0000] {processor.py:186} INFO - Started process (PID=3506549) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:33:19.132+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:33:19.136+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:33:19.135+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:33:19.158+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:33:19.193+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:33:19.192+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:33:19.226+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:33:19.226+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:33:19.267+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.146 seconds
+[2025-05-01T14:33:49.527+0000] {processor.py:186} INFO - Started process (PID=3509143) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:33:49.529+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:33:49.532+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:33:49.532+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:33:49.553+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:33:49.590+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:33:49.590+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:33:49.624+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:33:49.623+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:33:49.665+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.148 seconds
+[2025-05-01T14:34:19.906+0000] {processor.py:186} INFO - Started process (PID=3511753) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:34:19.908+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:34:19.913+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:34:19.912+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:34:19.933+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:34:19.968+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:34:19.967+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:34:19.999+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:34:19.999+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:34:20.026+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.130 seconds
+[2025-05-01T14:34:50.283+0000] {processor.py:186} INFO - Started process (PID=3514313) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:34:50.285+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:34:50.289+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:34:50.288+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:34:50.309+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:34:50.343+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:34:50.342+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:34:50.375+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:34:50.374+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:34:50.411+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.137 seconds
+[2025-05-01T14:35:20.650+0000] {processor.py:186} INFO - Started process (PID=3516877) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:35:20.652+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:35:20.656+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:35:20.655+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:35:20.678+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:35:20.712+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:35:20.712+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:35:20.744+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:35:20.744+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:35:20.783+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.143 seconds
+[2025-05-01T14:35:51.030+0000] {processor.py:186} INFO - Started process (PID=3519473) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:35:51.032+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:35:51.036+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:35:51.035+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:35:51.058+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:35:51.094+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:35:51.094+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:35:51.128+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:35:51.127+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:35:51.172+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.152 seconds
+[2025-05-01T14:36:21.409+0000] {processor.py:186} INFO - Started process (PID=3522102) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:36:21.411+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:36:21.415+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:36:21.414+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:36:21.436+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:36:21.470+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:36:21.469+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:36:21.504+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:36:21.504+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:36:21.544+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.146 seconds
+[2025-05-01T14:36:51.793+0000] {processor.py:186} INFO - Started process (PID=3524713) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:36:51.794+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:36:51.798+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:36:51.798+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:36:51.821+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:36:51.859+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:36:51.859+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:36:51.895+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:36:51.895+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:36:51.937+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.155 seconds
+[2025-05-01T14:37:22.167+0000] {processor.py:186} INFO - Started process (PID=3527340) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:37:22.168+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:37:22.172+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:37:22.171+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:37:22.192+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:37:22.227+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:37:22.227+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:37:22.262+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:37:22.262+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:37:22.304+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.148 seconds
+[2025-05-01T14:37:52.532+0000] {processor.py:186} INFO - Started process (PID=3529919) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:37:52.534+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:37:52.540+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:37:52.539+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:37:52.562+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:37:52.597+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:37:52.596+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:37:52.629+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:37:52.629+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:37:52.665+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.142 seconds
+[2025-05-01T14:38:22.919+0000] {processor.py:186} INFO - Started process (PID=3532505) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:38:22.921+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:38:22.924+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:38:22.924+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:38:22.946+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:38:22.980+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:38:22.980+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:38:23.023+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:38:23.022+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:38:23.060+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.152 seconds
+[2025-05-01T14:38:53.291+0000] {processor.py:186} INFO - Started process (PID=3535094) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:38:53.293+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:38:53.298+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:38:53.297+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:38:53.319+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:38:53.353+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:38:53.353+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:38:53.385+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:38:53.384+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:38:53.417+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.135 seconds
+[2025-05-01T14:39:23.663+0000] {processor.py:186} INFO - Started process (PID=3537693) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:39:23.664+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:39:23.668+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:39:23.667+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:39:23.689+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:39:23.724+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:39:23.723+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:39:23.756+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:39:23.756+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:39:23.800+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.147 seconds
+[2025-05-01T14:39:54.033+0000] {processor.py:186} INFO - Started process (PID=3540331) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:39:54.036+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:39:54.041+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:39:54.040+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:39:54.063+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:39:54.097+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:39:54.097+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:39:54.132+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:39:54.131+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:39:54.171+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.150 seconds
+[2025-05-01T14:40:24.420+0000] {processor.py:186} INFO - Started process (PID=3542971) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:40:24.422+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:40:24.426+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:40:24.425+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:40:24.447+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:40:24.481+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:40:24.481+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:40:24.512+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:40:24.512+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:40:24.550+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.141 seconds
+[2025-05-01T14:40:54.790+0000] {processor.py:186} INFO - Started process (PID=3545616) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:40:54.792+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:40:54.796+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:40:54.795+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:40:54.817+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:40:54.850+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:40:54.849+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:40:54.882+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:40:54.882+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:40:54.912+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.131 seconds
+[2025-05-01T14:41:25.141+0000] {processor.py:186} INFO - Started process (PID=3548219) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:41:25.143+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:41:25.147+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:41:25.147+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:41:25.169+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:41:25.205+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:41:25.205+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:41:25.242+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:41:25.242+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:41:25.280+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.150 seconds
+[2025-05-01T14:41:55.461+0000] {processor.py:186} INFO - Started process (PID=3550799) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:41:55.463+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:41:55.467+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:41:55.466+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:41:55.487+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:41:55.520+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:41:55.520+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:41:55.552+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:41:55.552+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:41:55.589+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.137 seconds
+[2025-05-01T14:42:25.772+0000] {processor.py:186} INFO - Started process (PID=3553350) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:42:25.775+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:42:25.779+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:42:25.778+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:42:25.802+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:42:25.841+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:42:25.841+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:42:25.877+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:42:25.877+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:42:25.915+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.153 seconds
+[2025-05-01T14:42:56.079+0000] {processor.py:186} INFO - Started process (PID=3555922) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:42:56.081+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:42:56.084+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:42:56.084+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:42:56.109+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:42:56.145+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:42:56.145+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:42:56.187+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:42:56.187+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:42:56.222+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.153 seconds
+[2025-05-01T14:43:26.444+0000] {processor.py:186} INFO - Started process (PID=3558541) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:43:26.446+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:43:26.451+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:43:26.449+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:43:26.470+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:43:26.508+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:43:26.507+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:43:26.543+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:43:26.543+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:43:26.581+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.146 seconds
+[2025-05-01T14:43:56.797+0000] {processor.py:186} INFO - Started process (PID=3561130) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:43:56.799+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:43:56.802+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:43:56.802+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:43:56.823+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:43:56.860+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:43:56.860+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:43:56.894+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:43:56.894+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:43:56.930+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.144 seconds
+[2025-05-01T14:44:27.154+0000] {processor.py:186} INFO - Started process (PID=3563717) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:44:27.156+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:44:27.159+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:44:27.158+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:44:27.179+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:44:27.211+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:44:27.211+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:44:27.246+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:44:27.245+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:44:27.281+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.137 seconds
+[2025-05-01T14:44:58.183+0000] {processor.py:186} INFO - Started process (PID=3566359) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:44:58.185+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:44:58.190+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:44:58.189+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:44:58.211+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:44:58.256+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:44:58.256+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:44:58.296+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:44:58.296+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:44:58.557+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.385 seconds
+[2025-05-01T14:45:28.953+0000] {processor.py:186} INFO - Started process (PID=3568938) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:45:28.955+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:45:28.958+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:45:28.957+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:45:28.979+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:45:29.012+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:45:29.012+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:45:29.203+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:45:29.203+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:45:29.232+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.289 seconds
+[2025-05-01T14:45:59.554+0000] {processor.py:186} INFO - Started process (PID=3571600) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:45:59.556+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:45:59.561+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:45:59.560+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:45:59.581+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:45:59.614+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:45:59.613+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:45:59.798+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:45:59.798+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:45:59.834+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.290 seconds
+[2025-05-01T14:46:29.968+0000] {processor.py:186} INFO - Started process (PID=3574190) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:46:29.970+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:46:29.973+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:46:29.972+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:46:29.993+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:46:30.026+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:46:30.026+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:46:30.204+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:46:30.204+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:46:30.229+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.271 seconds
+[2025-05-01T14:47:00.382+0000] {processor.py:186} INFO - Started process (PID=3576810) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:47:00.384+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:47:00.388+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:47:00.388+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:47:00.408+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:47:00.635+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:47:00.635+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:47:00.661+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:47:00.660+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:47:00.695+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.324 seconds
+[2025-05-01T14:47:30.886+0000] {processor.py:186} INFO - Started process (PID=3579408) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:47:30.888+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:47:30.892+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:47:30.891+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:47:31.087+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:47:31.109+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:47:31.109+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:47:31.133+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:47:31.132+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:47:31.168+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.292 seconds
+[2025-05-01T14:48:01.691+0000] {processor.py:186} INFO - Started process (PID=3581991) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:48:01.693+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:48:01.697+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:48:01.696+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:48:01.720+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:48:01.756+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:48:01.756+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:48:01.791+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:48:01.791+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:48:01.835+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.155 seconds
+[2025-05-01T14:48:32.303+0000] {processor.py:186} INFO - Started process (PID=3584602) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:48:32.305+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:48:32.310+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:48:32.309+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:48:32.332+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:48:32.368+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:48:32.368+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:48:32.403+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:48:32.403+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:48:32.436+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.146 seconds
+[2025-05-01T14:49:02.862+0000] {processor.py:186} INFO - Started process (PID=3587180) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:49:02.864+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:49:02.868+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:49:02.867+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:49:02.889+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:49:02.923+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:49:02.923+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:49:02.956+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:49:02.956+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:49:03.001+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.150 seconds
+[2025-05-01T14:49:33.172+0000] {processor.py:186} INFO - Started process (PID=3589748) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:49:33.173+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:49:33.178+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:49:33.177+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:49:33.199+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:49:33.231+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:49:33.231+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:49:33.265+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:49:33.264+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:49:33.297+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.135 seconds
+[2025-05-01T14:50:03.485+0000] {processor.py:186} INFO - Started process (PID=3592323) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:50:03.487+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:50:03.491+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:50:03.490+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:50:03.512+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:50:03.547+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:50:03.546+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:50:03.581+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:50:03.581+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:50:03.622+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.147 seconds
+[2025-05-01T14:50:33.792+0000] {processor.py:186} INFO - Started process (PID=3594860) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:50:33.793+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:50:33.798+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:50:33.797+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:50:33.821+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:50:33.860+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:50:33.860+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:50:33.897+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:50:33.896+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:50:33.928+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.147 seconds
+[2025-05-01T14:51:04.076+0000] {processor.py:186} INFO - Started process (PID=3597971) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:51:04.079+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:51:04.083+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:51:04.082+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:51:04.106+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:51:04.142+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:51:04.142+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:51:04.176+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:51:04.176+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:51:04.217+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.152 seconds
+[2025-05-01T14:51:34.390+0000] {processor.py:186} INFO - Started process (PID=3600584) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:51:34.392+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:51:34.397+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:51:34.396+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:51:34.419+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:51:34.455+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:51:34.455+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:51:34.490+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:51:34.490+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:51:34.534+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.155 seconds
+[2025-05-01T14:52:04.693+0000] {processor.py:186} INFO - Started process (PID=3603177) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:52:04.695+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:52:04.700+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:52:04.699+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:52:04.722+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:52:04.783+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:52:04.783+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:52:04.820+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:52:04.820+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:52:04.863+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.182 seconds
+[2025-05-01T14:52:35.002+0000] {processor.py:186} INFO - Started process (PID=3605743) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:52:35.004+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:52:35.008+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:52:35.007+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:52:35.029+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:52:35.064+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:52:35.064+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:52:35.099+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:52:35.099+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:52:35.137+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.146 seconds
+[2025-05-01T14:53:05.307+0000] {processor.py:186} INFO - Started process (PID=3608332) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:53:05.309+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:53:05.313+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:53:05.312+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:53:05.334+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:53:05.366+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:53:05.366+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:53:05.399+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:53:05.399+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:53:05.434+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.137 seconds
+[2025-05-01T14:53:35.614+0000] {processor.py:186} INFO - Started process (PID=3610897) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:53:35.616+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:53:35.621+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:53:35.620+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:53:35.642+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:53:35.676+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:53:35.676+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:53:35.717+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:53:35.716+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:53:35.752+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.148 seconds
+[2025-05-01T14:54:05.925+0000] {processor.py:186} INFO - Started process (PID=3613477) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:54:05.927+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:54:05.932+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:54:05.931+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:54:05.954+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:54:05.989+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:54:05.989+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:54:06.025+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:54:06.025+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:54:06.061+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.147 seconds
+[2025-05-01T14:54:36.231+0000] {processor.py:186} INFO - Started process (PID=3616119) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:54:36.233+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:54:36.238+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:54:36.237+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:54:36.259+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:54:36.297+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:54:36.296+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:54:36.333+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:54:36.333+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:54:36.375+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.154 seconds
+[2025-05-01T14:55:06.551+0000] {processor.py:186} INFO - Started process (PID=3618689) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:55:06.553+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:55:06.557+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:55:06.556+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:55:06.578+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:55:06.619+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:55:06.619+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:55:06.656+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:55:06.656+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:55:06.694+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.155 seconds
+[2025-05-01T14:55:36.850+0000] {processor.py:186} INFO - Started process (PID=3621248) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:55:36.851+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:55:36.855+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:55:36.854+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:55:36.876+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:55:36.915+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:55:36.914+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:55:36.950+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:55:36.949+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:55:36.989+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.149 seconds
+[2025-05-01T14:56:07.166+0000] {processor.py:186} INFO - Started process (PID=3623834) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:56:07.168+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:56:07.172+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:56:07.171+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:56:07.192+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:56:07.226+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:56:07.226+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:56:07.262+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:56:07.262+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:56:07.309+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.155 seconds
+[2025-05-01T14:56:37.475+0000] {processor.py:186} INFO - Started process (PID=3626391) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:56:37.477+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:56:37.481+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:56:37.480+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:56:37.503+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:56:37.538+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:56:37.538+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:56:37.573+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:56:37.572+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:56:37.612+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.146 seconds
+[2025-05-01T14:57:07.770+0000] {processor.py:186} INFO - Started process (PID=3628992) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:57:07.771+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:57:07.775+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:57:07.774+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:57:07.804+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:57:07.837+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:57:07.836+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:57:07.869+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:57:07.869+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:57:07.907+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.148 seconds
+[2025-05-01T14:57:38.078+0000] {processor.py:186} INFO - Started process (PID=3631607) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:57:38.080+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:57:38.084+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:57:38.083+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:57:38.105+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:57:38.138+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:57:38.138+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:57:38.172+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:57:38.172+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:57:38.215+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.148 seconds
+[2025-05-01T14:58:08.380+0000] {processor.py:186} INFO - Started process (PID=3634283) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:58:08.381+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:58:08.385+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:58:08.384+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:58:08.406+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:58:08.440+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:58:08.439+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:58:08.475+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:58:08.474+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:58:08.513+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.145 seconds
+[2025-05-01T14:58:38.703+0000] {processor.py:186} INFO - Started process (PID=3636882) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:58:38.705+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:58:38.711+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:58:38.710+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:58:38.734+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:58:38.770+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:58:38.770+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:58:38.805+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:58:38.805+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:58:38.843+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.152 seconds
+[2025-05-01T14:59:08.989+0000] {processor.py:186} INFO - Started process (PID=3639451) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:59:08.991+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:59:08.994+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:59:08.994+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:59:09.016+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:59:09.051+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:59:09.051+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:59:09.087+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:59:09.087+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:59:09.128+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.150 seconds
+[2025-05-01T14:59:39.856+0000] {processor.py:186} INFO - Started process (PID=3642064) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:59:39.857+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T14:59:39.861+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:59:39.861+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:59:39.885+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T14:59:39.921+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:59:39.921+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T14:59:39.958+0000] {logging_mixin.py:190} INFO - [2025-05-01T14:59:39.957+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T14:59:39.992+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.147 seconds
+[2025-05-01T15:00:10.648+0000] {processor.py:186} INFO - Started process (PID=3644675) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:00:10.650+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:00:10.654+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:00:10.654+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:00:10.675+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:00:10.713+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:00:10.712+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:00:10.752+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:00:10.752+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:00:10.789+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.151 seconds
+[2025-05-01T15:00:41.184+0000] {processor.py:186} INFO - Started process (PID=3647318) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:00:41.186+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:00:41.190+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:00:41.190+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:00:41.214+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:00:41.256+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:00:41.256+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:00:41.294+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:00:41.293+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:00:41.334+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.162 seconds
+[2025-05-01T15:01:12.307+0000] {processor.py:186} INFO - Started process (PID=3650004) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:01:12.309+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:01:12.312+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:01:12.312+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:01:12.333+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:01:12.367+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:01:12.367+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:01:12.401+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:01:12.400+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:01:12.431+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.134 seconds
+[2025-05-01T15:01:43.012+0000] {processor.py:186} INFO - Started process (PID=3652691) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:01:43.014+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:01:43.018+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:01:43.017+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:01:43.039+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:01:43.072+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:01:43.072+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:01:43.105+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:01:43.105+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:01:43.146+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.144 seconds
+[2025-05-01T15:02:13.790+0000] {processor.py:186} INFO - Started process (PID=3655288) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:02:13.792+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:02:13.797+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:02:13.796+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:02:13.817+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:02:13.851+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:02:13.850+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:02:13.885+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:02:13.884+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:02:13.918+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.138 seconds
+[2025-05-01T15:02:44.405+0000] {processor.py:186} INFO - Started process (PID=3657939) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:02:44.407+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:02:44.411+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:02:44.411+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:02:44.432+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:02:44.466+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:02:44.465+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:02:44.500+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:02:44.499+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:02:44.540+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.145 seconds
+[2025-05-01T15:03:15.005+0000] {processor.py:186} INFO - Started process (PID=3660545) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:03:15.007+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:03:15.011+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:03:15.010+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:03:15.031+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:03:15.065+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:03:15.065+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:03:15.098+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:03:15.098+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:03:15.132+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.137 seconds
+[2025-05-01T15:03:45.612+0000] {processor.py:186} INFO - Started process (PID=3663142) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:03:45.614+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:03:45.617+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:03:45.617+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:03:45.638+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:03:45.673+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:03:45.673+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:03:45.708+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:03:45.707+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:03:45.741+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.141 seconds
+[2025-05-01T15:04:16.235+0000] {processor.py:186} INFO - Started process (PID=3665814) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:04:16.237+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:04:16.241+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:04:16.240+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:04:16.263+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:04:16.297+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:04:16.297+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:04:16.331+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:04:16.331+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:04:16.370+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.146 seconds
+[2025-05-01T15:04:46.895+0000] {processor.py:186} INFO - Started process (PID=3668384) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:04:46.897+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:04:46.903+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:04:46.902+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:04:46.926+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:04:46.963+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:04:46.963+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:04:46.998+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:04:46.997+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:04:47.041+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.158 seconds
+[2025-05-01T15:05:17.502+0000] {processor.py:186} INFO - Started process (PID=3670981) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:05:17.504+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:05:17.509+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:05:17.508+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:05:17.533+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:05:17.570+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:05:17.570+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:05:17.606+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:05:17.606+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:05:17.639+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.152 seconds
+[2025-05-01T15:05:48.000+0000] {processor.py:186} INFO - Started process (PID=3673636) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:05:48.002+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:05:48.008+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:05:48.007+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:05:48.031+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:05:48.069+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:05:48.069+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:05:48.104+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:05:48.104+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:05:48.140+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.152 seconds
+[2025-05-01T15:06:18.640+0000] {processor.py:186} INFO - Started process (PID=3676234) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:06:18.642+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:06:18.646+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:06:18.645+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:06:18.669+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:06:18.706+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:06:18.706+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:06:18.743+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:06:18.743+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:06:18.780+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.154 seconds
+[2025-05-01T15:06:49.276+0000] {processor.py:186} INFO - Started process (PID=3678890) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:06:49.278+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:06:49.282+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:06:49.281+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:06:49.304+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:06:49.341+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:06:49.341+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:06:49.375+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:06:49.375+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:06:49.411+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.144 seconds
+[2025-05-01T15:07:19.901+0000] {processor.py:186} INFO - Started process (PID=3681472) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:07:19.902+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:07:19.907+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:07:19.906+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:07:19.927+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:07:19.961+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:07:19.961+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:07:19.995+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:07:19.995+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:07:20.028+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.137 seconds
+[2025-05-01T15:07:50.493+0000] {processor.py:186} INFO - Started process (PID=3684047) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:07:50.496+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:07:50.503+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:07:50.502+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:07:50.527+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:07:50.561+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:07:50.561+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:07:50.594+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:07:50.594+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:07:50.629+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.146 seconds
+[2025-05-01T15:08:21.110+0000] {processor.py:186} INFO - Started process (PID=3686701) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:08:21.112+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:08:21.117+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:08:21.116+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:08:21.140+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:08:21.177+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:08:21.177+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:08:21.212+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:08:21.212+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:08:21.243+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.144 seconds
+[2025-05-01T15:08:51.695+0000] {processor.py:186} INFO - Started process (PID=3689297) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:08:51.696+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:08:51.700+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:08:51.699+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:08:51.721+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:08:51.754+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:08:51.754+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:08:51.787+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:08:51.787+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:08:51.830+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.147 seconds
+[2025-05-01T15:09:22.255+0000] {processor.py:186} INFO - Started process (PID=3691870) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:09:22.257+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:09:22.261+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:09:22.260+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:09:22.284+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:09:22.320+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:09:22.319+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:09:22.354+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:09:22.354+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:09:22.390+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.147 seconds
+[2025-05-01T15:09:52.850+0000] {processor.py:186} INFO - Started process (PID=3694496) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:09:52.852+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:09:52.858+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:09:52.857+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:09:52.880+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:09:52.915+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:09:52.915+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:09:52.949+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:09:52.949+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:09:52.988+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.149 seconds
+[2025-05-01T15:10:23.469+0000] {processor.py:186} INFO - Started process (PID=3697059) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:10:23.471+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:10:23.474+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:10:23.474+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:10:23.495+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:10:23.529+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:10:23.529+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:10:23.562+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:10:23.562+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:10:23.603+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.146 seconds
+[2025-05-01T15:10:54.060+0000] {processor.py:186} INFO - Started process (PID=3699714) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:10:54.063+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:10:54.067+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:10:54.066+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:10:54.093+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:10:54.132+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:10:54.132+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:10:54.169+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:10:54.169+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:10:54.209+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.161 seconds
+[2025-05-01T15:11:24.434+0000] {processor.py:186} INFO - Started process (PID=3702311) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:11:24.437+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:11:24.442+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:11:24.441+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:11:24.468+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:11:24.509+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:11:24.508+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:11:24.546+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:11:24.546+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:11:24.587+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.168 seconds
+[2025-05-01T15:11:54.801+0000] {processor.py:186} INFO - Started process (PID=3704861) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:11:54.803+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:11:54.807+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:11:54.806+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:11:54.828+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:11:54.862+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:11:54.862+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:11:54.896+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:11:54.895+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:11:54.927+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.137 seconds
+[2025-05-01T15:12:25.164+0000] {processor.py:186} INFO - Started process (PID=3707461) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:12:25.166+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:12:25.171+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:12:25.171+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:12:25.193+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:12:25.228+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:12:25.228+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:12:25.262+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:12:25.262+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:12:25.301+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.147 seconds
+[2025-05-01T15:12:55.532+0000] {processor.py:186} INFO - Started process (PID=3710046) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:12:55.534+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:12:55.538+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:12:55.538+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:12:55.560+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:12:55.594+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:12:55.594+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:12:55.627+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:12:55.627+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:12:55.670+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.149 seconds
+[2025-05-01T15:13:25.904+0000] {processor.py:186} INFO - Started process (PID=3712638) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:13:25.906+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:13:25.910+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:13:25.910+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:13:25.931+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:13:25.965+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:13:25.964+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:13:25.997+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:13:25.997+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:13:26.039+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.146 seconds
+[2025-05-01T15:13:56.280+0000] {processor.py:186} INFO - Started process (PID=3715200) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:13:56.281+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:13:56.285+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:13:56.284+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:13:56.306+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:13:56.339+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:13:56.339+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:13:56.372+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:13:56.371+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:13:56.412+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.142 seconds
+[2025-05-01T15:14:26.669+0000] {processor.py:186} INFO - Started process (PID=3718669) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:14:26.673+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:14:26.677+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:14:26.676+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:14:26.702+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:14:26.738+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:14:26.737+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:14:26.772+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:14:26.772+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:14:26.812+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.160 seconds
+[2025-05-01T15:14:57.043+0000] {processor.py:186} INFO - Started process (PID=3721257) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:14:57.045+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:14:57.050+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:14:57.049+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:14:57.076+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:14:57.117+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:14:57.116+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:14:57.155+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:14:57.154+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:14:57.193+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.164 seconds
+[2025-05-01T15:15:27.414+0000] {processor.py:186} INFO - Started process (PID=3723897) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:15:27.416+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:15:27.421+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:15:27.420+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:15:27.443+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:15:27.479+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:15:27.479+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:15:27.514+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:15:27.514+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:15:27.550+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.147 seconds
+[2025-05-01T15:15:57.792+0000] {processor.py:186} INFO - Started process (PID=3726493) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:15:57.793+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:15:57.798+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:15:57.797+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:15:57.821+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:15:57.857+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:15:57.857+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:15:57.894+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:15:57.894+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:15:57.933+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.154 seconds
+[2025-05-01T15:16:28.168+0000] {processor.py:186} INFO - Started process (PID=3729110) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:16:28.171+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:16:28.175+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:16:28.174+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:16:28.200+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:16:28.242+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:16:28.242+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:16:28.283+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:16:28.283+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:16:28.327+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.171 seconds
+[2025-05-01T15:16:58.538+0000] {processor.py:186} INFO - Started process (PID=3731707) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:16:58.540+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:16:58.545+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:16:58.544+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:16:58.566+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:16:58.600+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:16:58.600+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:16:58.636+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:16:58.636+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:16:58.681+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.152 seconds
+[2025-05-01T15:17:28.911+0000] {processor.py:186} INFO - Started process (PID=3734302) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:17:28.913+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:17:28.917+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:17:28.916+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:17:28.940+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:17:28.976+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:17:28.976+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:17:29.010+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:17:29.010+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:17:29.055+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.159 seconds
+[2025-05-01T15:17:59.323+0000] {processor.py:186} INFO - Started process (PID=3736886) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:17:59.325+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:17:59.329+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:17:59.329+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:17:59.351+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:17:59.385+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:17:59.385+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:17:59.420+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:17:59.419+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:17:59.460+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.146 seconds
+[2025-05-01T15:18:29.689+0000] {processor.py:186} INFO - Started process (PID=3739457) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:18:29.691+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:18:29.696+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:18:29.695+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:18:29.717+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:18:29.752+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:18:29.752+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:18:29.786+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:18:29.786+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:18:29.829+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.150 seconds
+[2025-05-01T15:19:00.063+0000] {processor.py:186} INFO - Started process (PID=3742045) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:19:00.065+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:19:00.069+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:19:00.068+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:19:00.090+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:19:00.125+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:19:00.124+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:19:00.159+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:19:00.158+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:19:00.196+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.145 seconds
+[2025-05-01T15:19:30.441+0000] {processor.py:186} INFO - Started process (PID=3744646) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:19:30.442+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:19:30.446+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:19:30.445+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:19:30.467+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:19:30.500+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:19:30.500+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:19:30.534+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:19:30.534+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:19:30.575+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.146 seconds
+[2025-05-01T15:20:00.821+0000] {processor.py:186} INFO - Started process (PID=3747187) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:20:00.823+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:20:00.826+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:20:00.826+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:20:00.848+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:20:00.881+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:20:00.880+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:20:00.915+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:20:00.915+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:20:00.954+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.145 seconds
+[2025-05-01T15:20:31.220+0000] {processor.py:186} INFO - Started process (PID=3749744) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:20:31.222+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:20:31.226+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:20:31.225+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:20:31.249+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:20:31.284+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:20:31.283+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:20:31.319+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:20:31.319+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:20:31.358+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.149 seconds
+[2025-05-01T15:21:01.637+0000] {processor.py:186} INFO - Started process (PID=3752475) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:21:01.639+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:21:01.643+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:21:01.642+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:21:01.667+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:21:01.705+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:21:01.705+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:21:01.742+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:21:01.742+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:21:01.780+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.156 seconds
+[2025-05-01T15:21:32.028+0000] {processor.py:186} INFO - Started process (PID=3755034) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:21:32.030+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:21:32.036+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:21:32.035+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:21:32.064+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:21:32.106+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:21:32.106+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:21:32.145+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:21:32.145+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:21:32.191+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.176 seconds
+[2025-05-01T15:22:02.394+0000] {processor.py:186} INFO - Started process (PID=3757592) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:22:02.396+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:22:02.401+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:22:02.401+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:22:02.425+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:22:02.460+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:22:02.460+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:22:02.494+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:22:02.494+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:22:02.528+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.146 seconds
+[2025-05-01T15:22:32.764+0000] {processor.py:186} INFO - Started process (PID=3760160) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:22:32.766+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:22:32.770+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:22:32.769+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:22:32.793+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:22:32.829+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:22:32.829+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:22:32.865+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:22:32.864+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:22:32.904+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.151 seconds
+[2025-05-01T15:23:03.139+0000] {processor.py:186} INFO - Started process (PID=3762746) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:23:03.141+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:23:03.145+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:23:03.144+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:23:03.167+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:23:03.202+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:23:03.202+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:23:03.236+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:23:03.236+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:23:03.277+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.149 seconds
+[2025-05-01T15:23:33.513+0000] {processor.py:186} INFO - Started process (PID=3765340) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:23:33.515+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:23:33.520+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:23:33.519+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:23:33.540+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:23:33.574+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:23:33.573+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:23:33.607+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:23:33.607+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:23:33.648+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.144 seconds
+[2025-05-01T15:24:03.896+0000] {processor.py:186} INFO - Started process (PID=3767954) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:24:03.898+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:24:03.902+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:24:03.901+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:24:03.924+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:24:03.959+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:24:03.958+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:24:03.994+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:24:03.994+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:24:04.034+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.149 seconds
+[2025-05-01T15:24:34.289+0000] {processor.py:186} INFO - Started process (PID=3770580) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:24:34.291+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:24:34.295+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:24:34.294+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:24:34.317+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:24:34.350+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:24:34.350+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:24:34.384+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:24:34.384+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 14:25:00+00:00, run_after=2025-05-01 15:25:00+00:00
+[2025-05-01T15:24:34.426+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.149 seconds
+[2025-05-01T15:27:10.067+0000] {processor.py:186} INFO - Started process (PID=3787367) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:27:10.070+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:27:10.072+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:27:10.071+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:27:10.086+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:27:10.130+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:27:10.130+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:27:10.334+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:27:10.333+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 15:25:00+00:00, run_after=2025-05-01 16:25:00+00:00
+[2025-05-01T15:27:10.364+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.308 seconds
+[2025-05-01T15:27:41.251+0000] {processor.py:186} INFO - Started process (PID=3790066) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:27:41.253+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:27:41.255+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:27:41.254+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:27:41.267+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:27:41.500+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:27:41.499+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:27:41.521+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:27:41.521+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 15:25:00+00:00, run_after=2025-05-01 16:25:00+00:00
+[2025-05-01T15:27:41.553+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.315 seconds
+[2025-05-01T15:28:12.618+0000] {processor.py:186} INFO - Started process (PID=3792735) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:28:12.620+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:28:12.623+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:28:12.622+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:28:12.635+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:28:12.673+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:28:12.673+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:28:12.703+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:28:12.703+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 15:25:00+00:00, run_after=2025-05-01 16:25:00+00:00
+[2025-05-01T15:28:12.742+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.134 seconds
+[2025-05-01T15:28:43.022+0000] {processor.py:186} INFO - Started process (PID=3795302) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:28:43.024+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:28:43.026+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:28:43.025+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:28:43.039+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:28:43.077+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:28:43.076+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:28:43.106+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:28:43.105+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 15:25:00+00:00, run_after=2025-05-01 16:25:00+00:00
+[2025-05-01T15:28:43.144+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.133 seconds
+[2025-05-01T15:29:13.438+0000] {processor.py:186} INFO - Started process (PID=3797971) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:29:13.440+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:29:13.442+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:29:13.442+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:29:13.456+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:29:13.494+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:29:13.494+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:29:13.524+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:29:13.524+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 15:25:00+00:00, run_after=2025-05-01 16:25:00+00:00
+[2025-05-01T15:29:13.563+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.139 seconds
+[2025-05-01T15:29:43.804+0000] {processor.py:186} INFO - Started process (PID=3800584) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:29:43.806+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:29:43.808+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:29:43.807+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:29:43.820+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:29:43.859+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:29:43.858+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:29:43.888+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:29:43.887+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 15:25:00+00:00, run_after=2025-05-01 16:25:00+00:00
+[2025-05-01T15:29:43.931+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.139 seconds
+[2025-05-01T15:30:14.207+0000] {processor.py:186} INFO - Started process (PID=3803185) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:30:14.209+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:30:14.214+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:30:14.213+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:30:14.229+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:30:14.271+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:30:14.271+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:30:14.303+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:30:14.303+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 15:25:00+00:00, run_after=2025-05-01 16:25:00+00:00
+[2025-05-01T15:30:14.343+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.147 seconds
+[2025-05-01T15:30:44.613+0000] {processor.py:186} INFO - Started process (PID=3805769) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:30:44.614+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:30:44.617+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:30:44.616+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:30:44.629+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:30:44.667+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:30:44.666+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:30:44.697+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:30:44.696+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 15:25:00+00:00, run_after=2025-05-01 16:25:00+00:00
+[2025-05-01T15:30:44.734+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.132 seconds
+[2025-05-01T15:31:15.021+0000] {processor.py:186} INFO - Started process (PID=3808359) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:31:15.023+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:31:15.025+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:31:15.024+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:31:15.040+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:31:15.082+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:31:15.082+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:31:15.113+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:31:15.113+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 15:25:00+00:00, run_after=2025-05-01 16:25:00+00:00
+[2025-05-01T15:31:15.167+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.157 seconds
+[2025-05-01T15:31:45.353+0000] {processor.py:186} INFO - Started process (PID=3810934) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:31:45.355+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:31:45.357+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:31:45.356+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:31:45.369+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:31:45.408+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:31:45.408+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:31:45.438+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:31:45.438+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 15:25:00+00:00, run_after=2025-05-01 16:25:00+00:00
+[2025-05-01T15:31:45.475+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.135 seconds
+[2025-05-01T15:32:15.741+0000] {processor.py:186} INFO - Started process (PID=3813573) to work on /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:32:15.743+0000] {processor.py:914} INFO - Processing file /dis/airflow/dags/aggregate_bucket.py for tasks to queue
+[2025-05-01T15:32:15.745+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:32:15.744+0000] {dagbag.py:588} INFO - Filling up the DagBag from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:32:15.758+0000] {processor.py:925} INFO - DAG(s) 'aggregate_bucket' retrieved from /dis/airflow/dags/aggregate_bucket.py
+[2025-05-01T15:32:15.795+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:32:15.795+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-01T15:32:15.824+0000] {logging_mixin.py:190} INFO - [2025-05-01T15:32:15.824+0000] {dag.py:4180} INFO - Setting next_dagrun for aggregate_bucket to 2025-05-01 15:25:00+00:00, run_after=2025-05-01 16:25:00+00:00
+[2025-05-01T15:32:15.861+0000] {processor.py:208} INFO - Processing /dis/airflow/dags/aggregate_bucket.py took 0.131 seconds

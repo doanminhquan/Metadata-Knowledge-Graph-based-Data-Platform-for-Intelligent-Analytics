@@ -1,0 +1,157 @@
+{
+    "cards": [
+        {
+            "name": "Tổng Hợp Số Lượng Sinh Viên Theo Lớp",
+            "description": "Biểu đồ này cho thấy tổng số sinh viên được phân theo từng lớp, giúp theo dõi mức độ tuyển sinh và sự phân bổ sinh viên trong các lớp học.",
+            "collection_id": 2,
+            "display": "bar",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 116]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "bar",
+                    "x-axis": "class_code",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Tổng Hợp Số Lượng Sinh Viên Theo Năm Bắt Đầu",
+            "description": "Biểu đồ này trình bày tổng số lớp học được mở trong từng năm, giúp phân tích và theo dõi sự phát triển trong thời gian.",
+            "collection_id": 2,
+            "display": "bar",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 15,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 81]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "bar",
+                    "x-axis": "year_start",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Số Lượng Tốt Nghiệp Theo Chương Trình",
+            "description": "Biểu đồ này cho thấy số lượng sinh viên tốt nghiệp cho từng chương trình học, phản ánh chất lượng và mức độ thu hút của các chương trình.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 17,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 104]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "term_code",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Tổng Hợp Số Lượng Khóa Học Theo Mã Khóa Học",
+            "description": "Biểu đồ này thể hiện tổng số lớp học theo mã khóa học, giúp hiểu rõ hơn về sự phân bổ và tình trạng của các khóa học trong hệ thống.",
+            "collection_id": 2,
+            "display": "bar",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 13,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 191]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "bar",
+                    "x-axis": "course_code",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Số Lượng Sinh Viên Đang Theo Học Theo Khóa Học",
+            "description": "Biểu đồ này trình bày số lượng sinh viên đang theo học cho từng khóa học, giúp theo dõi mức độ quan tâm của sinh viên đến các khóa học khác nhau.",
+            "collection_id": 2,
+            "display": "bar",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 19,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 123]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "bar",
+                    "x-axis": "course_group_code",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        }
+    ],
+    "explanation": [
+        "Biểu đồ này cho thấy tổng số sinh viên được phân theo từng lớp, giúp theo dõi mức độ tuyển sinh và sự phân bổ sinh viên trong các lớp học.",
+        "Biểu đồ này trình bày tổng số lớp học được mở trong từng năm, giúp phân tích và theo dõi sự phát triển trong thời gian.",
+        "Biểu đồ này cho thấy số lượng sinh viên tốt nghiệp cho từng chương trình học, phản ánh chất lượng và mức độ thu hút của các chương trình.",
+        "Biểu đồ này thể hiện tổng số lớp học theo mã khóa học, giúp hiểu rõ hơn về sự phân bổ và tình trạng của các khóa học trong hệ thống.",
+        "Biểu đồ này trình bày số lượng sinh viên đang theo học cho từng khóa học, giúp theo dõi mức độ quan tâm của sinh viên đến các khóa học khác nhau."
+    ],
+    "dashboard_name": "Tổng Hợp Thông Tin Sinh Viên"
+}

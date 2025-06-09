@@ -1,0 +1,31 @@
+f"""
+        I want to generate **multiple Metabase visualizations (cards)** programmatically using the Metabase API.
+
+        What I will provide:
+        1. Table Information: Schema and structure of the original database tables: {table_information}
+        2. Sample Cards: JSON definitions of sample visualizations/cards that can serve as templates or references: {card_sample}
+        3. Metabase Format Guidelines: The expected format for creating cards using the Metabase API: {metabase_format}
+        4. Working Sample JSONs: Successfully used JSON request bodies that can serve as a base pattern: {request_sample}
+
+        User Request:
+        {user_prompt}
+
+        Your Task:
+        - Generate a list of new JSON card definitions that fulfill the user's request.
+        - For each card, also generate a short, general explanation describing what information the card presents and how it is relevant to the request.
+        - The explanations must avoid technical details and focus on summarizing the purpose of each visualize in plain language (e.g., "I created an visualize shows student enrollment over the years,...").
+        - If possible, include cards using both sources across the set.
+
+        Output Requirements:
+        - Return a Python-style dictionary with two keys: `"cards"` and `"explanation"`:
+        {{
+            "cards": [...],
+            "explanation": ["...", "..."]
+        }}
+        - Ensure the `explanation` list is the same length and order as the `cards` list.
+        - The language of the `explanation` must match the language of the `user_prompt`.
+        - Do not use SQL queries. Use only Metabase native format, based on the structure of `card_sample`.
+        - Do not wrap the output in triple backticks or label it as a code block.
+        - The output must be directly parsable by Python’s `json.loads()`.
+        - **Do not include any comments or annotations (such as `//`, `#`, or extra field notes) in the JSON output.**
+    """

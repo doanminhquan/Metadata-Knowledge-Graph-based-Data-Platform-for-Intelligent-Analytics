@@ -1,0 +1,142 @@
+{
+    "cards": [
+        {
+            "name": "Total Students by Class Code",
+            "description": "Displays the total number of students by class code, highlighting variations between different classes.",
+            "collection_id": 2,
+            "display": "bar",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 116]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "bar",
+                    "x-axis": "class_code",
+                    "y-axis": "count"
+                }
+            }
+        },
+        {
+            "name": "Students Enrolled by Year Start",
+            "description": "Illustrates the total number of students enrolled grouped by their year of entry.",
+            "collection_id": 2,
+            "display": "bar",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 115]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "bar",
+                    "x-axis": "year_start",
+                    "y-axis": "count"
+                }
+            }
+        },
+        {
+            "name": "Student Enrollment Trends",
+            "description": "Shows student enrollment trends over the years, providing insights into growth patterns.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 115]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "year",
+                    "y-axis": "count"
+                }
+            }
+        },
+        {
+            "name": "Graduation Rates by Program",
+            "description": "Displays the number of graduates by program, allowing for comparison of program effectiveness.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 17,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 104]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "term_code",
+                    "y-axis": "count"
+                }
+            }
+        },
+        {
+            "name": "Student Performance by Class",
+            "description": "Analyzes student scores across different classes, providing insight into class performance variations.",
+            "collection_id": 2,
+            "display": "bar",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 9,
+                    "aggregation": [
+                        ["avg"]
+                    ],
+                    "breakout": [
+                        ["field", 116]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "bar",
+                    "x-axis": "class_code",
+                    "y-axis": "average score"
+                }
+            }
+        }
+    ],
+    "explanation": [
+        "Total Students by Class Code - Displays the total number of students by class code, highlighting variations between different classes.",
+        "Students Enrolled by Year Start - Illustrates the total number of students enrolled grouped by their year of entry.",
+        "Student Enrollment Trends - Shows student enrollment trends over the years, providing insights into growth patterns.",
+        "Graduation Rates by Program - Displays the number of graduates by program, allowing for comparison of program effectiveness.",
+        "Student Performance by Class - Analyzes student scores across different classes, providing insight into class performance variations."
+    ],
+    "dashboard_name": "Student Enrollment and Performance Overview"
+}

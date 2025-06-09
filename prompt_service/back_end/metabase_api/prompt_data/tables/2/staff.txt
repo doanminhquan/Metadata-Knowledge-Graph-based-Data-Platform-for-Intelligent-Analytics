@@ -1,0 +1,28 @@
+{
+  "table_name": "staff",
+  "table_id": 20,
+  "db_id": "2",
+  "fields": [
+    {
+      "name": "staff_code",
+      "display_name": "Staff Code",
+      "base_type": "type/Text",
+      "semantic_type": "type/Category",
+      "id": 134
+    },
+    {
+      "name": "staff_name",
+      "display_name": "Staff Name",
+      "base_type": "type/Text",
+      "semantic_type": "type/Category",
+      "id": 133
+    },
+    {
+      "name": "id",
+      "display_name": "ID",
+      "base_type": "type/Text",
+      "semantic_type": "type/PK",
+      "id": 129
+    }
+  ]
+}

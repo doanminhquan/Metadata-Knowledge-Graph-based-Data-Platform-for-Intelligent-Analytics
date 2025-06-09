@@ -1,0 +1,171 @@
+{
+  "type": "record",
+  "Aspect": {
+    "name": "mlTrainingRunProperties"
+  },
+  "name": "MLTrainingRunProperties",
+  "namespace": "com.linkedin.pegasus2avro.ml.metadata",
+  "fields": [
+    {
+      "Searchable": {
+        "/*": {
+          "fieldType": "TEXT",
+          "queryByDefault": true
+        }
+      },
+      "type": {
+        "type": "map",
+        "values": "string"
+      },
+      "name": "customProperties",
+      "default": {},
+      "doc": "Custom property bag."
+    },
+    {
+      "Searchable": {
+        "fieldType": "KEYWORD"
+      },
+      "java": {
+        "class": "com.linkedin.pegasus2avro.common.url.Url",
+        "coercerClass": "com.linkedin.pegasus2avro.common.url.UrlCoercer"
+      },
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "externalUrl",
+      "default": null,
+      "doc": "URL where the reference exist"
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "id",
+      "default": null,
+      "doc": "Run Id of the ML Training Run"
+    },
+    {
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "name": "outputUrls",
+      "default": null,
+      "doc": "List of URLs for the Outputs of the ML Training Run"
+    },
+    {
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": {
+            "type": "record",
+            "Aspect": {
+              "name": "mlHyperParam"
+            },
+            "name": "MLHyperParam",
+            "namespace": "com.linkedin.pegasus2avro.ml.metadata",
+            "fields": [
+              {
+                "type": "string",
+                "name": "name",
+                "doc": "Name of the MLHyperParam"
+              },
+              {
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "name": "description",
+                "default": null,
+                "doc": "Documentation of the MLHyperParam"
+              },
+              {
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "name": "value",
+                "default": null,
+                "doc": "The value of the MLHyperParam"
+              },
+              {
+                "type": [
+                  "null",
+                  "long"
+                ],
+                "name": "createdAt",
+                "default": null,
+                "doc": "Date when the MLHyperParam was developed"
+              }
+            ],
+            "doc": "Properties associated with an ML Hyper Param"
+          }
+        }
+      ],
+      "name": "hyperParams",
+      "default": null,
+      "doc": "Hyperparameters of the ML Training Run"
+    },
+    {
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": {
+            "type": "record",
+            "Aspect": {
+              "name": "mlMetric"
+            },
+            "name": "MLMetric",
+            "namespace": "com.linkedin.pegasus2avro.ml.metadata",
+            "fields": [
+              {
+                "type": "string",
+                "name": "name",
+                "doc": "Name of the mlMetric"
+              },
+              {
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "name": "description",
+                "default": null,
+                "doc": "Documentation of the mlMetric"
+              },
+              {
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "name": "value",
+                "default": null,
+                "doc": "The value of the mlMetric"
+              },
+              {
+                "type": [
+                  "null",
+                  "long"
+                ],
+                "name": "createdAt",
+                "default": null,
+                "doc": "Date when the mlMetric was developed"
+              }
+            ],
+            "doc": "Properties associated with an ML Metric"
+          }
+        }
+      ],
+      "name": "trainingMetrics",
+      "default": null,
+      "doc": "Metrics of the ML Training Run"
+    }
+  ],
+  "doc": "The inputs and outputs of this training run"
+}

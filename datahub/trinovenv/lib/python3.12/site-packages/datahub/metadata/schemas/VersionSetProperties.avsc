@@ -1,0 +1,54 @@
+{
+  "type": "record",
+  "Aspect": {
+    "name": "versionSetProperties"
+  },
+  "name": "VersionSetProperties",
+  "namespace": "com.linkedin.pegasus2avro.versionset",
+  "fields": [
+    {
+      "Searchable": {
+        "/*": {
+          "fieldType": "TEXT",
+          "queryByDefault": true
+        }
+      },
+      "type": {
+        "type": "map",
+        "values": "string"
+      },
+      "name": "customProperties",
+      "default": {},
+      "doc": "Custom property bag."
+    },
+    {
+      "Searchable": {
+        "queryByDefault": "false"
+      },
+      "java": {
+        "class": "com.linkedin.pegasus2avro.common.urn.Urn"
+      },
+      "type": "string",
+      "name": "latest",
+      "doc": "The latest versioned entity linked to in this version set",
+      "Urn": "Urn"
+    },
+    {
+      "type": {
+        "type": "enum",
+        "symbolDocs": {
+          "ALPHANUMERIC_GENERATED_BY_DATAHUB": "String managed by DataHub. Currently, an 8 character alphabetical string.",
+          "LEXICOGRAPHIC_STRING": "String sorted lexicographically."
+        },
+        "name": "VersioningScheme",
+        "namespace": "com.linkedin.pegasus2avro.versionset",
+        "symbols": [
+          "LEXICOGRAPHIC_STRING",
+          "ALPHANUMERIC_GENERATED_BY_DATAHUB"
+        ]
+      },
+      "name": "versioningScheme",
+      "doc": "What versioning scheme is being utilized for the versioned entities sort criterion. Static once set"
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import count
+from pyspark.sql.functions import countDistinct
+from pyspark.sql.functions import avg, col, unbase64, udf, round
+from pyspark.sql.types import DoubleType
+from pyspark.sql import Row
+import struct   
+import base64
+
+# Order:
+#   Spark extra configs
+#   Hudi
+#   MinIO/S3
+#   DataHub
+def configure_spark_with_hudi_minio():
+    spark = (SparkSession.builder
+        .appName("Spark: Write to Gold Bucket")
+        .config("spark.jars.packages", "org.apache.hudi:hudi-spark3-bundle_2.12:0.15.0,io.acryl:acryl-spark-lineage:0.2.17")
+        .config("spark.driver.memory", "4g")
+        .config("spark.executor.memory", "4g")
+        .config("spark.default.parallelism", "100")
+        .config("spark.sql.shuffle.partitions", "100")
+        .config("spark.sql.hive.metastore.version", "2.3.9")
+        .config("spark.sql.warehouse.dir", "s3a://warehouse/spark-warehouse")
+        .config("spark.sql.hive.convertMetastoreParquet", "false")
+        .config("spark.local.dir", "/dis/tmp")
+
+        .config("spark.serializer", "org.apache.spark.serializer.KryoSerializer")
+        .config("spark.sql.extensions", "org.apache.spark.sql.hudi.HoodieSparkSessionExtension")
+        .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.hudi.catalog.HoodieCatalog")
+        .config("spark.kryo.registrator", "org.apache.spark.HoodieSparkKryoRegistrar")
+
+        .config("fs.s3a.impl", "org.apache.hadoop.fs.s3a.S3AFileSystem")
+        .config("fs.s3a.aws.credentials.provider", "org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider")
+        .config("spark.hadoop.fs.s3a.aws.credentials.provider.impl.software.amazon.awssdk.auth.credentials.AwsCredentialsProvider.disabled", "true")
+        .config("spark.hadoop.fs.s3a.endpoint", "http://localhost:9008")
+        .config("spark.hadoop.fs.s3a.access.key", "admin")  
+        .config("spark.hadoop.fs.s3a.secret.key", "password") 
+        .config("spark.hadoop.fs.s3a.path.style.access", "true")
+        .config("spark.hadoop.fs.s3a.impl", "org.apache.hadoop.fs.s3a.S3AFileSystem")
+        .config("spark.hadoop.fs.s3a.connection.ssl.enabled", "false")
+        .config("spark.hadoop.fs.s3a.aws.credentials.provider", "org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider")
+        .config("spark.hadoop.fs.s3a.committer.name", "directory")
+
+        .config("spark.extraListeners","datahub.spark.DatahubSparkListener") 
+        .config("spark.datahub.rest.server","http://localhost:22691")
+
+        .enableHiveSupport()
+        .getOrCreate()
+    )
+
+    return spark
+
+def write_gold_data(spark_session, folder_name, data, primary_field):
+
+    database_name = "gold_bucket"
+    spark_session.sql(f"CREATE DATABASE IF NOT EXISTS {database_name}")
+
+    hudi_options = {
+        'hoodie.table.name': folder_name,
+        'hoodie.datasource.write.recordkey.field': primary_field,
+        'hoodie.datasource.write.partitionpath.field': '',
+        'hoodie.datasource.write.table.name': folder_name,
+        'hoodie.datasource.write.operation': 'upsert',
+        'hoodie.datasource.write.precombine.field': primary_field,
+        "hoodie.datasource.write.table.type": "COPY_ON_WRITE",
+        "hoodie.datasource.hive_sync.enable": "true",
+        "hoodie.datasource.hive_sync.mode": "hms",
+        "hoodie.datasource.hive_sync.jdbcurl": "thrift://localhost:9083",
+        'hoodie.datasource.hive_sync.database': database_name,
+        'hoodie.datasource.hive_sync.table': folder_name,
+        'hoodie.datasource.hive_sync.support_timestamp': 'true',
+    }
+
+    data_path = f"s3a://warehouse/gold_bucket/{folder_name}"
+    data.write.format("hudi").options(**hudi_options).mode("overwrite").save(data_path)
+
+def summary_counts(students, staff, course, classes, program, major):
+    summary = {
+        "summary_id": 1,
+        "total_students": students.select(countDistinct("student_code")).first()[0],
+        "total_staff": staff.select(countDistinct("staff_code")).first()[0],
+        "total_courses": course.select(countDistinct("course_code")).first()[0],
+        "total_classes": classes.select(countDistinct("class_code")).first()[0],
+        "total_programs": program.select(countDistinct("program_code")).first()[0],
+        "total_majors": major.select(countDistinct("major_code")).first()[0]
+    }
+    return summary
+
+def students_by_class(students):
+    return students.groupBy("class_code").agg(count("*").alias("total_students"))
+
+def courses_per_program(program_course):
+    return program_course.groupBy("program_code").agg(countDistinct("course_code").alias("total_courses"))
+
+def graduates_by_term(graduate):
+    return graduate.groupBy("term_code").agg(countDistinct("student_code").alias("total_graduates"))
+
+SCALE = 2
+
+def decode_decimal(binary_val):
+    if binary_val is not None:
+        unscaled = int.from_bytes(binary_val, byteorder='big', signed=False)
+        return unscaled / (10 ** SCALE)
+    return None
+
+decode_decimal_udf = udf(decode_decimal, DoubleType())
+
+def avg_score_per_term(point):
+    return point.withColumn("binary_point", unbase64("point_4")) \
+                .withColumn("decoded_point", decode_decimal_udf("binary_point")) \
+                .groupBy("term_code") \
+                .agg(round(avg("decoded_point"), 2).alias("term_avg_score"))
+
+def teaching_load(course_group_detail):
+    return course_group_detail.groupBy("staff_code").agg(countDistinct("course_group_code").alias("total_groups_taught"))
+
+def graduation_rate(students, graduate):
+    total_students = students.select(countDistinct("student_code")).first()[0]
+    graduated_students = graduate.select(countDistinct("student_code")).first()[0]
+    return {"graduation_rate": graduated_students / total_students if total_students > 0 else 0}
+
+if __name__ == "__main__":
+    spark_session = configure_spark_with_hudi_minio()
+
+    classes = spark_session.read.format("hudi").load("s3a://warehouse/curated_bucket/school/class")
+    course = spark_session.read.format("hudi").load("s3a://warehouse/curated_bucket/school/course")
+    course_group = spark_session.read.format("hudi").load("s3a://warehouse/curated_bucket/school/course_group")
+    course_group_detail = spark_session.read.format("hudi").load("s3a://warehouse/curated_bucket/school/course_group_detail")
+    course_section = spark_session.read.format("hudi").load("s3a://warehouse/curated_bucket/school/course_section")
+    enrollment = spark_session.read.format("hudi").load("s3a://warehouse/curated_bucket/school/enrollment")
+    graduate = spark_session.read.format("hudi").load("s3a://warehouse/curated_bucket/school/graduate")
+    major = spark_session.read.format("hudi").load("s3a://warehouse/curated_bucket/school/major")
+    point = spark_session.read.format("hudi").load("s3a://warehouse/curated_bucket/school/point")
+    program = spark_session.read.format("hudi").load("s3a://warehouse/curated_bucket/school/program")
+    program_course = spark_session.read.format("hudi").load("s3a://warehouse/curated_bucket/school/program_course")
+    room = spark_session.read.format("hudi").load("s3a://warehouse/curated_bucket/school/room")
+    staff = spark_session.read.format("hudi").load("s3a://warehouse/curated_bucket/school/staff")
+    student = spark_session.read.format("hudi").load("s3a://warehouse/curated_bucket/school/student")
+    term = spark_session.read.format("hudi").load("s3a://warehouse/curated_bucket/school/term")
+
+    folder_name = "summary_counts"
+    data = summary_counts(students=student, staff=staff, course=course, classes=classes, program=program, major=major)
+    data = spark_session.createDataFrame([Row(**data)])
+    data.show()
+    write_gold_data(spark_session=spark_session, folder_name=folder_name, data=data, primary_field="summary_id")
+    print(f"Data Written to gold bucket with content {folder_name} successfully")
+
+    folder_name = "students_by_class"
+    data = students_by_class(students=student)
+    data.show()
+    write_gold_data(spark_session=spark_session, folder_name=folder_name, data=data, primary_field="class_code")
+    print(f"Data Written to gold bucket with content {folder_name} successfully")
+
+    folder_name = "courses_per_program"
+    data = courses_per_program(program_course=program_course)
+    data.show()
+    write_gold_data(spark_session=spark_session, folder_name=folder_name, data=data, primary_field="program_code")
+    print(f"Data Written to gold bucket with content {folder_name} successfully")
+    folder_name = "graduates_by_term"
+
+    data = graduates_by_term(graduate=graduate)
+    data.show()
+    write_gold_data(spark_session=spark_session, folder_name=folder_name, data=data, primary_field="term_code")
+    print(f"Data Written to gold bucket with content {folder_name} successfully")
+
+    folder_name = "avg_score_per_term"
+    data = avg_score_per_term(point=point)
+    data.show()
+    write_gold_data(spark_session=spark_session, folder_name=folder_name, data=data, primary_field="term_code")
+    print(f"Data Written to gold bucket with content {folder_name} successfully")
+
+    folder_name = "teaching_load"
+    data = teaching_load(course_group_detail=course_group_detail)
+    data.show()
+    write_gold_data(spark_session=spark_session, folder_name=folder_name, data=data, primary_field="staff_code")
+    print(f"Data Written to gold bucket with content {folder_name} successfully")
+
+    folder_name = "graduation_rate"
+    data = graduation_rate(students=student, graduate=graduate)
+    data = spark_session.createDataFrame([Row(**data)])
+    data.show()
+    write_gold_data(spark_session=spark_session, folder_name=folder_name, data=data, primary_field="graduation_rate")
+    print(f"Data Written to gold bucket with content {folder_name} successfully")
+
+    spark_session.stop()
+
+

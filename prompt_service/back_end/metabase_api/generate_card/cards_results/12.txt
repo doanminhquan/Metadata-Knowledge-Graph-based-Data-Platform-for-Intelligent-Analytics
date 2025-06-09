@@ -1,0 +1,96 @@
+{
+    "cards": [
+        {
+            "name": "Student Enrollment Trend for Classes",
+            "description": "Displays the trend of student enrollment over the years, showing how many students have enrolled in different classes each year.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 115]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "year",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": None,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Yearly Student Enrollment Overview",
+            "description": "Provides a comprehensive look at the yearly student enrollments, helping to identify patterns or changes in enrollment trends across different years.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 15,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 81]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "year_start",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": None,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Enrollment Trends by Class Code",
+            "description": "Illustrates the fluctuation in student enrollment numbers based on class codes over the years, providing insight into which classes are gaining or losing interest.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 116]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "class_code",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": None,
+            "parameters": [],
+            "param_values": []
+        }
+    ],
+    "explanation": [
+        "This card shows the trend of student enrollment for classes, helping us to see how many students enrolled each year.",
+        "This card provides a yearly overview of student enrollments, which is essential for understanding shifts in enrollment patterns.",
+        "This card highlights enrollment trends based on class codes, offering insights into which classes are becoming more or less popular over time."
+    ]
+}

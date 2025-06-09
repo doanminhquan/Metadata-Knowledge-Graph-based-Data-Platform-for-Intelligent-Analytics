@@ -1,0 +1,153 @@
+{
+  "type": "record",
+  "Aspect": {
+    "name": "testResults"
+  },
+  "name": "TestResults",
+  "namespace": "com.linkedin.pegasus2avro.test",
+  "fields": [
+    {
+      "Relationship": {
+        "/*/test": {
+          "entityTypes": [
+            "test"
+          ],
+          "name": "IsFailing"
+        }
+      },
+      "Searchable": {
+        "/*/test": {
+          "fieldName": "failingTests",
+          "fieldType": "URN",
+          "hasValuesFieldName": "hasFailingTests",
+          "queryByDefault": false
+        }
+      },
+      "type": {
+        "type": "array",
+        "items": {
+          "type": "record",
+          "name": "TestResult",
+          "namespace": "com.linkedin.pegasus2avro.test",
+          "fields": [
+            {
+              "java": {
+                "class": "com.linkedin.pegasus2avro.common.urn.Urn"
+              },
+              "type": "string",
+              "name": "test",
+              "doc": "The urn of the test",
+              "Urn": "Urn"
+            },
+            {
+              "type": {
+                "type": "enum",
+                "symbolDocs": {
+                  "FAILURE": " The Test Failed",
+                  "SUCCESS": " The Test Succeeded"
+                },
+                "name": "TestResultType",
+                "namespace": "com.linkedin.pegasus2avro.test",
+                "symbols": [
+                  "SUCCESS",
+                  "FAILURE"
+                ]
+              },
+              "name": "type",
+              "doc": "The type of the result"
+            },
+            {
+              "type": [
+                "null",
+                "string"
+              ],
+              "name": "testDefinitionMd5",
+              "default": null,
+              "doc": "The md5 of the test definition that was used to compute this result.\nSee TestInfo.testDefinition.md5 for more information."
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "record",
+                  "name": "AuditStamp",
+                  "namespace": "com.linkedin.pegasus2avro.common",
+                  "fields": [
+                    {
+                      "type": "long",
+                      "name": "time",
+                      "doc": "When did the resource/association/sub-resource move into the specific lifecycle stage represented by this AuditEvent."
+                    },
+                    {
+                      "java": {
+                        "class": "com.linkedin.pegasus2avro.common.urn.Urn"
+                      },
+                      "type": "string",
+                      "name": "actor",
+                      "doc": "The entity (e.g. a member URN) which will be credited for moving the resource/association/sub-resource into the specific lifecycle stage. It is also the one used to authorize the change.",
+                      "Urn": "Urn"
+                    },
+                    {
+                      "java": {
+                        "class": "com.linkedin.pegasus2avro.common.urn.Urn"
+                      },
+                      "type": [
+                        "null",
+                        "string"
+                      ],
+                      "name": "impersonator",
+                      "default": null,
+                      "doc": "The entity (e.g. a service URN) which performs the change on behalf of the Actor and must be authorized to act as the Actor.",
+                      "Urn": "Urn"
+                    },
+                    {
+                      "type": [
+                        "null",
+                        "string"
+                      ],
+                      "name": "message",
+                      "default": null,
+                      "doc": "Additional context around how DataHub was informed of the particular change. For example: was the change created by an automated process, or manually."
+                    }
+                  ],
+                  "doc": "Data captured on a resource/association/sub-resource level giving insight into when that resource/association/sub-resource moved into a particular lifecycle stage, and who acted to move it into that specific lifecycle stage."
+                }
+              ],
+              "name": "lastComputed",
+              "default": null,
+              "doc": "The audit stamp of when the result was computed, including the actor who computed it."
+            }
+          ],
+          "doc": "Information about a Test Result"
+        }
+      },
+      "name": "failing",
+      "doc": "Results that are failing"
+    },
+    {
+      "Relationship": {
+        "/*/test": {
+          "entityTypes": [
+            "test"
+          ],
+          "name": "IsPassing"
+        }
+      },
+      "Searchable": {
+        "/*/test": {
+          "fieldName": "passingTests",
+          "fieldType": "URN",
+          "hasValuesFieldName": "hasPassingTests",
+          "queryByDefault": false
+        }
+      },
+      "type": {
+        "type": "array",
+        "items": "com.linkedin.pegasus2avro.test.TestResult"
+      },
+      "name": "passing",
+      "doc": "Results that are passing"
+    }
+  ],
+  "doc": "Information about a Test Result"
+}

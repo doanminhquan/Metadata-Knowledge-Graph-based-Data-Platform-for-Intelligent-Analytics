@@ -1,0 +1,49 @@
+{
+  "table_name": "graduate",
+  "table_id": 17,
+  "db_id": "2",
+  "fields": [
+    {
+      "name": "rank",
+      "display_name": "Rank",
+      "base_type": "type/Text",
+      "semantic_type": "type/Category",
+      "id": 105
+    },
+    {
+      "name": "program_code",
+      "display_name": "Program Code",
+      "base_type": "type/Text",
+      "semantic_type": "type/Category",
+      "id": 108
+    },
+    {
+      "name": "id",
+      "display_name": "ID",
+      "base_type": "type/Text",
+      "semantic_type": "type/PK",
+      "id": 110
+    },
+    {
+      "name": "term_code",
+      "display_name": "Term Code",
+      "base_type": "type/Text",
+      "semantic_type": "type/Category",
+      "id": 104
+    },
+    {
+      "name": "student_code",
+      "display_name": "Student Code",
+      "base_type": "type/Text",
+      "semantic_type": "type/Category",
+      "id": 106
+    },
+    {
+      "name": "avg_score",
+      "display_name": "Avg Score",
+      "base_type": "type/Text",
+      "semantic_type": "type/Category",
+      "id": 109
+    }
+  ]
+}

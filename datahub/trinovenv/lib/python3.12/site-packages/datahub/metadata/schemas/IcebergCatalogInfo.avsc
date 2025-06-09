@@ -1,0 +1,28 @@
+{
+  "type": "record",
+  "Aspect": {
+    "name": "icebergCatalogInfo"
+  },
+  "name": "IcebergCatalogInfo",
+  "namespace": "com.linkedin.pegasus2avro.dataset",
+  "fields": [
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "metadataPointer",
+      "default": null,
+      "doc": "When Datahub is the REST Catalog for an Iceberg Table, stores the current metadata pointer.\nIf the Iceberg table is managed by an external catalog, the metadata pointer is not set."
+    },
+    {
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "name": "view",
+      "default": null
+    }
+  ],
+  "doc": "Iceberg Catalog metadata associated with an Iceberg table/view"
+}

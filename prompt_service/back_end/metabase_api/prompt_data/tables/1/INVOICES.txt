@@ -1,0 +1,49 @@
+{
+  "table_name": "INVOICES",
+  "table_id": 8,
+  "db_id": "1",
+  "fields": [
+    {
+      "name": "ID",
+      "display_name": "ID",
+      "base_type": "type/BigInteger",
+      "semantic_type": "type/PK",
+      "id": 68
+    },
+    {
+      "name": "ACCOUNT_ID",
+      "display_name": "Account ID",
+      "base_type": "type/BigInteger",
+      "semantic_type": "type/FK",
+      "id": 66
+    },
+    {
+      "name": "PAYMENT",
+      "display_name": "Payment",
+      "base_type": "type/Float",
+      "semantic_type": null,
+      "id": 64
+    },
+    {
+      "name": "EXPECTED_INVOICE",
+      "display_name": "Expected Invoice",
+      "base_type": "type/Boolean",
+      "semantic_type": "type/Category",
+      "id": 70
+    },
+    {
+      "name": "PLAN",
+      "display_name": "Plan",
+      "base_type": "type/Text",
+      "semantic_type": "type/Category",
+      "id": 46
+    },
+    {
+      "name": "DATE_RECEIVED",
+      "display_name": "Date Received",
+      "base_type": "type/DateTime",
+      "semantic_type": null,
+      "id": 71
+    }
+  ]
+}

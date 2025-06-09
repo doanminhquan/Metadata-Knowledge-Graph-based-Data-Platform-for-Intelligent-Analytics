@@ -1,0 +1,35 @@
+{
+  "table_name": "program_course",
+  "table_id": 13,
+  "db_id": "2",
+  "fields": [
+    {
+      "name": "type",
+      "display_name": "Type",
+      "base_type": "type/Text",
+      "semantic_type": "type/Category",
+      "id": 196
+    },
+    {
+      "name": "program_code",
+      "display_name": "Program Code",
+      "base_type": "type/Text",
+      "semantic_type": "type/Category",
+      "id": 194
+    },
+    {
+      "name": "id",
+      "display_name": "ID",
+      "base_type": "type/Text",
+      "semantic_type": "type/PK",
+      "id": 192
+    },
+    {
+      "name": "course_code",
+      "display_name": "Course Code",
+      "base_type": "type/Text",
+      "semantic_type": "type/Category",
+      "id": 191
+    }
+  ]
+}

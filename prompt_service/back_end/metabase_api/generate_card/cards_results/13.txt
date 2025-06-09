@@ -1,0 +1,66 @@
+{
+    "cards": [
+        {
+            "name": "Student Enrollment Trend by Year",
+            "description": "Displays the trend of student enrollments grouped by year.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 115]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "year",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": None,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Trends in Student Enrollment Over the Years",
+            "description": "Shows the annual trend of student enrollments via a clear line graph.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 81]  // Year start field
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "year_start",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": None,
+            "parameters": [],
+            "param_values": []
+        }
+    ],
+    "explanation": [
+        "This card tracks the number of students enrolled each year, providing a visual representation of how student enrollment has changed over time. It's useful for understanding trends in school capacity and educational demand.",
+        "This card emphasizes the trend of student enrollments from initial years, “year_start,” allowing stakeholders to analyze yearly variations. It helps in assessing the growth or decline in enrollment, which can inform strategic decisions for future program planning."
+    ]
+}

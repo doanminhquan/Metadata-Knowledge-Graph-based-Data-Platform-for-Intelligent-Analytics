@@ -1,0 +1,94 @@
+{
+    "cards": [
+        {
+            "name": "Student Enrollment Trend by Year",
+            "description": "Displays the total number of students enrolled each year.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 13]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "year",
+                    "y-axis": "count"
+                }
+            },
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "New Students Enrolled Over Time",
+            "description": "Shows new student enrollment numbers compared year after year.",
+            "collection_id": 2,
+            "display": "bar",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 13]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "bar",
+                    "x-axis": "year",
+                    "y-axis": "count"
+                }
+            },
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Year-over-Year Student Growth",
+            "description": "Illustrates the growth of student enrollment from year to year.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 13]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "year",
+                    "y-axis": "count"
+                }
+            },
+            "parameters": [],
+            "param_values": []
+        }
+    ],
+    "explanation": [
+        "This chart shows student enrollment over the years, providing a visual trend of how many students have enrolled in each academic year.",
+        "This bar chart displays the number of new students enrolled each year, highlighting yearly increments and helping assess enrollment strategy effectiveness.",
+        "This line graph represents the growth of student enrollment from one year to the next, offering insights into overall trends in education engagement."
+    ],
+    "dashboard_name": "Student Enrollment Overview"
+}

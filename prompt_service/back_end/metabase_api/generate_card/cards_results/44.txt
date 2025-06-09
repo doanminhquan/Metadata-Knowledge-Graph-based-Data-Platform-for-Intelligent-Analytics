@@ -1,0 +1,160 @@
+{
+    "cards": [
+        {
+            "name": "Total Students by Class Code",
+            "description": "This card displays the total number of students enrolled in each class, giving insight into class sizes and popularity.",
+            "collection_id": 2,
+            "display": "bar",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 116]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "bar",
+                    "x-axis": "class_code",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Students Enrolled by Year Start",
+            "description": "This visualization shows how many students are starting each year, helping to track trends in enrollment.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 15,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 81]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "year_start",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Annual Graduates by Program Code",
+            "description": "This card illustrates the number of graduates each year based on their program code, providing a clear view of graduation trends.",
+            "collection_id": 2,
+            "display": "bar",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 17,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 104]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "bar",
+                    "x-axis": "term_code",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Enrollment Trends Over Years",
+            "description": "This chart shows how the total number of students varies over the years, allowing for observation of growth or decline in enrollment numbers.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 115]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "year",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Total Revenue by State",
+            "description": "This visualization displays the total revenue generated from customers in each state, helping to identify high-performing regions.",
+            "collection_id": 2,
+            "display": "map",
+            "dataset_query": {
+                "type": "query",
+                "database": 1,
+                "query": {
+                    "aggregation": [
+                        ["sum", ["field", "TOTAL", {"base-type": "type/Float"}]]
+                    ],
+                    "breakout": [
+                        ["field", "STATE", {"base-type": "type/Text"}]
+                    ],
+                    "source-table": "card__1",
+                    "aggregation-idents": {
+                        "0": "aggregation_jjO5LcBp8qNILJFiYZoVt@0__0"
+                    }
+                }
+            },
+            "visualization_settings": {
+                "map": {
+                    "colors": ["rgb(229, 229, 241)", "rgb(192, 192, 218)", "rgb(155, 155, 194)", "rgb(118, 119, 171)", "hsl(239, 29.5%, 39.3%)"],
+                    "region": "us_states",
+                    "type": "region"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        }
+    ],
+    "explanation": [
+        "This card displays the total number of students enrolled in each class, giving insight into class sizes and popularity.",
+        "This visualization shows how many students are starting each year, helping to track trends in enrollment.",
+        "This card illustrates the number of graduates each year based on their program code, providing a clear view of graduation trends.",
+        "This chart shows how the total number of students varies over the years, allowing for observation of growth or decline in enrollment numbers.",
+        "This visualization displays the total revenue generated from customers in each state, helping to identify high-performing regions."
+    ],
+    "dashboard_name": "Student Enrollment and Financial Analysis"
+}

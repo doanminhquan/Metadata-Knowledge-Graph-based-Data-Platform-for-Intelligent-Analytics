@@ -1,0 +1,555 @@
+[
+  {
+    "table_name": "class",
+    "table_id": 15,
+    "db_id": "2",
+    "fields": [
+      {
+        "name": "name",
+        "display_name": "Name",
+        "base_type": "type/Text",
+        "semantic_type": "type/Name",
+        "id": 84
+      },
+      {
+        "name": "year_start",
+        "display_name": "Year Start",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 81
+      },
+      {
+        "name": "program_code",
+        "display_name": "Program Code",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 90
+      },
+      {
+        "name": "class_code",
+        "display_name": "Class Code",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 88
+      },
+      {
+        "name": "id",
+        "display_name": "ID",
+        "base_type": "type/Text",
+        "semantic_type": "type/PK",
+        "id": 82
+      }
+    ]
+  },
+  {
+    "table_name": "course",
+    "table_id": 10,
+    "db_id": "2",
+    "fields": [
+      {
+        "name": "eng_name",
+        "display_name": "Eng Name",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 170
+      },
+      {
+        "name": "name",
+        "display_name": "Name",
+        "base_type": "type/Text",
+        "semantic_type": "type/Name",
+        "id": 169
+      },
+      {
+        "name": "course_code",
+        "display_name": "Course Code",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 173
+      },
+      {
+        "name": "id",
+        "display_name": "ID",
+        "base_type": "type/Text",
+        "semantic_type": "type/PK",
+        "id": 168
+      }
+    ]
+  },
+  {
+    "table_name": "course_group",
+    "table_id": 23,
+    "db_id": "2",
+    "fields": [
+      {
+        "name": "type",
+        "display_name": "Type",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 204
+      },
+      {
+        "name": "course_section_code",
+        "display_name": "Course Section Code",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 203
+      },
+      {
+        "name": "course_group_code",
+        "display_name": "Course Group Code",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 205
+      },
+      {
+        "name": "id",
+        "display_name": "ID",
+        "base_type": "type/Text",
+        "semantic_type": "type/PK",
+        "id": 201
+      },
+      {
+        "name": "group_order",
+        "display_name": "Group Order",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 209
+      },
+      {
+        "name": "student_amount",
+        "display_name": "Student Amount",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 202
+      }
+    ]
+  },
+  {
+    "table_name": "course_group_detail",
+    "table_id": 21,
+    "db_id": "2",
+    "fields": [
+      {
+        "name": "session_end",
+        "display_name": "Session End",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 143
+      },
+      {
+        "name": "staff_code",
+        "display_name": "Staff Code",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 141
+      },
+      {
+        "name": "course_group_code",
+        "display_name": "Course Group Code",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 138
+      },
+      {
+        "name": "room_code",
+        "display_name": "Room Code",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 145
+      },
+      {
+        "name": "id",
+        "display_name": "ID",
+        "base_type": "type/Text",
+        "semantic_type": "type/PK",
+        "id": 136
+      },
+      {
+        "name": "session_start",
+        "display_name": "Session Start",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 144
+      },
+      {
+        "name": "weekday",
+        "display_name": "Weekday",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 146
+      }
+    ]
+  },
+  {
+    "table_name": "course_section",
+    "table_id": 14,
+    "db_id": "2",
+    "fields": [
+      {
+        "name": "term_code",
+        "display_name": "Term Code",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 74
+      },
+      {
+        "name": "course_section_code",
+        "display_name": "Course Section Code",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 79
+      },
+      {
+        "name": "id",
+        "display_name": "ID",
+        "base_type": "type/Text",
+        "semantic_type": "type/PK",
+        "id": 72
+      },
+      {
+        "name": "course_code",
+        "display_name": "Course Code",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 80
+      }
+    ]
+  },
+  {
+    "table_name": "enrollment",
+    "table_id": 19,
+    "db_id": "2",
+    "fields": [
+      {
+        "name": "student_code",
+        "display_name": "Student Code",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 120
+      },
+      {
+        "name": "id",
+        "display_name": "ID",
+        "base_type": "type/Text",
+        "semantic_type": "type/PK",
+        "id": 121
+      },
+      {
+        "name": "course_group_code",
+        "display_name": "Course Group Code",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 123
+      }
+    ]
+  },
+  {
+    "table_name": "graduate",
+    "table_id": 17,
+    "db_id": "2",
+    "fields": [
+      {
+        "name": "rank",
+        "display_name": "Rank",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 105
+      },
+      {
+        "name": "program_code",
+        "display_name": "Program Code",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 108
+      },
+      {
+        "name": "id",
+        "display_name": "ID",
+        "base_type": "type/Text",
+        "semantic_type": "type/PK",
+        "id": 110
+      },
+      {
+        "name": "term_code",
+        "display_name": "Term Code",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 104
+      },
+      {
+        "name": "student_code",
+        "display_name": "Student Code",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 106
+      },
+      {
+        "name": "avg_score",
+        "display_name": "Avg Score",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 109
+      }
+    ]
+  },
+  {
+    "table_name": "major",
+    "table_id": 22,
+    "db_id": "2",
+    "fields": [
+      {
+        "name": "major_code",
+        "display_name": "Major Code",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 153
+      },
+      {
+        "name": "id",
+        "display_name": "ID",
+        "base_type": "type/Text",
+        "semantic_type": "type/PK",
+        "id": 152
+      },
+      {
+        "name": "name",
+        "display_name": "Name",
+        "base_type": "type/Text",
+        "semantic_type": "type/Name",
+        "id": 147
+      }
+    ]
+  },
+  {
+    "table_name": "point",
+    "table_id": 9,
+    "db_id": "2",
+    "fields": [
+      {
+        "name": "point_10",
+        "display_name": "Point 10",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 164
+      },
+      {
+        "name": "course_section_code",
+        "display_name": "Course Section Code",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 160
+      },
+      {
+        "name": "point_4",
+        "display_name": "Point 4",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 158
+      },
+      {
+        "name": "id",
+        "display_name": "ID",
+        "base_type": "type/Text",
+        "semantic_type": "type/PK",
+        "id": 155
+      },
+      {
+        "name": "term_code",
+        "display_name": "Term Code",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 162
+      },
+      {
+        "name": "student_code",
+        "display_name": "Student Code",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 156
+      }
+    ]
+  },
+  {
+    "table_name": "program",
+    "table_id": 12,
+    "db_id": "2",
+    "fields": [
+      {
+        "name": "program_code",
+        "display_name": "Program Code",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 183
+      },
+      {
+        "name": "id",
+        "display_name": "ID",
+        "base_type": "type/Text",
+        "semantic_type": "type/PK",
+        "id": 185
+      },
+      {
+        "name": "name",
+        "display_name": "Name",
+        "base_type": "type/Text",
+        "semantic_type": "type/Name",
+        "id": 188
+      }
+    ]
+  },
+  {
+    "table_name": "program_course",
+    "table_id": 13,
+    "db_id": "2",
+    "fields": [
+      {
+        "name": "type",
+        "display_name": "Type",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 196
+      },
+      {
+        "name": "program_code",
+        "display_name": "Program Code",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 194
+      },
+      {
+        "name": "id",
+        "display_name": "ID",
+        "base_type": "type/Text",
+        "semantic_type": "type/PK",
+        "id": 192
+      },
+      {
+        "name": "course_code",
+        "display_name": "Course Code",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 191
+      }
+    ]
+  },
+  {
+    "table_name": "room",
+    "table_id": 16,
+    "db_id": "2",
+    "fields": [
+      {
+        "name": "room_code",
+        "display_name": "Room Code",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 93
+      },
+      {
+        "name": "capacity",
+        "display_name": "Capacity",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 95
+      },
+      {
+        "name": "id",
+        "display_name": "ID",
+        "base_type": "type/Text",
+        "semantic_type": "type/PK",
+        "id": 94
+      },
+      {
+        "name": "room_name",
+        "display_name": "Room Name",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 98
+      }
+    ]
+  },
+  {
+    "table_name": "staff",
+    "table_id": 20,
+    "db_id": "2",
+    "fields": [
+      {
+        "name": "staff_code",
+        "display_name": "Staff Code",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 134
+      },
+      {
+        "name": "staff_name",
+        "display_name": "Staff Name",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 133
+      },
+      {
+        "name": "id",
+        "display_name": "ID",
+        "base_type": "type/Text",
+        "semantic_type": "type/PK",
+        "id": 129
+      }
+    ]
+  },
+  {
+    "table_name": "student",
+    "table_id": 18,
+    "db_id": "2",
+    "fields": [
+      {
+        "name": "class_code",
+        "display_name": "Class Code",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 116
+      },
+      {
+        "name": "student_code",
+        "display_name": "Student Code",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 115
+      },
+      {
+        "name": "id",
+        "display_name": "ID",
+        "base_type": "type/Text",
+        "semantic_type": "type/PK",
+        "id": 112
+      }
+    ]
+  },
+  {
+    "table_name": "term",
+    "table_id": 11,
+    "db_id": "2",
+    "fields": [
+      {
+        "name": "term_code",
+        "display_name": "Term Code",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 180
+      },
+      {
+        "name": "term_name",
+        "display_name": "Term Name",
+        "base_type": "type/Text",
+        "semantic_type": "type/Category",
+        "id": 182
+      },
+      {
+        "name": "id",
+        "display_name": "ID",
+        "base_type": "type/Text",
+        "semantic_type": "type/PK",
+        "id": 175
+      }
+    ]
+  }
+]

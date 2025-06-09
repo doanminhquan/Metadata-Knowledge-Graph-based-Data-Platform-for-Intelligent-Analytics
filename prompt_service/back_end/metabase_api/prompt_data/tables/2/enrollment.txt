@@ -1,0 +1,28 @@
+{
+  "table_name": "enrollment",
+  "table_id": 19,
+  "db_id": "2",
+  "fields": [
+    {
+      "name": "student_code",
+      "display_name": "Student Code",
+      "base_type": "type/Text",
+      "semantic_type": "type/Category",
+      "id": 120
+    },
+    {
+      "name": "id",
+      "display_name": "ID",
+      "base_type": "type/Text",
+      "semantic_type": "type/PK",
+      "id": 121
+    },
+    {
+      "name": "course_group_code",
+      "display_name": "Course Group Code",
+      "base_type": "type/Text",
+      "semantic_type": "type/Category",
+      "id": 123
+    }
+  ]
+}

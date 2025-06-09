@@ -1,0 +1,29 @@
+{
+  "type": "record",
+  "Aspect": {
+    "name": "schemaFieldAliases"
+  },
+  "name": "SchemaFieldAliases",
+  "namespace": "com.linkedin.pegasus2avro.schemafield",
+  "fields": [
+    {
+      "Searchable": {
+        "/*": {
+          "fieldName": "schemaFieldAliases",
+          "fieldType": "URN",
+          "queryByDefault": false
+        }
+      },
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "name": "aliases",
+      "default": null,
+      "doc": "Used to store aliases"
+    }
+  ]
+}

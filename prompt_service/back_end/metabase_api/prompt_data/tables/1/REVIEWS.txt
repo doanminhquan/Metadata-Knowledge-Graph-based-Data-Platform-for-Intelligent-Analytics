@@ -1,0 +1,49 @@
+{
+  "table_name": "REVIEWS",
+  "table_id": 4,
+  "db_id": "1",
+  "fields": [
+    {
+      "name": "ID",
+      "display_name": "ID",
+      "base_type": "type/BigInteger",
+      "semantic_type": "type/PK",
+      "id": 59
+    },
+    {
+      "name": "PRODUCT_ID",
+      "display_name": "Product ID",
+      "base_type": "type/Integer",
+      "semantic_type": "type/FK",
+      "id": 65
+    },
+    {
+      "name": "REVIEWER",
+      "display_name": "Reviewer",
+      "base_type": "type/Text",
+      "semantic_type": null,
+      "id": 67
+    },
+    {
+      "name": "RATING",
+      "display_name": "Rating",
+      "base_type": "type/Integer",
+      "semantic_type": "type/Score",
+      "id": 19
+    },
+    {
+      "name": "BODY",
+      "display_name": "Body",
+      "base_type": "type/Text",
+      "semantic_type": "type/Description",
+      "id": 69
+    },
+    {
+      "name": "CREATED_AT",
+      "display_name": "Created At",
+      "base_type": "type/DateTime",
+      "semantic_type": "type/CreationTimestamp",
+      "id": 55
+    }
+  ]
+}

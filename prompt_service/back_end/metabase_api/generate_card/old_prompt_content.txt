@@ -1,0 +1,14 @@
+f"""
+I want to generate Metabase visualizations (cards) programmatically using the Metabase API.
+What I will provide:
+Table Information: Schema and structure of the tables available for visualization: {table_information}
+Sample Cards: JSON definitions of sample visualizations/cards that can serve as templates or references: {card_sample}
+Metabase Format Guidelines: The expected format for creating cards using the Metabase API: {metabase_format}
+A Working Sample JSON: A successfully used JSON request body that can serve as a base pattern: {request_sample}
+Your Task: Based on the inputs above, generate a new JSON card definition based on the following request: {user_query}
+Output in JSON format like the sample JSON request. Just output for me the JSON request body (no additional content like words or anything else).
+
+Some important notes:
+- null values in JSON should be replaced with None
+- true/false values should be replaced with True/False
+"""

@@ -1,0 +1,157 @@
+{
+    "cards": [
+        {
+            "name": "Total Students Enrolled by Class Code",
+            "description": "Displays the total number of students enrolled in each class, allowing for a quick overview of class popularity and participation.",
+            "collection_id": 2,
+            "display": "bar",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 116]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "bar",
+                    "x-axis": "class_code",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Average Score by Major",
+            "description": "Illustrates the average score achieved by students in each major, providing insight into academic performance across disciplines.",
+            "collection_id": 2,
+            "display": "bar",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 17,
+                    "aggregation": [
+                        ["avg", ["field", 109]]
+                    ],
+                    "breakout": [
+                        ["field", 108]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "bar",
+                    "x-axis": "program_code",
+                    "y-axis": "average"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Student Enrollment Trends Over Years",
+            "description": "Shows how student enrollment has changed over the years, helping to identify patterns of growth and decline in enrollment rates.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 81]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "year_start",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Expenses Related to Program Codes",
+            "description": "Displays the total expenses associated with each program code, offering insight into financial resource allocation.",
+            "collection_id": 2,
+            "display": "bar",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 12,
+                    "aggregation": [
+                        ["sum", ["field", 194]]
+                    ],
+                    "breakout": [
+                        ["field", 183]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "bar",
+                    "x-axis": "program_code",
+                    "y-axis": "total_expense"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Graduates by Year and Program",
+            "description": "Illustrates the number of graduates each year by program, providing a clear view of graduation trends and program effectiveness.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 17,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 104]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "term_code",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        }
+    ],
+    "explanation": [
+        "Displays the total number of students enrolled in each class, allowing for a quick overview of class popularity and participation.",
+        "Illustrates the average score achieved by students in each major, providing insight into academic performance across disciplines.",
+        "Shows how student enrollment has changed over the years, helping to identify patterns of growth and decline in enrollment rates.",
+        "Displays the total expenses associated with each program code, offering insight into financial resource allocation.",
+        "Illustrates the number of graduates each year by program, providing a clear view of graduation trends and program effectiveness."
+    ],
+    "dashboard_name": "Student Enrollment and Performance Overview"
+}

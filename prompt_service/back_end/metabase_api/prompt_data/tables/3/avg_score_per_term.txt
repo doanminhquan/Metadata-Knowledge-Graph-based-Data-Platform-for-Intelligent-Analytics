@@ -1,0 +1,21 @@
+{
+  "table_name": "avg_score_per_term",
+  "table_id": 27,
+  "db_id": "3",
+  "fields": [
+    {
+      "name": "term_avg_score",
+      "display_name": "Term Avg Score",
+      "base_type": "type/Float",
+      "semantic_type": null,
+      "id": 237
+    },
+    {
+      "name": "term_code",
+      "display_name": "Term Code",
+      "base_type": "type/Text",
+      "semantic_type": null,
+      "id": 239
+    }
+  ]
+}

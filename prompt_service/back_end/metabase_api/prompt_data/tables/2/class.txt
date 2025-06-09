@@ -1,0 +1,42 @@
+{
+  "table_name": "class",
+  "table_id": 15,
+  "db_id": "2",
+  "fields": [
+    {
+      "name": "name",
+      "display_name": "Name",
+      "base_type": "type/Text",
+      "semantic_type": "type/Name",
+      "id": 84
+    },
+    {
+      "name": "year_start",
+      "display_name": "Year Start",
+      "base_type": "type/Text",
+      "semantic_type": "type/Category",
+      "id": 81
+    },
+    {
+      "name": "program_code",
+      "display_name": "Program Code",
+      "base_type": "type/Text",
+      "semantic_type": "type/Category",
+      "id": 90
+    },
+    {
+      "name": "class_code",
+      "display_name": "Class Code",
+      "base_type": "type/Text",
+      "semantic_type": "type/Category",
+      "id": 88
+    },
+    {
+      "name": "id",
+      "display_name": "ID",
+      "base_type": "type/Text",
+      "semantic_type": "type/PK",
+      "id": 82
+    }
+  ]
+}

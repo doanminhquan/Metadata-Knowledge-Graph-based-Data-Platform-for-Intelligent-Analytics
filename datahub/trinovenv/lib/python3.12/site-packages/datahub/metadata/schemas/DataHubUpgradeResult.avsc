@@ -1,0 +1,53 @@
+{
+  "type": "record",
+  "Aspect": {
+    "name": "dataHubUpgradeResult"
+  },
+  "name": "DataHubUpgradeResult",
+  "namespace": "com.linkedin.pegasus2avro.upgrade",
+  "fields": [
+    {
+      "type": [
+        {
+          "type": "enum",
+          "symbolDocs": {
+            "ABORTED": "Upgrade with an error state and should not be re-run.",
+            "FAILED": "Upgrade with an error state, however the upgrade should be re-run.",
+            "IN_PROGRESS": "Upgrade in progress.",
+            "SUCCEEDED": "Upgrade was successful."
+          },
+          "name": "DataHubUpgradeState",
+          "namespace": "com.linkedin.pegasus2avro.upgrade",
+          "symbols": [
+            "IN_PROGRESS",
+            "SUCCEEDED",
+            "FAILED",
+            "ABORTED"
+          ]
+        },
+        "null"
+      ],
+      "name": "state",
+      "default": "SUCCEEDED",
+      "doc": "Upgrade state  UpgradeResult.Result"
+    },
+    {
+      "type": "long",
+      "name": "timestampMs",
+      "doc": "Timestamp when we started this DataHubUpgrade"
+    },
+    {
+      "type": [
+        "null",
+        {
+          "type": "map",
+          "values": "string"
+        }
+      ],
+      "name": "result",
+      "default": null,
+      "doc": "Result map to place helpful information about this upgrade job"
+    }
+  ],
+  "doc": "Information collected when a DataHubUpgrade successfully finishes"
+}

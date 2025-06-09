@@ -1,0 +1,243 @@
+{
+  "type": "record",
+  "Aspect": {
+    "name": "mlModelGroupProperties"
+  },
+  "name": "MLModelGroupProperties",
+  "namespace": "com.linkedin.pegasus2avro.ml.metadata",
+  "fields": [
+    {
+      "Searchable": {
+        "/*": {
+          "fieldType": "TEXT",
+          "queryByDefault": true
+        }
+      },
+      "type": {
+        "type": "map",
+        "values": "string"
+      },
+      "name": "customProperties",
+      "default": {},
+      "doc": "Custom property bag."
+    },
+    {
+      "Relationship": {
+        "/*": {
+          "entityTypes": [
+            "dataJob",
+            "dataProcessInstance"
+          ],
+          "isLineage": true,
+          "name": "TrainedBy"
+        }
+      },
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "name": "trainingJobs",
+      "default": null,
+      "doc": "List of jobs or process instances (if any) used to train the model or group. Visible in Lineage. Note that ML Models can also be specified as the output of a specific Data Process Instances (runs) via the DataProcessInstanceOutputs aspect."
+    },
+    {
+      "Relationship": {
+        "/*": {
+          "entityTypes": [
+            "dataJob",
+            "dataProcessInstance"
+          ],
+          "isLineage": true,
+          "isUpstream": false,
+          "name": "UsedBy"
+        }
+      },
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "name": "downstreamJobs",
+      "default": null,
+      "doc": "List of jobs or process instances (if any) that use the model or group."
+    },
+    {
+      "Searchable": {
+        "fieldType": "KEYWORD"
+      },
+      "java": {
+        "class": "com.linkedin.pegasus2avro.common.url.Url",
+        "coercerClass": "com.linkedin.pegasus2avro.common.url.UrlCoercer"
+      },
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "externalUrl",
+      "default": null,
+      "doc": "URL where the reference exist"
+    },
+    {
+      "Searchable": {
+        "boostScore": 10.0,
+        "enableAutocomplete": true,
+        "fieldType": "WORD_GRAM",
+        "queryByDefault": true
+      },
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "name",
+      "default": null,
+      "doc": "Display name of the MLModelGroup"
+    },
+    {
+      "Searchable": {
+        "fieldType": "TEXT",
+        "hasValuesFieldName": "hasDescription"
+      },
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "description",
+      "default": null,
+      "doc": "Documentation of the MLModelGroup"
+    },
+    {
+      "deprecated": true,
+      "type": [
+        "null",
+        "long"
+      ],
+      "name": "createdAt",
+      "default": null,
+      "doc": "Date when the MLModelGroup was developed"
+    },
+    {
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "TimeStamp",
+          "namespace": "com.linkedin.pegasus2avro.common",
+          "fields": [
+            {
+              "type": "long",
+              "name": "time",
+              "doc": "When did the event occur"
+            },
+            {
+              "java": {
+                "class": "com.linkedin.pegasus2avro.common.urn.Urn"
+              },
+              "type": [
+                "null",
+                "string"
+              ],
+              "name": "actor",
+              "default": null,
+              "doc": "Optional: The actor urn involved in the event.",
+              "Urn": "Urn"
+            }
+          ],
+          "doc": "A standard event timestamp"
+        }
+      ],
+      "name": "created",
+      "default": null,
+      "doc": "Time and Actor who created the MLModelGroup"
+    },
+    {
+      "type": [
+        "null",
+        "com.linkedin.pegasus2avro.common.TimeStamp"
+      ],
+      "name": "lastModified",
+      "default": null,
+      "doc": "Date when the MLModelGroup was last modified"
+    },
+    {
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "VersionTag",
+          "namespace": "com.linkedin.pegasus2avro.common",
+          "fields": [
+            {
+              "type": [
+                "null",
+                "string"
+              ],
+              "name": "versionTag",
+              "default": null
+            },
+            {
+              "type": [
+                "null",
+                {
+                  "type": "record",
+                  "name": "MetadataAttribution",
+                  "namespace": "com.linkedin.pegasus2avro.common",
+                  "fields": [
+                    {
+                      "type": "long",
+                      "name": "time",
+                      "doc": "When this metadata was updated."
+                    },
+                    {
+                      "java": {
+                        "class": "com.linkedin.pegasus2avro.common.urn.Urn"
+                      },
+                      "type": "string",
+                      "name": "actor",
+                      "doc": "The entity (e.g. a member URN) responsible for applying the assocated metadata. This can\neither be a user (in case of UI edits) or the datahub system for automation.",
+                      "Urn": "Urn"
+                    },
+                    {
+                      "java": {
+                        "class": "com.linkedin.pegasus2avro.common.urn.Urn"
+                      },
+                      "type": [
+                        "null",
+                        "string"
+                      ],
+                      "name": "source",
+                      "default": null,
+                      "doc": "The DataHub source responsible for applying the associated metadata. This will only be filled out\nwhen a DataHub source is responsible. This includes the specific metadata test urn, the automation urn.",
+                      "Urn": "Urn"
+                    },
+                    {
+                      "type": {
+                        "type": "map",
+                        "values": "string"
+                      },
+                      "name": "sourceDetail",
+                      "default": {},
+                      "doc": "The details associated with why this metadata was applied. For example, this could include\nthe actual regex rule, sql statement, ingestion pipeline ID, etc."
+                    }
+                  ],
+                  "doc": "Information about who, why, and how this metadata was applied"
+                }
+              ],
+              "name": "metadataAttribution",
+              "default": null
+            }
+          ],
+          "doc": "A resource-defined string representing the resource state for the purpose of concurrency control"
+        }
+      ],
+      "name": "version",
+      "default": null,
+      "doc": "Version of the MLModelGroup"
+    }
+  ],
+  "doc": "Properties associated with an ML Model Group"
+}

@@ -1,0 +1,169 @@
+[
+    {
+        "name": "Average Score per Term",
+        "description": "Shows the average score for each term.",
+        "collection_id": 2,
+        "display": "bar",
+        "dataset_query": {
+            "type": "query",
+            "query": {
+                "aggregation": [
+                    [
+                        "avg",
+                        [
+                            "field",
+                            "term_avg_score",
+                            {
+                                "base-type": "type/Float"
+                            }
+                        ]
+                    ]
+                ],
+                "breakout": [
+                    [
+                        "field",
+                        "term_code",
+                        {
+                            "base-type": "type/Text"
+                        }
+                    ]
+                ],
+                "source-table": 27
+            },
+            "database": 3
+        },
+        "visualization_settings": {
+            "graph": {
+                "type": "bar",
+                "x-axis": "term_code",
+                "y-axis": "term_avg_score"
+            }
+        },
+        "collection_position": None,
+        "parameters": [],
+        "param_values": []
+    },
+    {
+        "name": "Total Courses per Program",
+        "description": "Displays the total number of courses for each program.",
+        "collection_id": 2,
+        "display": "pie",
+        "dataset_query": {
+            "type": "query",
+            "query": {
+                "aggregation": [
+                    [
+                        "sum",
+                        [
+                            "field",
+                            "total_courses",
+                            {
+                                "base-type": "type/BigInteger"
+                            }
+                        ]
+                    ]
+                ],
+                "breakout": [
+                    [
+                        "field",
+                        "program_code",
+                        {
+                            "base-type": "type/Text"
+                        }
+                    ]
+                ],
+                "source-table": 24
+            },
+            "database": 3
+        },
+        "visualization_settings": {
+            "pie": {
+                "rows": [
+                    {
+                        "color": "#4CAF50",
+                        "key": "program_code",
+                        "name": "Program Code"
+                    }
+                ],
+                "decimal_places": 2,
+                "percent_visibility": "both"
+            }
+        },
+        "collection_position": None,
+        "parameters": [],
+        "param_values": []
+    },
+    {
+        "name": "Total Graduates by Term",
+        "description": "Shows the total number of graduates for each term.",
+        "collection_id": 2,
+        "display": "line",
+        "dataset_query": {
+            "type": "query",
+            "query": {
+                "aggregation": [
+                    [
+                        "sum",
+                        [
+                            "field",
+                            "total_graduates",
+                            {
+                                "base-type": "type/BigInteger"
+                            }
+                        ]
+                    ]
+                ],
+                "breakout": [
+                    [
+                        "field",
+                        "term_code",
+                        {
+                            "base-type": "type/Text"
+                        }
+                    ]
+                ],
+                "source-table": 26
+            },
+            "database": 3
+        },
+        "visualization_settings": {
+            "graph": {
+                "type": "line",
+                "x-axis": "term_code",
+                "y-axis": "total_graduates"
+            }
+        },
+        "collection_position": None,
+        "parameters": [],
+        "param_values": []
+    },
+    {
+        "name": "Graduation Rate",
+        "description": "Display the graduation rate.",
+        "collection_id": 2,
+        "display": "smartscalar",
+        "dataset_query": {
+            "type": "query",
+            "query": {
+                "aggregation": [
+                    [
+                        "avg",
+                        [
+                            "field",
+                            "graduation_rate",
+                            {
+                                "base-type": "type/Float"
+                            }
+                        ]
+                    ]
+                ],
+                "source-table": 28
+            },
+            "database": 3
+        },
+        "visualization_settings": {},
+        "collection_position": None,
+        "parameters": [],
+        "param_values": []
+    }
+]

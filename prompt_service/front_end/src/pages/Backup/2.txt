@@ -1,0 +1,77 @@
+import { useState } from "react";
+import ChatPromptInput from "@/components/textarea.jsx";
+
+export default function PromptToDashboard() {
+  const [prompt, setPrompt] = useState("");
+  const [displayedText, setDisplayedText] = useState("");
+  const [isTyping, setIsTyping] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleSubmit = async () => {
+    if (!prompt.trim()) return;
+    setDisplayedText("");
+    setIsTyping(true);
+    setErrorMessage("");
+
+    try {
+      const response = await fetch("http://127.0.0.1:5000/fetch-url", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ body: prompt }),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.message || "Something went wrong");
+      }
+
+      const data = await response.json();
+      const content = data.content || "";
+
+      setPrompt(""); // Xoá prompt sau khi gửi
+      setDisplayedText("");
+      setIsTyping(true);
+
+      let i = 0;
+      const typeOut = () => {
+        if (i < content.length) {
+          setDisplayedText((prev) => prev + content.charAt(i));
+          i++;
+          setTimeout(typeOut, 30);
+        } else {
+          setIsTyping(false);
+        }
+      };
+      typeOut();
+
+    } catch (error) {
+      console.error("Error sending prompt to API:", error.message);
+      setErrorMessage(error.message);
+      setIsTyping(false);
+    }
+  };
+
+  return (
+    <div className="max-w-3xl mx-auto py-12 px-6 space-y-6">
+      <ChatPromptInput
+        value={prompt}
+        onChange={(e) => setPrompt(e.target.value)}
+        onSubmit={handleSubmit}
+      />
+
+      {displayedText && (
+        <div className="mt-4 p-4 bg-white border border-gray-200 rounded-lg shadow text-gray-800 text-sm">
+          {displayedText}
+        </div>
+      )}
+
+      {errorMessage && (
+        <div className="mt-4 p-4 bg-red-100 border border-red-200 rounded-lg text-red-700 text-sm">
+          {errorMessage}
+        </div>
+      )}
+    </div>
+  );
+}

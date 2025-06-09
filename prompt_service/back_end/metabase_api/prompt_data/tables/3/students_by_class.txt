@@ -1,0 +1,21 @@
+{
+  "table_name": "students_by_class",
+  "table_id": 29,
+  "db_id": "3",
+  "fields": [
+    {
+      "name": "total_students",
+      "display_name": "Total Students",
+      "base_type": "type/BigInteger",
+      "semantic_type": null,
+      "id": 254
+    },
+    {
+      "name": "class_code",
+      "display_name": "Class Code",
+      "base_type": "type/Text",
+      "semantic_type": null,
+      "id": 253
+    }
+  ]
+}

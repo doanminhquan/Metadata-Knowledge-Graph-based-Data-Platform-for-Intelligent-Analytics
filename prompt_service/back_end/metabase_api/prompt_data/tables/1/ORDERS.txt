@@ -1,0 +1,70 @@
+{
+  "table_name": "ORDERS",
+  "table_id": 2,
+  "db_id": "1",
+  "fields": [
+    {
+      "name": "ID",
+      "display_name": "ID",
+      "base_type": "type/BigInteger",
+      "semantic_type": "type/PK",
+      "id": 9
+    },
+    {
+      "name": "USER_ID",
+      "display_name": "User ID",
+      "base_type": "type/Integer",
+      "semantic_type": "type/FK",
+      "id": 11
+    },
+    {
+      "name": "PRODUCT_ID",
+      "display_name": "Product ID",
+      "base_type": "type/Integer",
+      "semantic_type": "type/FK",
+      "id": 14
+    },
+    {
+      "name": "SUBTOTAL",
+      "display_name": "Subtotal",
+      "base_type": "type/Float",
+      "semantic_type": null,
+      "id": 10
+    },
+    {
+      "name": "TAX",
+      "display_name": "Tax",
+      "base_type": "type/Float",
+      "semantic_type": null,
+      "id": 6
+    },
+    {
+      "name": "TOTAL",
+      "display_name": "Total",
+      "base_type": "type/Float",
+      "semantic_type": null,
+      "id": 5
+    },
+    {
+      "name": "DISCOUNT",
+      "display_name": "Discount",
+      "base_type": "type/Float",
+      "semantic_type": "type/Discount",
+      "id": 3
+    },
+    {
+      "name": "CREATED_AT",
+      "display_name": "Created At",
+      "base_type": "type/DateTime",
+      "semantic_type": "type/CreationTimestamp",
+      "id": 13
+    },
+    {
+      "name": "QUANTITY",
+      "display_name": "Quantity",
+      "base_type": "type/Integer",
+      "semantic_type": "type/Quantity",
+      "id": 2
+    }
+  ]
+}

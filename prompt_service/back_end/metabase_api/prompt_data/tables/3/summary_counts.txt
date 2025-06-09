@@ -1,0 +1,56 @@
+{
+  "table_name": "summary_counts",
+  "table_id": 25,
+  "db_id": "3",
+  "fields": [
+    {
+      "name": "total_students",
+      "display_name": "Total Students",
+      "base_type": "type/BigInteger",
+      "semantic_type": null,
+      "id": 221
+    },
+    {
+      "name": "total_staff",
+      "display_name": "Total Staff",
+      "base_type": "type/BigInteger",
+      "semantic_type": null,
+      "id": 227
+    },
+    {
+      "name": "total_courses",
+      "display_name": "Total Courses",
+      "base_type": "type/BigInteger",
+      "semantic_type": null,
+      "id": 218
+    },
+    {
+      "name": "total_classes",
+      "display_name": "Total Classes",
+      "base_type": "type/BigInteger",
+      "semantic_type": null,
+      "id": 225
+    },
+    {
+      "name": "total_programs",
+      "display_name": "Total Programs",
+      "base_type": "type/BigInteger",
+      "semantic_type": null,
+      "id": 229
+    },
+    {
+      "name": "total_majors",
+      "display_name": "Total Majors",
+      "base_type": "type/BigInteger",
+      "semantic_type": null,
+      "id": 222
+    },
+    {
+      "name": "summary_id",
+      "display_name": "Summary ID",
+      "base_type": "type/BigInteger",
+      "semantic_type": null,
+      "id": 223
+    }
+  ]
+}

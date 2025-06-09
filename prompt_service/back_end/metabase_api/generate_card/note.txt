@@ -1,0 +1,1 @@
+Sửa lỗi avg_score không phải float 

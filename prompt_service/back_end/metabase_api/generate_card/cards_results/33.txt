@@ -1,0 +1,68 @@
+{
+  "cards": [
+    {
+      "name": "Student Enrollment Trend",
+      "description": "This card displays the trend of student enrollment over the years.",
+      "collection_id": 2,
+      "display": "line",
+      "dataset_query": {
+        "type": "query",
+        "database": 2,
+        "query": {
+          "source-table": 18,
+          "aggregation": [
+            ["count"]
+          ],
+          "breakout": [
+            ["field", 115]
+          ]
+        }
+      },
+      "visualization_settings": {
+        "graph": {
+          "type": "line",
+          "x-axis": "year",
+          "y-axis": "count"
+        }
+      },
+      "collection_position": null,
+      "parameters": [],
+      "param_values": []
+    },
+    {
+      "name": "Enrollment by Class Code",
+      "description": "This chart shows how enrollment varies across different classes each year.",
+      "collection_id": 2,
+      "display": "bar",
+      "dataset_query": {
+        "type": "query",
+        "database": 2,
+        "query": {
+          "source-table": 18,
+          "aggregation": [
+            ["count"]
+          ],
+          "breakout": [
+            ["field", 116],
+            ["field", 115]
+          ]
+        }
+      },
+      "visualization_settings": {
+        "graph": {
+          "type": "bar",
+          "x-axis": "class_code",
+          "y-axis": "count"
+        }
+      },
+      "collection_position": null,
+      "parameters": [],
+      "param_values": []
+    }
+  ],
+  "explanation": [
+    "This card displays the trend of student enrollment over the years.",
+    "This chart shows how enrollment varies across different classes each year."
+  ],
+  "dashboard_name": "Student Enrollment Overview"
+}

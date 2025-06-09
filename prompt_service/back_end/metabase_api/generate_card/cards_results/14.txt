@@ -1,0 +1,66 @@
+{
+    "cards": [
+        {
+            "name": "Student Enrollment Trend by Year",
+            "description": "Displays the trend of student enrollment over the years.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 115]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "year",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": None,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Annual Student Enrollment Overview",
+            "description": "Analyzes the number of students enrolled each year.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 81]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "year_start",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": None,
+            "parameters": [],
+            "param_values": []
+        }
+    ],
+    "explanation": [
+        "I created a visualize that shows student enrollment trends over the years, making it easy to see how the number of enrolled students has changed over time.",
+        "I also developed a second visualize that analyzes the number of students enrolled each year, providing a clear view of how enrollment numbers have fluctuated based on academic years."
+    ]
+}

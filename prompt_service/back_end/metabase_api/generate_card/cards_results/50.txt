@@ -1,0 +1,158 @@
+{
+    "cards": [
+        {
+            "name": "Total Students Enrolled per Class",
+            "description": "Hiển thị tổng số sinh viên theo mã lớp.",
+            "collection_id": 2,
+            "display": "bar",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 116]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "bar",
+                    "x-axis": "class_code",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Enrollment Trend by Class Code",
+            "description": "Minh họa sự thay đổi số lượng sinh viên đăng ký qua các năm theo lớp.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 115],
+                        ["field", 116]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "year",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Graduates by Year and Program",
+            "description": "Minh họa số lượng sinh viên tốt nghiệp mỗi năm theo chương trình, cung cấp cái nhìn rõ ràng về xu hướng tốt nghiệp và hiệu quả chương trình.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 17,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 104]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "term_code",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Number of Subscriptions Over Time",
+            "description": "Theo dõi sự thay đổi số lượng đăng ký qua năm, cung cấp cái nhìn về xu hướng đăng ký của người dùng.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 6,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 31]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "CREATED_AT",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Revenue by State",
+            "description": "Hiển thị doanh thu phân bổ theo từng bang, giúp nhận diện thị trường chủ yếu.",
+            "collection_id": 2,
+            "display": "map",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "aggregation": [
+                        ["sum", ["field", "TOTAL", {"base-type": "type/Float"}]]
+                    ],
+                    "breakout": [
+                        ["field", "STATE", {"base-type": "type/Text"}]
+                    ],
+                    "source-table": 2
+                }
+            },
+            "visualization_settings": {
+                "map": {
+                    "colors": ["rgb(229, 229, 241)", "rgb(192, 192, 218)"],
+                    "region": "us_states",
+                    "type": "region"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        }
+    ],
+    "explanation": [
+        "Student Overview - Hiển thị tổng số sinh viên theo mã lớp.",
+        "Student Overview - Minh họa sự thay đổi số lượng sinh viên đăng ký qua các năm theo lớp.",
+        "Graduation Trends - Minh họa số lượng sinh viên tốt nghiệp mỗi năm theo chương trình, cung cấp cái nhìn rõ ràng về xu hướng tốt nghiệp và hiệu quả chương trình.",
+        "Subscription Trends - Theo dõi sự thay đổi số lượng đăng ký qua năm, cung cấp cái nhìn về xu hướng đăng ký của người dùng.",
+        "Financial Overview - Hiển thị doanh thu phân bổ theo từng bang, giúp nhận diện thị trường chủ yếu."
+    ],
+    "dashboard_name": "Student Overview"
+}

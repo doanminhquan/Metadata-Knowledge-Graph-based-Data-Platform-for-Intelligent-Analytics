@@ -1,0 +1,119 @@
+{
+  "table_name": "ACCOUNTS",
+  "table_id": 6,
+  "db_id": "1",
+  "fields": [
+    {
+      "name": "ID",
+      "display_name": "ID",
+      "base_type": "type/BigInteger",
+      "semantic_type": "type/PK",
+      "id": 24
+    },
+    {
+      "name": "EMAIL",
+      "display_name": "Email",
+      "base_type": "type/Text",
+      "semantic_type": "type/Email",
+      "id": 62
+    },
+    {
+      "name": "FIRST_NAME",
+      "display_name": "First Name",
+      "base_type": "type/Text",
+      "semantic_type": "type/Name",
+      "id": 37
+    },
+    {
+      "name": "LAST_NAME",
+      "display_name": "Last Name",
+      "base_type": "type/Text",
+      "semantic_type": "type/Name",
+      "id": 36
+    },
+    {
+      "name": "PLAN",
+      "display_name": "Plan",
+      "base_type": "type/Text",
+      "semantic_type": "type/Category",
+      "id": 43
+    },
+    {
+      "name": "SOURCE",
+      "display_name": "Source",
+      "base_type": "type/Text",
+      "semantic_type": "type/Source",
+      "id": 41
+    },
+    {
+      "name": "SEATS",
+      "display_name": "Seats",
+      "base_type": "type/Integer",
+      "semantic_type": null,
+      "id": 33
+    },
+    {
+      "name": "CREATED_AT",
+      "display_name": "Created At",
+      "base_type": "type/DateTime",
+      "semantic_type": "type/CreationTimestamp",
+      "id": 31
+    },
+    {
+      "name": "TRIAL_ENDS_AT",
+      "display_name": "Trial Ends At",
+      "base_type": "type/DateTime",
+      "semantic_type": null,
+      "id": 40
+    },
+    {
+      "name": "CANCELED_AT",
+      "display_name": "Canceled At",
+      "base_type": "type/DateTime",
+      "semantic_type": "type/CancelationTimestamp",
+      "id": 39
+    },
+    {
+      "name": "TRIAL_CONVERTED",
+      "display_name": "Trial Converted",
+      "base_type": "type/Boolean",
+      "semantic_type": "type/Category",
+      "id": 38
+    },
+    {
+      "name": "ACTIVE_SUBSCRIPTION",
+      "display_name": "Active Subscription",
+      "base_type": "type/Boolean",
+      "semantic_type": "type/Category",
+      "id": 42
+    },
+    {
+      "name": "LEGACY_PLAN",
+      "display_name": "Legacy Plan",
+      "base_type": "type/Boolean",
+      "semantic_type": "type/Category",
+      "id": 47
+    },
+    {
+      "name": "LATITUDE",
+      "display_name": "Latitude",
+      "base_type": "type/Float",
+      "semantic_type": "type/Latitude",
+      "id": 57
+    },
+    {
+      "name": "LONGITUDE",
+      "display_name": "Longitude",
+      "base_type": "type/Float",
+      "semantic_type": "type/Longitude",
+      "id": 21
+    },
+    {
+      "name": "COUNTRY",
+      "display_name": "Country",
+      "base_type": "type/Text",
+      "semantic_type": "type/Country",
+      "id": 56
+    }
+  ]
+}

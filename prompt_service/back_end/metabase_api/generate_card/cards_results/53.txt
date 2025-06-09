@@ -1,0 +1,157 @@
+{
+    "cards": [
+        {
+            "name": "Total Students Enrolled by Program",
+            "description": "Displays the total number of students enrolled, grouped by program.",
+            "collection_id": 2,
+            "display": "bar",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 106]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "bar",
+                    "x-axis": "program_code",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Student Enrollment Trend by Year",
+            "description": "Shows the trend of student enrollments over the years.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 19,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 74]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "year",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Graduates by Program",
+            "description": "Illustrates the number of graduates per program over time.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 17,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 104]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "term_code",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Average Student Scores by Major",
+            "description": "Shows the average scores of students, grouped by their major.",
+            "collection_id": 2,
+            "display": "bar",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 17,
+                    "aggregation": [
+                        ["avg", ["field", 109]]
+                    ],
+                    "breakout": [
+                        ["field", 153]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "bar",
+                    "x-axis": "major_code",
+                    "y-axis": "avg"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Student Distribution by Class Code",
+            "description": "Displays the distribution of students across different class codes.",
+            "collection_id": 2,
+            "display": "bar",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 116]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "bar",
+                    "x-axis": "class_code",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        }
+    ],
+    "explanation": [
+        "Total Students Enrolled by Program - This chart provides insights into how many students are enrolled in each program, which can help identify popular programs and areas needing attention.",
+        "Student Enrollment Trend by Year - This visualization tracks changes in student enrollments over the years, providing a clear view of trends in student interest.",
+        "Graduates by Program - This line chart shows the number of graduates within each program, giving a representation of program effectiveness and outcomes.",
+        "Average Student Scores by Major - Here, you can see how average scores vary across different majors, allowing for performance comparisons.",
+        "Student Distribution by Class Code - This chart shows how students are spread across various class codes, which can inform resource allocation and class planning."
+    ],
+    "dashboard_name": "Student Enrollment Insights"
+}

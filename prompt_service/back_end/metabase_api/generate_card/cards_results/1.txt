@@ -1,0 +1,124 @@
+```json
+[
+    {
+        "name": "Average Score Per Term",
+        "description": "Shows the average score per term from aggregated data.",
+        "collection_id": 1,
+        "display": "bar",
+        "dataset_query": {
+            "type": "native",
+            "native": {
+                "query": "SELECT term_code, term_avg_score FROM avg_score_per_term",
+                "template-tags": {}
+            },
+            "database": 3
+        },
+        "visualization_settings": {
+            "graph": {
+                "type": "bar",
+                "x-axis": "term_code",
+                "y-axis": "term_avg_score"
+            }
+        },
+        "collection_position": None,
+        "parameters": [],
+        "param_values": []
+    },
+    {
+        "name": "Total Courses Per Program",
+        "description": "Displays the total number of courses available per program.",
+        "collection_id": 1,
+        "display": "bar",
+        "dataset_query": {
+            "type": "native",
+            "native": {
+                "query": "SELECT program_code, total_courses FROM courses_per_program",
+                "template-tags": {}
+            },
+            "database": 3
+        },
+        "visualization_settings": {
+            "graph": {
+                "type": "bar",
+                "x-axis": "program_code",
+                "y-axis": "total_courses"
+            }
+        },
+        "collection_position": None,
+        "parameters": [],
+        "param_values": []
+    },
+    {
+        "name": "Total Graduates By Term",
+        "description": "Shows the total number of graduates by term.",
+        "collection_id": 1,
+        "display": "bar",
+        "dataset_query": {
+            "type": "native",
+            "native": {
+                "query": "SELECT term_code, total_graduates FROM graduates_by_term",
+                "template-tags": {}
+            },
+            "database": 3
+        },
+        "visualization_settings": {
+            "graph": {
+                "type": "bar",
+                "x-axis": "term_code",
+                "y-axis": "total_graduates"
+            }
+        },
+        "collection_position": None,
+        "parameters": [],
+        "param_values": []
+    },
+    {
+        "name": "Graduation Rate",
+        "description": "Displays the overall graduation rate.",
+        "collection_id": 1,
+        "display": "gauge",
+        "dataset_query": {
+            "type": "native",
+            "native": {
+                "query": "SELECT graduation_rate FROM graduation_rate",
+                "template-tags": {}
+            },
+            "database": 3
+        },
+        "visualization_settings": {
+            "graph": {
+                "type": "gauge",
+                "max": 100,
+                "min": 0
+            }
+        },
+        "collection_position": None,
+        "parameters": [],
+        "param_values": []
+    },
+    {
+        "name": "Students By Class",
+        "description": "Shows the total number of students in each class.",
+        "collection_id": 1,
+        "display": "bar",
+        "dataset_query": {
+            "type": "native",
+            "native": {
+                "query": "SELECT class_code, total_students FROM students_by_class",
+                "template-tags": {}
+            },
+            "database": 3
+        },
+        "visualization_settings": {
+            "graph": {
+                "type": "bar",
+                "x-axis": "class_code",
+                "y-axis": "total_students"
+            }
+        },
+        "collection_position": None,
+        "parameters": [],
+        "param_values": []
+    }
+]
+```

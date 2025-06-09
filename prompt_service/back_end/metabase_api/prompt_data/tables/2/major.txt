@@ -1,0 +1,28 @@
+{
+  "table_name": "major",
+  "table_id": 22,
+  "db_id": "2",
+  "fields": [
+    {
+      "name": "major_code",
+      "display_name": "Major Code",
+      "base_type": "type/Text",
+      "semantic_type": "type/Category",
+      "id": 153
+    },
+    {
+      "name": "id",
+      "display_name": "ID",
+      "base_type": "type/Text",
+      "semantic_type": "type/PK",
+      "id": 152
+    },
+    {
+      "name": "name",
+      "display_name": "Name",
+      "base_type": "type/Text",
+      "semantic_type": "type/Name",
+      "id": 147
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+[
+    {
+        "name": "Average Score per Term",
+        "description": "Shows the average score for each term.",
+        "collection_id": 2,
+        "display": "bar",
+        "dataset_query": {
+            "type": "native",
+            "native": {
+                "query": "SELECT term_code, AVG(avg_score) AS term_avg_score FROM avg_score_per_term GROUP BY term_code ORDER BY term_code",
+                "template-tags": {}
+            },
+            "database": 3
+        },
+        "visualization_settings": {
+            "graph": {
+                "type": "bar",
+                "x-axis": "term_code",
+                "y-axis": "term_avg_score"
+            }
+        },
+        "collection_position": None,
+        "parameters": [],
+        "param_values": []
+    },
+    {
+        "name": "Total Courses per Program",
+        "description": "Displays the total number of courses offered for each program.",
+        "collection_id": 2,
+        "display": "bar",
+        "dataset_query": {
+            "type": "native",
+            "native": {
+                "query": "SELECT program_code, COUNT(total_courses) AS total_courses FROM courses_per_program GROUP BY program_code ORDER BY total_courses DESC",
+                "template-tags": {}
+            },
+            "database": 3
+        },
+        "visualization_settings": {
+            "graph": {
+                "type": "bar",
+                "x-axis": "program_code",
+                "y-axis": "total_courses"
+            }
+        },
+        "collection_position": None,
+        "parameters": [],
+        "param_values": []
+    },
+    {
+        "name": "Graduates by Term",
+        "description": "Shows total graduates per term.",
+        "collection_id": 2,
+        "display": "bar",
+        "dataset_query": {
+            "type": "native",
+            "native": {
+                "query": "SELECT term_code, COUNT(total_graduates) AS total_graduates FROM graduates_by_term GROUP BY term_code ORDER BY term_code",
+                "template-tags": {}
+            },
+            "database": 3
+        },
+        "visualization_settings": {
+            "graph": {
+                "type": "bar",
+                "x-axis": "term_code",
+                "y-axis": "total_graduates"
+            }
+        },
+        "collection_position": None,
+        "parameters": [],
+        "param_values": []
+    },
+    {
+        "name": "Graduation Rate Overview",
+        "description": "Displays the graduation rate for recent terms.",
+        "collection_id": 2,
+        "display": "gauge",
+        "dataset_query": {
+            "type": "native",
+            "native": {
+                "query": "SELECT graduation_rate FROM graduation_rate",
+                "template-tags": {}
+            },
+            "database": 3
+        },
+        "visualization_settings": {
+            "graph": {
+                "type": "gauge"
+            }
+        },
+        "collection_position": None,
+        "parameters": [],
+        "param_values": []
+    },
+    {
+        "name": "Total Students by Class",
+        "description": "Shows the total number of students in each class.",
+        "collection_id": 2,
+        "display": "bar",
+        "dataset_query": {
+            "type": "native",
+            "native": {
+                "query": "SELECT class_code, COUNT(total_students) AS total_students FROM students_by_class GROUP BY class_code ORDER BY total_students DESC",
+                "template-tags": {}
+            },
+            "database": 3
+        },
+        "visualization_settings": {
+            "graph": {
+                "type": "bar",
+                "x-axis": "class_code",
+                "y-axis": "total_students"
+            }
+        },
+        "collection_position": None,
+        "parameters": [],
+        "param_values": []
+    }
+]

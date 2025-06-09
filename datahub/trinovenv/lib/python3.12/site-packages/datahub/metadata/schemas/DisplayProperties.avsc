@@ -1,0 +1,62 @@
+{
+  "type": "record",
+  "Aspect": {
+    "name": "displayProperties"
+  },
+  "name": "DisplayProperties",
+  "namespace": "com.linkedin.pegasus2avro.common",
+  "fields": [
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "colorHex",
+      "default": null,
+      "doc": "The color associated with the entity in Hex. For example #FFFFFF."
+    },
+    {
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "IconProperties",
+          "namespace": "com.linkedin.pegasus2avro.common",
+          "fields": [
+            {
+              "type": {
+                "type": "enum",
+                "symbolDocs": {
+                  "MATERIAL": "Material UI"
+                },
+                "name": "IconLibrary",
+                "namespace": "com.linkedin.pegasus2avro.common",
+                "symbols": [
+                  "MATERIAL"
+                ],
+                "doc": "Enum of possible icon sources"
+              },
+              "name": "iconLibrary",
+              "doc": "The source of the icon: e.g. Antd, Material, etc"
+            },
+            {
+              "type": "string",
+              "name": "name",
+              "doc": "The name of the icon"
+            },
+            {
+              "type": "string",
+              "name": "style",
+              "doc": "Any modifier for the icon, this will be library-specific, e.g. filled/outlined, etc"
+            }
+          ],
+          "doc": "Properties describing an icon associated with an entity"
+        }
+      ],
+      "name": "icon",
+      "default": null,
+      "doc": "The icon associated with the entity"
+    }
+  ],
+  "doc": "Properties related to how the entity is displayed in the Datahub UI"
+}

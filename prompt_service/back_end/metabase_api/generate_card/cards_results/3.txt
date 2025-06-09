@@ -1,0 +1,98 @@
+[
+    {
+        "name": "Total Students by Class",
+        "description": "Shows total students grouped by class.",
+        "collection_id": 1,
+        "display": "bar",
+        "dataset_query": {
+            "type": "native",
+            "native": {
+                "query": "SELECT class_code, COUNT(student_code) as total FROM enrollment GROUP BY class_code",
+                "template-tags": {}
+            },
+            "database": 2
+        },
+        "visualization_settings": {
+            "graph": {
+                "type": "bar",
+                "x-axis": "class_code",
+                "y-axis": "total"
+            }
+        },
+        "collection_position": None,
+        "parameters": [],
+        "param_values": []
+    },
+    {
+        "name": "Average Score per Term",
+        "description": "Shows the average score per term.",
+        "collection_id": 1,
+        "display": "bar",
+        "dataset_query": {
+            "type": "native",
+            "native": {
+                "query": "SELECT term_code, AVG(term_avg_score) as avg_score FROM avg_score_per_term GROUP BY term_code",
+                "template-tags": {}
+            },
+            "database": 3
+        },
+        "visualization_settings": {
+            "graph": {
+                "type": "bar",
+                "x-axis": "term_code",
+                "y-axis": "avg_score"
+            }
+        },
+        "collection_position": None,
+        "parameters": [],
+        "param_values": []
+    },
+    {
+        "name": "Total Courses per Program",
+        "description": "Shows total courses offered per program.",
+        "collection_id": 1,
+        "display": "bar",
+        "dataset_query": {
+            "type": "native",
+            "native": {
+                "query": "SELECT program_code, COUNT(course_code) as total_courses FROM courses_per_program GROUP BY program_code",
+                "template-tags": {}
+            },
+            "database": 3
+        },
+        "visualization_settings": {
+            "graph": {
+                "type": "bar",
+                "x-axis": "program_code",
+                "y-axis": "total_courses"
+            }
+        },
+        "collection_position": None,
+        "parameters": [],
+        "param_values": []
+    },
+    {
+        "name": "Graduates by Term",
+        "description": "Shows the total number of graduates by term.",
+        "collection_id": 1,
+        "display": "bar",
+        "dataset_query": {
+            "type": "native",
+            "native": {
+                "query": "SELECT term_code, COUNT(total_graduates) as total_graduates FROM graduates_by_term GROUP BY term_code",
+                "template-tags": {}
+            },
+            "database": 3
+        },
+        "visualization_settings": {
+            "graph": {
+                "type": "bar",
+                "x-axis": "term_code",
+                "y-axis": "total_graduates"
+            }
+        },
+        "collection_position": None,
+        "parameters": [],
+        "param_values": []
+    }
+]

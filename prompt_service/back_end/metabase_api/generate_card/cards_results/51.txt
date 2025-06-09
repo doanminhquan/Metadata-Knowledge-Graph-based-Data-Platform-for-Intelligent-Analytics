@@ -1,0 +1,123 @@
+{
+    "cards": [
+        {
+            "name": "Total Students Enrolled by Class Code",
+            "description": "Displays the total number of students enrolled in each class based on the class code.",
+            "collection_id": 2,
+            "display": "bar",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 116]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "bar",
+                    "x-axis": "class_code",
+                    "y-axis": "count"
+                }
+            },
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Graduates by Year and Program",
+            "description": "Illustrates the number of graduates each year by program, providing a clear view of graduation trends and program effectiveness.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 17,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 104]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "term_code",
+                    "y-axis": "count"
+                }
+            },
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Number of Students Enrolled per Year",
+            "description": "This chart shows the trend of student enrollment over the years, allowing us to analyze how enrollment numbers change over time.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 115]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "year",
+                    "y-axis": "count"
+                }
+            },
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Total Classes by Year Start",
+            "description": "Shows the total number of classes offered each year, providing insights into the academic planning of the institution.",
+            "collection_id": 2,
+            "display": "bar",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 15,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 81]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "bar",
+                    "x-axis": "year_start",
+                    "y-axis": "count"
+                }
+            },
+            "parameters": [],
+            "param_values": []
+        }
+    ],
+    "explanation": [
+        "Total Students Enrolled by Class Code - Displays the total number of students enrolled in each class based on the class code.",
+        "Graduates by Year and Program - Illustrates the number of graduates each year by program, providing a clear view of graduation trends and program effectiveness.",
+        "Number of Students Enrolled per Year - This chart shows the trend of student enrollment over the years, allowing us to analyze how enrollment numbers change over time.",
+        "Total Classes by Year Start - Shows the total number of classes offered each year, providing insights into the academic planning of the institution."
+    ],
+    "dashboard_name": "Student Enrollment and Graduation Trends"
+}

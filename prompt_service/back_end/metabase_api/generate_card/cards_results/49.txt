@@ -1,0 +1,154 @@
+{
+    "cards": [
+        {
+            "name": "Tổng số sinh viên theo lớp",
+            "description": "Biểu đồ này hiển thị tổng số sinh viên phân nhóm theo mã lớp.",
+            "collection_id": 2,
+            "display": "bar",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 116]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "bar",
+                    "x-axis": "class_code",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Doanh thu theo nhóm tuổi",
+            "description": "Biểu đồ này minh họa doanh thu phân chia theo độ tuổi của khách hàng.",
+            "collection_id": 2,
+            "display": "bar",
+            "dataset_query": {
+                "type": "query",
+                "database": 1,
+                "query": {
+                    "source-table": 2,
+                    "aggregation": [
+                        ["sum", ["field", "TOTAL", {"base-type": "type/Float"}]]
+                    ],
+                    "breakout": [
+                        ["field", "Age", {"base-type": "type/BigInteger"}]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "bar",
+                    "x-axis": "Age",
+                    "y-axis": "sum"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Phân tích sinh viên tốt nghiệp theo chương trình",
+            "description": "Biểu đồ này thể hiện số lượng sinh viên tốt nghiệp theo từng chương trình học.",
+            "collection_id": 2,
+            "display": "bar",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 17,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", "term_code"]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "bar",
+                    "x-axis": "term_code",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Luồng người dùng qua các giai đoạn hành động",
+            "description": "Biểu đồ này minh họa luồng người dùng từ khi truy cập website đến khi thực hiện hành động.",
+            "collection_id": 2,
+            "display": "sankey",
+            "dataset_query": {
+                "type": "query",
+                "database": 1,
+                "query": {
+                    "expressions": {
+                        "Step": [
+                            "case",
+                            [
+                                [
+                                    [
+                                        "is-null",
+                                        ["field", "BUTTON_LABEL", {"base-type": "type/Text"}]
+                                    ],
+                                    "Bounced"
+                                ]
+                            ],
+                            {
+                                "default": [
+                                    "field", "BUTTON_LABEL", {"base-type": "type/Text"}
+                                ]
+                            }
+                        ]
+                    },
+                    "filter": [
+                        "!=",
+                        ["expression", "Step", {"base-type": "type/Text"}],
+                        "Bounced"
+                    ],
+                    "source-query": {
+                        "aggregation": [["count"]],
+                        "breakout": [
+                            ["field", 29, {"base-type": "type/Text"}],
+                            ["field", 32, {"base-type": "type/Text"}]
+                        ],
+                        "source-table": 7
+                    },
+                    "expression-idents": {
+                        "Step": "expression"
+                    }
+                }
+            },
+            "visualization_settings": {
+                "sankey.node_align": "right",
+                "sankey.show_edge_labels": true,
+                "sankey.source": "EVENT",
+                "sankey.target": "Step"
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        }
+    ],
+    "explanation": [
+        "Tổng hợp sinh viên - Biểu đồ này hiển thị tổng số sinh viên phân nhóm theo mã lớp.",
+        "Tổng hợp doanh thu - Biểu đồ này minh họa doanh thu phân chia theo độ tuổi của khách hàng.",
+        "Tổng hợp tốt nghiệp - Biểu đồ này thể hiện số lượng sinh viên tốt nghiệp theo từng chương trình học.",
+        "Tổng hợp luồng người dùng - Biểu đồ này minh họa luồng người dùng từ khi truy cập website đến khi thực hiện hành động."
+    ],
+    "dashboard_name": "Tổng hợp thông tin sinh viên & doanh thu"
+}

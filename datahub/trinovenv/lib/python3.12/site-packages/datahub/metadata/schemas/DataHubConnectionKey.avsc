@@ -1,0 +1,23 @@
+{
+  "type": "record",
+  "Aspect": {
+    "name": "dataHubConnectionKey",
+    "keyForEntity": "dataHubConnection",
+    "entityCategory": "internal",
+    "entityAspects": [
+      "dataHubConnectionDetails",
+      "dataPlatformInstance"
+    ]
+  },
+  "name": "DataHubConnectionKey",
+  "namespace": "com.linkedin.pegasus2avro.metadata.key",
+  "fields": [
+    {
+      "Searchable": {},
+      "type": "string",
+      "name": "id",
+      "doc": "A unique identifier for the connection."
+    }
+  ],
+  "doc": "Key for a Connection"
+}

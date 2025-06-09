@@ -1,0 +1,49 @@
+{
+  "table_name": "ANALYTIC_EVENTS",
+  "table_id": 7,
+  "db_id": "1",
+  "fields": [
+    {
+      "name": "ID",
+      "display_name": "ID",
+      "base_type": "type/BigInteger",
+      "semantic_type": "type/PK",
+      "id": 60
+    },
+    {
+      "name": "ACCOUNT_ID",
+      "display_name": "Account ID",
+      "base_type": "type/BigInteger",
+      "semantic_type": "type/FK",
+      "id": 45
+    },
+    {
+      "name": "EVENT",
+      "display_name": "Event",
+      "base_type": "type/Text",
+      "semantic_type": "type/Category",
+      "id": 32
+    },
+    {
+      "name": "TIMESTAMP",
+      "display_name": "Timestamp",
+      "base_type": "type/DateTime",
+      "semantic_type": null,
+      "id": 35
+    },
+    {
+      "name": "PAGE_URL",
+      "display_name": "Page URL",
+      "base_type": "type/Text",
+      "semantic_type": "type/URL",
+      "id": 49
+    },
+    {
+      "name": "BUTTON_LABEL",
+      "display_name": "Button Label",
+      "base_type": "type/Text",
+      "semantic_type": "type/Category",
+      "id": 29
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+[
+    {
+        "name": "Total Students by Class",
+        "description": "Displays the total number of students enrolled in each class.",
+        "collection_id": 2,
+        "display": "bar",
+        "dataset_query": {
+            "type": "query",
+            "query": {
+                "aggregation": [
+                    [
+                        "count"
+                    ]
+                ],
+                "breakout": [
+                    [
+                        "field",
+                        "class_code",
+                        {
+                            "base-type": "type/Text"
+                        }
+                    ]
+                ],
+                "source-table": 18
+            },
+            "database": 2
+        },
+        "visualization_settings": {
+            "graph": {
+                "type": "bar",
+                "x-axis": "class_code",
+                "y-axis": "count"
+            }
+        },
+        "collection_position": None,
+        "parameters": [],
+        "param_values": []
+    },
+    {
+        "name": "Average Score Per Term",
+        "description": "Shows the average score for students, aggregated by term.",
+        "collection_id": 2,
+        "display": "line",
+        "dataset_query": {
+            "type": "query",
+            "query": {
+                "aggregation": [
+                    [
+                        "avg",
+                        [
+                            "field",
+                            "term_avg_score",
+                            {
+                                "base-type": "type/Float"
+                            }
+                        ]
+                    ]
+                ],
+                "breakout": [
+                    [
+                        "field",
+                        "term_code",
+                        {
+                            "base-type": "type/Text"
+                        }
+                    ]
+                ],
+                "source-table": 27
+            },
+            "database": 3
+        },
+        "visualization_settings": {
+            "graph": {
+                "type": "line",
+                "x-axis": "term_code",
+                "y-axis": "avg"
+            }
+        },
+        "collection_position": None,
+        "parameters": [],
+        "param_values": []
+    },
+    {
+        "name": "Graduates by Term",
+        "description": "Displays the total graduates for each term.",
+        "collection_id": 2,
+        "display": "bar",
+        "dataset_query": {
+            "type": "query",
+            "query": {
+                "aggregation": [
+                    [
+                        "count"
+                    ]
+                ],
+                "breakout": [
+                    [
+                        "field",
+                        "term_code",
+                        {
+                            "base-type": "type/Text"
+                        }
+                    ]
+                ],
+                "source-table": 26
+            },
+            "database": 3
+        },
+        "visualization_settings": {
+            "graph": {
+                "type": "bar",
+                "x-axis": "term_code",
+                "y-axis": "count"
+            }
+        },
+        "collection_position": None,
+        "parameters": [],
+        "param_values": []
+    },
+    {
+        "name": "Total Courses Per Program",
+        "description": "Displays the total number of courses offered per program.",
+        "collection_id": 2,
+        "display": "pie",
+        "dataset_query": {
+            "type": "query",
+            "query": {
+                "aggregation": [
+                    [
+                        "count"
+                    ]
+                ],
+                "breakout": [
+                    [
+                        "field",
+                        "program_code",
+                        {
+                            "base-type": "type/Text"
+                        }
+                    ]
+                ],
+                "source-table": 24
+            },
+            "database": 3
+        },
+        "visualization_settings": {
+            "graph": {
+                "type": "pie",
+                "rows": [
+                    {
+                        "name": "program_code",
+                        "key": "program_code"
+                    }
+                ]
+            }
+        },
+        "collection_position": None,
+        "parameters": [],
+        "param_values": []
+    }
+]

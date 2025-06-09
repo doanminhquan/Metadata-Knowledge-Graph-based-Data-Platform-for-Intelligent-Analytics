@@ -1,0 +1,10 @@
+{
+  "type": "record",
+  "Aspect": {
+    "name": "dataHubPersonaInfo"
+  },
+  "name": "DataHubPersonaInfo",
+  "namespace": "com.linkedin.pegasus2avro.persona",
+  "fields": [],
+  "doc": "Placeholder aspect for persona type info"
+}

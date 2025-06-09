@@ -1,0 +1,21 @@
+{
+  "name": "Users by Month",
+  "description": "Shows the number of new users grouped by month.",
+  "collection_id": 1,
+  "display": "bar",
+  "dataset_query": {
+    "type": "question",              
+    "query": {},
+    "database": 1                 // ID of the database
+  },
+  "visualization_settings": {
+    "graph": {
+      "type": "bar",              // Chart type: "bar", "line", "pie", "table", etc.
+      "x-axis": "month",          // Field used for x-axis
+      "y-axis": "total"           // Field used for y-axis
+    }
+  },
+  "collection_position": null,    // Optional; controls order in the collection
+  "parameters": [],               // Optional; 
+  "param_values": []              // Optional; used to pre-fill parameter values
+}

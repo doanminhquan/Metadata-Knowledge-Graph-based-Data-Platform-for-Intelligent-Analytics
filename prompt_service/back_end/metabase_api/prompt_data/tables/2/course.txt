@@ -1,0 +1,35 @@
+{
+  "table_name": "course",
+  "table_id": 10,
+  "db_id": "2",
+  "fields": [
+    {
+      "name": "eng_name",
+      "display_name": "Eng Name",
+      "base_type": "type/Text",
+      "semantic_type": "type/Category",
+      "id": 170
+    },
+    {
+      "name": "name",
+      "display_name": "Name",
+      "base_type": "type/Text",
+      "semantic_type": "type/Name",
+      "id": 169
+    },
+    {
+      "name": "course_code",
+      "display_name": "Course Code",
+      "base_type": "type/Text",
+      "semantic_type": "type/Category",
+      "id": 173
+    },
+    {
+      "name": "id",
+      "display_name": "ID",
+      "base_type": "type/Text",
+      "semantic_type": "type/PK",
+      "id": 168
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "type": "record",
+  "Aspect": {
+    "name": "dataTransformLogic"
+  },
+  "name": "DataTransformLogic",
+  "namespace": "com.linkedin.pegasus2avro.common",
+  "fields": [
+    {
+      "type": {
+        "type": "array",
+        "items": {
+          "type": "record",
+          "name": "DataTransform",
+          "namespace": "com.linkedin.pegasus2avro.common",
+          "fields": [
+            {
+              "type": [
+                "null",
+                {
+                  "type": "record",
+                  "name": "QueryStatement",
+                  "namespace": "com.linkedin.pegasus2avro.query",
+                  "fields": [
+                    {
+                      "type": "string",
+                      "name": "value",
+                      "doc": "The query text"
+                    },
+                    {
+                      "type": {
+                        "type": "enum",
+                        "symbolDocs": {
+                          "SQL": "A SQL Query",
+                          "UNKNOWN": "Unknown query language"
+                        },
+                        "name": "QueryLanguage",
+                        "namespace": "com.linkedin.pegasus2avro.query",
+                        "symbols": [
+                          "SQL",
+                          "UNKNOWN"
+                        ]
+                      },
+                      "name": "language",
+                      "default": "SQL",
+                      "doc": "The language of the Query, e.g. SQL."
+                    }
+                  ],
+                  "doc": "A query statement against one or more data assets."
+                }
+              ],
+              "name": "queryStatement",
+              "default": null,
+              "doc": "The data transform may be defined by a query statement"
+            }
+          ],
+          "doc": "Information about a transformation. It may be a query,"
+        }
+      },
+      "name": "transforms",
+      "doc": "List of transformations applied"
+    }
+  ],
+  "doc": "Information about a Query against one or more data assets (e.g. Tables or Views)."
+}

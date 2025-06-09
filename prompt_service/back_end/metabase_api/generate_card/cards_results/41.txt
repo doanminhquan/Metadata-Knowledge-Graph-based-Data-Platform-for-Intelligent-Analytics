@@ -1,0 +1,132 @@
+{
+    "cards": [
+        {
+            "name": "Total Students Enrolled per Class",
+            "description": "Displays the total number of students grouped by class_code.",
+            "collection_id": 2,
+            "display": "bar",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 116]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "bar",
+                    "x-axis": "class_code",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Students by Year Start",
+            "description": "Shows the total number of students enrolled each year, giving insight into enrollment trends.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 81]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "year_start",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Revenue per Course Category",
+            "description": "Displays the total revenue generated from each course category, highlighting the most profitable areas.",
+            "collection_id": 2,
+            "display": "bar",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 13,
+                    "aggregation": [
+                        ["sum", ["field", 5]]
+                    ],
+                    "breakout": [
+                        ["field", 18]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "bar",
+                    "x-axis": "category",
+                    "y-axis": "sum"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Average Scores by Program Code",
+            "description": "Shows the average scores of students grouped by program code, helping to identify trends in academic performance.",
+            "collection_id": 2,
+            "display": "bar",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 17,
+                    "aggregation": [
+                        ["avg", ["field", 109]]
+                    ],
+                    "breakout": [
+                        ["field", 108]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "bar",
+                    "x-axis": "program_code",
+                    "y-axis": "avg"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        }
+    ],
+    "explanation": [
+        "This card shows the total number of students enrolled in each class, allowing administrators to easily see enrollment statistics.",
+        "This chart illustrates how student enrollment varies by year start, helping stakeholders understand trends over time.",
+        "This card provides insights into revenue generated from different course categories, focusing on profitability.",
+        "This analysis displays the average scores of students by program, highlighting academic performance across programs."
+    ],
+    "dashboard_name": [
+        "Student Enrollment Overview",
+        "Enrollment Trends",
+        "Course Revenue Analysis",
+        "Academic Performance Index"
+    ]
+}

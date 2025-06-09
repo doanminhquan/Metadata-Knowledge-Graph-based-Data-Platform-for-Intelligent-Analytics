@@ -1,0 +1,26 @@
+{
+  "type": "record",
+  "Aspect": {
+    "name": "versionSetKey",
+    "keyForEntity": "versionSet",
+    "entityCategory": "core",
+    "entityAspects": [
+      "versionSetProperties"
+    ]
+  },
+  "name": "VersionSetKey",
+  "namespace": "com.linkedin.pegasus2avro.metadata.key",
+  "fields": [
+    {
+      "type": "string",
+      "name": "id",
+      "doc": "ID of the Version Set, generated from platform + asset id / name"
+    },
+    {
+      "type": "string",
+      "name": "entityType",
+      "doc": "Type of entities included in version set, limits to a single entity type between linked versioned entities"
+    }
+  ],
+  "doc": "Key for a Version Set entity"
+}

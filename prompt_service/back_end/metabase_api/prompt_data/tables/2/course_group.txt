@@ -1,0 +1,49 @@
+{
+  "table_name": "course_group",
+  "table_id": 23,
+  "db_id": "2",
+  "fields": [
+    {
+      "name": "type",
+      "display_name": "Type",
+      "base_type": "type/Text",
+      "semantic_type": "type/Category",
+      "id": 204
+    },
+    {
+      "name": "course_section_code",
+      "display_name": "Course Section Code",
+      "base_type": "type/Text",
+      "semantic_type": "type/Category",
+      "id": 203
+    },
+    {
+      "name": "course_group_code",
+      "display_name": "Course Group Code",
+      "base_type": "type/Text",
+      "semantic_type": "type/Category",
+      "id": 205
+    },
+    {
+      "name": "id",
+      "display_name": "ID",
+      "base_type": "type/Text",
+      "semantic_type": "type/PK",
+      "id": 201
+    },
+    {
+      "name": "group_order",
+      "display_name": "Group Order",
+      "base_type": "type/Text",
+      "semantic_type": "type/Category",
+      "id": 209
+    },
+    {
+      "name": "student_amount",
+      "display_name": "Student Amount",
+      "base_type": "type/Text",
+      "semantic_type": "type/Category",
+      "id": 202
+    }
+  ]
+}

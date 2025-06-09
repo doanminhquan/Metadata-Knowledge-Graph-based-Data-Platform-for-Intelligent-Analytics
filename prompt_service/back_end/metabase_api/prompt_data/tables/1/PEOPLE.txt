@@ -1,0 +1,98 @@
+{
+  "table_name": "PEOPLE",
+  "table_id": 1,
+  "db_id": "1",
+  "fields": [
+    {
+      "name": "ID",
+      "display_name": "ID",
+      "base_type": "type/BigInteger",
+      "semantic_type": "type/PK",
+      "id": 4
+    },
+    {
+      "name": "ADDRESS",
+      "display_name": "Address",
+      "base_type": "type/Text",
+      "semantic_type": null,
+      "id": 51
+    },
+    {
+      "name": "EMAIL",
+      "display_name": "Email",
+      "base_type": "type/Text",
+      "semantic_type": "type/Email",
+      "id": 7
+    },
+    {
+      "name": "PASSWORD",
+      "display_name": "Password",
+      "base_type": "type/Text",
+      "semantic_type": null,
+      "id": 54
+    },
+    {
+      "name": "NAME",
+      "display_name": "Name",
+      "base_type": "type/Text",
+      "semantic_type": "type/Name",
+      "id": 48
+    },
+    {
+      "name": "CITY",
+      "display_name": "City",
+      "base_type": "type/Text",
+      "semantic_type": "type/City",
+      "id": 53
+    },
+    {
+      "name": "LONGITUDE",
+      "display_name": "Longitude",
+      "base_type": "type/Float",
+      "semantic_type": "type/Longitude",
+      "id": 58
+    },
+    {
+      "name": "STATE",
+      "display_name": "State",
+      "base_type": "type/Text",
+      "semantic_type": "type/State",
+      "id": 1
+    },
+    {
+      "name": "SOURCE",
+      "display_name": "Source",
+      "base_type": "type/Text",
+      "semantic_type": "type/Source",
+      "id": 30
+    },
+    {
+      "name": "BIRTH_DATE",
+      "display_name": "Birth Date",
+      "base_type": "type/Date",
+      "semantic_type": null,
+      "id": 12
+    },
+    {
+      "name": "ZIP",
+      "display_name": "Zip",
+      "base_type": "type/Text",
+      "semantic_type": "type/ZipCode",
+      "id": 61
+    },
+    {
+      "name": "LATITUDE",
+      "display_name": "Latitude",
+      "base_type": "type/Float",
+      "semantic_type": "type/Latitude",
+      "id": 52
+    },
+    {
+      "name": "CREATED_AT",
+      "display_name": "Created At",
+      "base_type": "type/DateTime",
+      "semantic_type": "type/CreationTimestamp",
+      "id": 50
+    }
+  ]
+}

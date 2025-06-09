@@ -1,0 +1,22 @@
+{
+  "type": "record",
+  "Aspect": {
+    "name": "dataHubOpenAPISchemaKey",
+    "keyForEntity": "dataHubOpenAPISchema",
+    "entityCategory": "internal",
+    "entityAspects": [
+      "systemMetadata"
+    ],
+    "entityDoc": "Contains aspects which are used in OpenAPI requests/responses which are not otherwise present in the data model."
+  },
+  "name": "DataHubOpenAPISchemaKey",
+  "namespace": "com.linkedin.pegasus2avro.metadata.key",
+  "fields": [
+    {
+      "type": "string",
+      "name": "id",
+      "doc": "A unique id for the DataHub OpenAPI schema."
+    }
+  ],
+  "doc": "Key for a Query"
+}

@@ -1,0 +1,67 @@
+{
+    "cards": [
+        {
+            "name": "Student Enrollment Trend by Class Code",
+            "description": "Illustrates how student enrollment changes over the years, categorized by class.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 115],  // Student Code
+                        ["field", 81]    // Year Start
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "year_start",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Overall Student Enrollment Trend",
+            "description": "Shows the overall trend of student enrollment over the years.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 113]  // Year
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "year",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        }
+    ],
+    "explanation": [
+        "I created a visualization that illustrates how student enrollment changes over the years based on class codes. This helps in understanding which classes draw more students over time.",
+        "I created another visualization that shows the overall trend of student enrollment over the years. This gives a general view of how attendance is changing year by year."
+    ]
+}

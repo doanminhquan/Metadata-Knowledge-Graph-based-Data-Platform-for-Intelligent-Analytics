@@ -1,0 +1,97 @@
+{
+    "cards": [
+        {
+            "name": "Student Enrollment Trend Over Years",
+            "description": "Displays the trend of student enrollment grouped by year.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "question",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 115]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "year",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Enrollment Growth by Class Code",
+            "description": "Shows the number of students enrolled each year, categorized by class code.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "query",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 116],
+                        ["field", 115]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "year",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        },
+        {
+            "name": "Overall Student Enrollment Trends",
+            "description": "Illustrates the overall student enrollment trends over the years.",
+            "collection_id": 2,
+            "display": "line",
+            "dataset_query": {
+                "type": "question",
+                "database": 2,
+                "query": {
+                    "source-table": 18,
+                    "aggregation": [
+                        ["count"]
+                    ],
+                    "breakout": [
+                        ["field", 81]
+                    ]
+                }
+            },
+            "visualization_settings": {
+                "graph": {
+                    "type": "line",
+                    "x-axis": "year_start",
+                    "y-axis": "count"
+                }
+            },
+            "collection_position": null,
+            "parameters": [],
+            "param_values": []
+        }
+    ],
+    "explanation": [
+        "I created a visualize that shows the trend of student enrollment over the years, helping to understand how many students are enrolling each year.",
+        "This visualize illustrates the growth of student enrollment categorized by class code, providing insight into which classes are attracting more students over time.",
+        "I developed a visualize that highlights the overall trends in student enrollment, which allows stakeholders to see how enrollment patterns have changed over the years."
+    ]
+}

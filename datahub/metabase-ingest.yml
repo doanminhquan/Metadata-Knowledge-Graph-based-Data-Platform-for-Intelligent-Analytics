@@ -1,0 +1,18 @@
+source:
+  type: metabase
+  config:
+    connect_uri: 'http://localhost:3000'
+    # api_key: mb_P9x0fSoUt43XrXtMVS+s9tXEJnVFF6AH1SZaJ+2xeUE= # All-users key not working (?)
+    api_key: mb_3yS3qqqGIKH+EeKBpPahDJJYMa2lsEQA6wCsW59OPyI=
+    exclude_other_user_collections: true
+    stateful_ingestion:
+      enabled: true
+      remove_stale_metadata: true
+      fail_safe_threshold: 99
+
+pipeline_name: "cli_metabase"
+
+sink:
+  type: datahub-rest
+  config:
+    server: "http://localhost:22691"

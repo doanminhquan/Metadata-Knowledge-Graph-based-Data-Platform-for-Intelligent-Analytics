@@ -1,0 +1,20 @@
+source:
+  type: s3
+  config:
+    path_specs:
+      - include: 's3://warehouse/raw_bucket/unprocessed/*/*.*'
+      # - include: "s3a://warehouse/gold_bucket/*.*"
+    platform_instance: minio
+    aws_config:
+      aws_access_key_id: "Fpt5U54544GCeg8JgiNr"
+      aws_secret_access_key: "aQZ37SIiVWFIQt4B04oFibkDGbxYYOxneNm96OI8"
+      aws_endpoint_url: "http://localhost:9008"
+      aws_region: "us-east-1" # any for local minio
+    env: "PROD"
+    profiling:
+      enabled: false
+
+sink:
+  type: datahub-rest
+  config:
+    server: "http://localhost:22691"

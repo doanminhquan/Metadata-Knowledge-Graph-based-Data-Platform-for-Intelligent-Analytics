@@ -1,0 +1,19 @@
+{
+  "type": "record",
+  "Aspect": {
+    "name": "dataHubActionKey",
+    "keyForEntity": "dataHubAction",
+    "entityCategory": "internal",
+    "entityAspects": []
+  },
+  "name": "DataHubActionKey",
+  "namespace": "com.linkedin.pegasus2avro.metadata.key",
+  "fields": [
+    {
+      "type": "string",
+      "name": "id",
+      "doc": "A unique id for the Action, either generated or provided"
+    }
+  ],
+  "doc": "Key for a DataHub Action Pipeline"
+}

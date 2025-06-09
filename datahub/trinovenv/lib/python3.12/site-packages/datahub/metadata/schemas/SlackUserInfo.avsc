@@ -1,0 +1,160 @@
+{
+  "type": "record",
+  "Aspect": {
+    "name": "slackUserInfo"
+  },
+  "name": "SlackUserInfo",
+  "namespace": "com.linkedin.pegasus2avro.dataplatform.slack",
+  "fields": [
+    {
+      "Relationship": {
+        "entityTypes": [
+          "dataPlatformInstance"
+        ],
+        "name": "PartOfSlackWorkspace"
+      },
+      "java": {
+        "class": "com.linkedin.pegasus2avro.common.urn.Urn"
+      },
+      "type": "string",
+      "name": "slackInstance",
+      "doc": "The dataplatform instance that this Slack member belongs to.",
+      "Urn": "Urn",
+      "entityTypes": [
+        "dataPlatformInstance"
+      ]
+    },
+    {
+      "type": "string",
+      "name": "id",
+      "doc": "The unique identifier for the Slack member."
+    },
+    {
+      "type": "string",
+      "name": "name",
+      "doc": "The username of the Slack member."
+    },
+    {
+      "type": "string",
+      "name": "realName",
+      "doc": "The real name of the Slack member."
+    },
+    {
+      "type": "string",
+      "name": "displayName",
+      "doc": "The display name of the Slack member."
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "email",
+      "default": null,
+      "doc": "The email associated with the Slack member."
+    },
+    {
+      "type": "string",
+      "name": "teamId",
+      "doc": "The ID associated with the Slack team."
+    },
+    {
+      "type": "boolean",
+      "name": "isDeleted",
+      "doc": "Whether the member is deleted or not."
+    },
+    {
+      "type": "boolean",
+      "name": "isAdmin",
+      "doc": "Whether the member is an admin."
+    },
+    {
+      "type": "boolean",
+      "name": "isOwner",
+      "doc": "Whether the member is an owner."
+    },
+    {
+      "type": "boolean",
+      "name": "isPrimaryOwner",
+      "doc": "Whether the member is a primary owner."
+    },
+    {
+      "type": "boolean",
+      "name": "isBot",
+      "doc": "Whether the member is a bot."
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "timezone",
+      "default": null,
+      "doc": "The timezone of the Slack member."
+    },
+    {
+      "type": [
+        "null",
+        "int"
+      ],
+      "name": "timezoneOffset",
+      "default": null,
+      "doc": "The timezone offset of the Slack member."
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "title",
+      "default": null,
+      "doc": "The title of the Slack member."
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "phone",
+      "default": null,
+      "doc": "The phone number of the Slack member."
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "profilePictureUrl",
+      "default": null,
+      "doc": "The URL of the member's profile picture."
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "statusText",
+      "default": null,
+      "doc": "The status text of the Slack member."
+    },
+    {
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "statusEmoji",
+      "default": null,
+      "doc": "The status emoji of the Slack member."
+    },
+    {
+      "type": [
+        "null",
+        "long"
+      ],
+      "name": "lastUpdatedSeconds",
+      "default": null,
+      "doc": "The timestamp of when the member was last updated. (in seconds)"
+    }
+  ],
+  "doc": "Information about a Slack user."
+}

@@ -1,0 +1,101 @@
+{
+  "cards": [
+    {
+      "name": "Student Enrollment Trend",
+      "description": "Displays the trend of student enrollment over the years.",
+      "collection_id": 2,
+      "display": "line",
+      "dataset_query": {
+        "type": "query",
+        "database": 2,
+        "query": {
+          "source-table": 18,
+          "aggregation": [
+            ["count"]
+          ],
+          "breakout": [
+            ["field", 115]
+          ]
+        }
+      },
+      "visualization_settings": {
+        "graph": {
+          "type": "line",
+          "x-axis": "year",
+          "y-axis": "count"
+        }
+      },
+      "collection_position": null,
+      "parameters": [],
+      "param_values": []
+    },
+    {
+      "name": "Monthly Enrollment Overview",
+      "description": "Shows the total enrollment of students each month over the years.",
+      "collection_id": 2,
+      "display": "line",
+      "dataset_query": {
+        "type": "query",
+        "database": 2,
+        "query": {
+          "source-table": 18,
+          "aggregation": [
+            ["count"]
+          ],
+          "breakout": [
+            ["field", 13]
+          ]
+        }
+      },
+      "visualization_settings": {
+        "graph": {
+          "type": "line",
+          "x-axis": "month",
+          "y-axis": "count"
+        }
+      },
+      "collection_position": null,
+      "parameters": [],
+      "param_values": []
+    },
+    {
+      "name": "Yearly Enrollment Sum",
+      "description": "Illustrates the total number of students enrolled each year.",
+      "collection_id": 2,
+      "display": "bar",
+      "dataset_query": {
+        "type": "query",
+        "database": 2,
+        "query": {
+          "source-table": 18,
+          "aggregation": [
+            ["count"]
+          ],
+          "breakout": [
+            ["field", 81]
+          ]
+        }
+      },
+      "visualization_settings": {
+        "graph": {
+          "type": "bar",
+          "x-axis": "year",
+          "y-axis": "count"
+        }
+      },
+      "collection_position": null,
+      "parameters": [],
+      "param_values": []
+    }
+  ],
+  "explanation": [
+    "This card illustrates how student enrollment changes over the years, helping to identify trends in education demand and resource planning.",
+    "This card provides an overview of monthly student enrollments, allowing for detailed insight into enrollment patterns throughout the year.",
+    "This card presents the total number of students enrolled each year, giving a straightforward look at yearly changes and trends in student enrollment."
+  ],
+  "dashboard_name": [
+    "Student Enrollment Dashboard",
+    "Monthly Enrollment Dashboard",
+    "Yearly Trends Dashboard"
+  ]
+}

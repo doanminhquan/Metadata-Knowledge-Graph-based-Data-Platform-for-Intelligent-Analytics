@@ -1,0 +1,14 @@
+{
+  "table_name": "graduation_rate",
+  "table_id": 28,
+  "db_id": "3",
+  "fields": [
+    {
+      "name": "graduation_rate",
+      "display_name": "Graduation Rate",
+      "base_type": "type/Float",
+      "semantic_type": null,
+      "id": 248
+    }
+  ]
+}
